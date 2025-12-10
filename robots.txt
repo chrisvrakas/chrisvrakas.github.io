@@ -1,0 +1,14 @@
+# robots.txt for chrisvrakas.com
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://chrisvrakas.com/sitemap.xml
+
+# Crawl-delay (optional, helps prevent server overload)
+Crawl-delay: 1
+
+# Disallow admin or private directories (if you add any later)
+# Disallow: /admin/
+# Disallow: /private/

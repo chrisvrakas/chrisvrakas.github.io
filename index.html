@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Vrakas - Relentlessly Curious</title>
+    <meta name="description" content="Chris Vrakas - Relentlessly curious lifelong learner, technologist, Bitcoin enthusiast, and interdisciplinary explorer. Challenging the status quo through human versatility.">
+    <meta name="keywords" content="Chris Vrakas, technologist, Bitcoin, blockchain, privacy advocate, polymath, entrepreneur, Milwaukee nightlife, cypherpunk">
+    <meta name="author" content="Chris Vrakas">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chrisvrakas.com/">
+    <meta property="og:title" content="Chris Vrakas - Relentlessly Curious">
+    <meta property="og:description" content="Relentlessly curious lifelong learner, technologist, Bitcoin enthusiast, and interdisciplinary explorer.">
+    <meta property="og:image" content="https://chrisvrakas.com/assets/images/index_heroimage.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chrisvrakas.com/">
+    <meta property="twitter:title" content="Chris Vrakas - Relentlessly Curious">
+    <meta property="twitter:description" content="Relentlessly curious lifelong learner, technologist, Bitcoin enthusiast, and interdisciplinary explorer.">
+    <meta property="twitter:image" content="https://chrisvrakas.com/assets/images/index_heroimage.png">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sometype Mono', monospace;
+            background-color: #1a1a1a;
+            color: #ddc18a;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            z-index: 1000;
+            background-color: rgba(26, 26, 26, 0.95);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .logo {
+            height: 30px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: opacity 0.3s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .hamburger img {
+            height: 25px;
+            width: auto;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(26, 26, 26, 0.98);
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border: none;
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .mobile-menu a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            opacity: 0.7;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 40px 60px;
+            position: relative;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .hero-image {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            line-height: 0;
+        }
+
+        .hellofriend {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 0 20px 0;
+            padding: 0;
+        }
+
+        .main-hero {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 0 20px 0;
+            padding: 0;
+        }
+
+        .welcometo {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 0 40px 0;
+            padding: 0;
+        }
+
+        .scroll-arrow {
+            width: 30px;
+            height: auto;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+            margin-top: 20px;
+            align-self: center;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        /* Second Section */
+        .future-section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 40px;
+        }
+
+        .future-content {
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .future-image {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        /* Third Section */
+        .quote-section {
+            padding: 80px 40px;
+        }
+
+        .quote-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .red-line {
+            width: 100%;
+            height: 2px;
+            background-color: #ff3333;
+            margin: 0;
+        }
+
+        .heraclitus-quote {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 80px;
+            align-items: start;
+            margin-top: 60px;
+        }
+
+        .preface-text {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 32px;
+            font-weight: 700;
+            color: #ddc18a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .preface-text::before {
+            content: '→ ';
+            color: #ddc18a;
+        }
+
+        .copy-text-column {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* Fourth Section */
+        .story-section {
+            padding: 80px 40px;
+        }
+
+        .story-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .story-image {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            display: block;
+            margin: 0 0 60px 0;
+        }
+
+        .lewis-quote {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .yourstruly-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px 0;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            padding: 80px 40px 40px 40px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-top: 1px solid #ff3333;
+        }
+
+        .footer-text {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            line-height: 1.1;
+            color: #ddc18a;
+            margin-bottom: 3px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+
+        .footer-text .red {
+            color: #ff3333;
+        }
+
+        .footer-text .strikethrough {
+            text-decoration: line-through;
+        }
+
+        .footer-copyright {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            color: #ddc18a;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+
+        .footer-copyright .red {
+            color: #ff3333;
+        }
+
+        .footer-link {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+
+        .footer-link a {
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-link a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-link .tan {
+            color: #ddc18a;
+        }
+
+        /* Scroll to Top Arrow */
+        .scroll-top-arrow {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 40px;
+            height: auto;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 998;
+        }
+
+        .scroll-top-arrow.visible {
+            opacity: 1;
+        }
+
+        .scroll-top-arrow:hover {
+            opacity: 0.7;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #ff3333;
+            font-size: 20px;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+
+        /* Text Styling */
+        .copy-text-block {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 16px;
+            line-height: 1.618;
+            color: #ddc18a;
+            font-weight: 400;
+        }
+
+        .copy-text-block .red {
+            color: #ff3333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 25px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .hero-section {
+                padding: 80px 25px 40px;
+            }
+
+            .future-section {
+                padding: 40px 25px;
+            }
+
+            .quote-section {
+                padding: 60px 25px;
+            }
+
+            .story-section {
+                padding: 60px 25px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .hellofriend,
+            .main-hero {
+                width: 95%;
+            }
+
+            .welcometo {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 12px 20px;
+            }
+
+            .logo {
+                height: 25px;
+            }
+
+            .hero-section {
+                padding: 70px 20px 30px;
+            }
+
+            .future-section {
+                padding: 30px 20px;
+            }
+
+            .quote-section {
+                padding: 40px 20px;
+            }
+
+            .story-section {
+                padding: 40px 20px;
+            }
+
+            footer {
+                padding: 40px 20px;
+            }
+
+            .content-grid {
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="assets/images/Header_LeftLogo.png" alt="CV Logo" class="logo"></a>
+            
+            <nav>
+    <a href="whoami.html">whoami</a>
+    <a href="resources.html">resources</a>
+    <a href="connect.html">connect</a>
+</nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <img src="assets/images/HamburgerOpen.png" alt="Menu" id="hamburger-icon">
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+   <div class="mobile-menu" id="mobile-menu">
+    <a href="whoami.html">whoami</a>
+    <a href="resources.html">resources</a>
+    <a href="connect.html">connect</a>
+</div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <img src="assets/images/index_hellofriend.png" alt="Hello Friend" class="hero-image hellofriend">
+            <img src="assets/images/index_heroimage.png" alt="Hero Image" class="hero-image main-hero">
+            <img src="assets/images/index_welcometo.png" alt="Welcome to my digital stomping ground" class="hero-image welcometo">
+            <img src="assets/images/index_scrolldownarrow.png" alt="Scroll Down" class="scroll-arrow" id="scroll-arrow">
+        </div>
+    </section>
+
+    <!-- Future Section -->
+    <section class="future-section">
+        <div class="future-content">
+            <img src="assets/images/index_futurewill.png" alt="The future will belong" class="future-image">
+        </div>
+    </section>
+
+    <!-- Quote Section -->
+    <section class="quote-section">
+        <div class="quote-content">
+            <div class="red-line"></div>
+            <img src="assets/images/index_heraclitusquote.png" alt="Heraclitus Quote" class="heraclitus-quote">
+            <div class="red-line"></div>
+            
+            <div class="content-grid">
+                <div class="preface-column">
+                    <h2 class="preface-text">Preface</h2>
+                </div>
+                <div class="copy-text-column">
+                    <div class="copy-text-block">
+                        In our rapidly <span class="red">changing,</span> technology-driven world, traditional industry lines are beginning to blur — becoming increasingly <span class="red">interconnected</span> and ever-more <span class="red">complex.</span>
+                    </div>
+                    
+                    <div class="copy-text-block">
+                        The nature of the <span class="red">workplace is changing,</span> the nature of <span class="red">knowledge is changing,</span> and the skills needed to navigate the <span class="red">future</span> will be dramatically different than those <span class="red">past.</span>
+                    </div>
+                    
+                    <div class="copy-text-block">
+                        Most children growing up today will eventually enter jobs that do not yet exist with <span class="red">technologies</span> that have not yet been invented, and this in itself presents a fascinating dilemma for <span class="red">modern civilization</span> to consider.
+                    </div>
+                    
+                    <div class="copy-text-block">
+                        Gone are the days where one can attend university, pass an exam, and finish with something that is <span class="red">education.</span>
+                    </div>
+                    
+                    <div class="copy-text-block">
+                        Henceforth, the whole of <span class="red">life</span> has now become a process of <span class="red">learning.</span>
+                    </div>
+                    
+                    <div class="copy-text-block">
+                        Nevertheless, most will give-in and become passive participants with age — treating <span class="red">education, work, and self-actualization</span> as a finished product.
+                    </div>
+                    
+                    <div class="copy-text-block">
+                        The <span class="red">proof is etched in code</span> on countless blogs, biographies, and LinkedIn accounts whereby individuals cast themselves as static entities that stand still with <span class="red">time</span> — governed by the same batch-processed standards and myopic career titles as the next.
+                    </div>
+                    
+                    <div class="copy-text-block">
+                        If you're looking for 'industry-standard' then this is not the place for you. The world is replete with normies who will meet your needs. My tolerance for ordinary has long since <span class="red">expired.</span>
+                    </div>
+                    
+                    <div class="copy-text-block">
+                        I am a <span class="red">relentlessly curious, lifelong learner,</span> prototyping my way forward through iteration. I not only differ from others, but I also differ from myself from yesterday.
+                    </div>
+                    
+                    <div class="copy-text-block">
+                        I am, quite literally, <span class="red">living transition.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="story-content">
+            <img src="assets/images/index_storybegins.png" alt="Story Begins" class="story-image">
+            
+            <div class="red-line"></div>
+            <img src="assets/images/index_lewiscarrolquote.png" alt="Lewis Carroll Quote" class="lewis-quote">
+            <div class="red-line"></div>
+            
+            <img src="assets/images/index_yourstruly.png" alt="Yours Truly" class="yourstruly-image">
+            <div class="red-line"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">when everyone <span class="red strikethrough">copyrights</span>, <span class="red">copyleft</span></div>
+            <div class="footer-copyright"><span class="red">© chrisvrakas.com</span> — to infinity and beyond</div>
+            <div class="footer-link"><a href="privacy.html"><span class="tan">PRIVACY POLICY</span></a></div>
+            
+            <div class="social-icons">
+                <a href="https://x.com/chris_vrakas" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
+                <a href="https://www.instagram.com/chris_vrakas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chrisvrakasofficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://medium.com/@chrisvrakas" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://github.com/chrisvrakas" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Arrow -->
+    <img src="assets/images/index_scrolluparrow.png" alt="Scroll to Top" class="scroll-top-arrow" id="scroll-top-arrow">
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+            
+            if (mobileMenu.classList.contains('active')) {
+                hamburgerIcon.src = 'assets/images/HamburgerClose.png';
+            } else {
+                hamburgerIcon.src = 'assets/images/HamburgerOpen.png';
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                hamburgerIcon.src = 'assets/images/HamburgerOpen.png';
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Smooth scroll for arrow
+        const scrollArrow = document.getElementById('scroll-arrow');
+        scrollArrow.addEventListener('click', () => {
+            window.scrollTo({
+                top: window.innerHeight,
+                behavior: 'smooth'
+            });
+        });
+
+        // Scroll to top arrow
+        const scrollTopArrow = document.getElementById('scroll-top-arrow');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopArrow.classList.add('visible');
+            } else {
+                scrollTopArrow.classList.remove('visible');
+            }
+        });
+
+        scrollTopArrow.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>

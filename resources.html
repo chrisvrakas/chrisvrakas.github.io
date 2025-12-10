@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Resources | Chris Vrakas - Privacy Tools, Security Software & Reading List</title>
+    <meta name="title" content="Resources | Chris Vrakas - Privacy Tools, Security Software & Reading List">
+    <meta name="description" content="Curated software stack, security tools, and reading list for privacy advocates and technologists. Open-source thinking from Chris Vrakas.">
+    <meta name="keywords" content="Chris Vrakas, privacy tools, security software, Bitcoin resources, hacker books, open source, technology stack, VPN, encryption, cybersecurity">
+    <meta name="author" content="Chris Vrakas">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chrisvrakas.com/resources.html">
+    <meta property="og:title" content="Resources | Chris Vrakas - Privacy Tools, Security Software & Reading List">
+    <meta property="og:description" content="Curated software stack, security tools, and reading list for privacy advocates and technologists. Open-source thinking from Chris Vrakas.">
+    <meta property="og:image" content="https://chrisvrakas.com/assets/images/Header_LeftLogo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chrisvrakas.com/resources.html">
+    <meta property="twitter:title" content="Resources | Chris Vrakas - Privacy Tools, Security Software & Reading List">
+    <meta property="twitter:description" content="Curated software stack, security tools, and reading list for privacy advocates and technologists. Open-source thinking from Chris Vrakas.">
+    <meta property="twitter:image" content="https://chrisvrakas.com/assets/images/Header_LeftLogo.png">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://chrisvrakas.com/resources.html">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sometype Mono', monospace;
+            background-color: #1a1a1a;
+            color: #ddc18a;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            z-index: 1000;
+            background-color: rgba(26, 26, 26, 0.95);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .logo {
+            height: 30px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: opacity 0.3s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        nav a.active {
+            color: #ddc18a;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .hamburger img {
+            height: 25px;
+            width: auto;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(26, 26, 26, 0.98);
+            width: 100%;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border-top: 1px solid #333;
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            opacity: 0.7;
+        }
+
+        /* Content */
+        .content-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 120px 40px 80px;
+        }
+
+        .page-title {
+            font-size: 64px;
+            font-weight: 700;
+            color: #ff3333;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+
+        .page-intro {
+            font-size: 16px;
+            line-height: 1.618;
+            color: #ddc18a;
+            margin-bottom: 40px;
+            max-width: 800px;
+        }
+
+        .page-intro .highlight {
+            color: #ff3333;
+            font-weight: 700;
+        }
+
+        .category-nav {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+
+        .category-nav a {
+            color: #ff3333;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: opacity 0.3s ease;
+        }
+
+        .category-nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* Terminal Window */
+        .terminal-window {
+            background: #0a0a0a;
+            border: 2px solid #ff3333;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            overflow: hidden;
+        }
+
+        .terminal-header {
+            background: #ff3333;
+            padding: 10px 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .terminal-dots {
+            display: flex;
+            gap: 6px;
+        }
+
+        .terminal-dots .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #1a1a1a;
+        }
+
+        .terminal-title {
+            color: #1a1a1a;
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .terminal-content {
+            padding: 30px;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+
+        .terminal-content::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .terminal-content::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+
+        .terminal-content::-webkit-scrollbar-thumb {
+            background: #ff3333;
+            border-radius: 5px;
+        }
+
+        .command-line {
+            color: #ff3333;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .command-line::before {
+            content: '$ ';
+        }
+
+        .output {
+            color: #ddc18a;
+            line-height: 1.8;
+        }
+
+        .output .section-title {
+            color: #ff3333;
+            font-weight: 700;
+            font-size: 18px;
+            margin: 30px 0 15px 0;
+            display: block;
+        }
+
+        .output a {
+            color: #ff3333;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .output a:hover {
+            opacity: 0.7;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            padding: 80px 40px 40px 40px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-top: 1px solid #ff3333;
+        }
+
+        .footer-text {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            line-height: 1.1;
+            color: #ddc18a;
+            margin-bottom: 3px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+
+        .footer-text .red {
+            color: #ff3333;
+        }
+
+        .footer-text .strikethrough {
+            text-decoration: line-through;
+        }
+
+        .footer-copyright {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            color: #ddc18a;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+
+        .footer-copyright .red {
+            color: #ff3333;
+        }
+
+        .footer-link {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+
+        .footer-link a {
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-link a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-link .tan {
+            color: #ddc18a;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #ff3333;
+            font-size: 20px;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+
+        /* Scroll to Top Arrow */
+        .scroll-top-arrow {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 40px;
+            height: auto;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 998;
+        }
+
+        .scroll-top-arrow.visible {
+            opacity: 1;
+        }
+
+        .scroll-top-arrow:hover {
+            opacity: 0.7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 25px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .content-section {
+                padding: 100px 25px 60px;
+            }
+
+            .page-title {
+                font-size: 40px;
+            }
+
+            .terminal-content {
+                padding: 20px;
+            }
+
+            footer {
+                padding: 40px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 12px 20px;
+            }
+
+            .logo {
+                height: 25px;
+            }
+
+            .content-section {
+                padding: 90px 20px 40px;
+            }
+
+            .page-title {
+                font-size: 32px;
+            }
+
+            .terminal-content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="assets/images/Header_LeftLogo.png" alt="CV Logo" class="logo"></a>
+            
+            <nav>
+    <a href="whoami.html">whoami</a>
+    <a href="resources.html" class="active">resources</a>
+    <a href="connect.html">connect</a>
+</nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <img src="assets/images/HamburgerOpen.png" alt="Menu" id="hamburger-icon">
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="whoami.html">whoami</a>
+    <a href="resources.html">resources</a>
+    <a href="connect.html">connect</a>
+</div>
+    <!-- Content -->
+    <div class="content-section">
+        <h1 class="page-title">RESOURCES</h1>
+
+        <p class="page-intro">
+            <span class="highlight">FREE KNOWLEDGE. TOOLS. CURATED LISTS.</span><br><br>
+            
+            I believe in open-source thinking. Everything I learn, I share. Below you'll find my personal arsenal of software, books, and resources that have shaped my worldview and daily workflows.
+        </p>
+
+        <div class="category-nav">
+            <a href="#software">[SOFTWARE]</a>
+            <a href="#books">[BOOKS]</a>
+        </div>
+
+        <!-- SOFTWARE STACK -->
+        <div class="terminal-window" id="software">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="terminal-title">software_stack.txt</div>
+            </div>
+            <div class="terminal-content">
+                <div class="command-line">cat software_stack.txt</div>
+                <div class="output">
+                    <span class="section-title"># BROWSERS</span>
+                    • <a href="https://www.mozilla.org/firefox/" target="_blank" rel="noopener noreferrer">Firefox</a><br>
+                    • <a href="https://librewolf.net/" target="_blank" rel="noopener noreferrer">Librewolf</a><br>
+                    • <a href="https://zen-browser.app/" target="_blank" rel="noopener noreferrer">Zen Browser</a><br>
+                    • <a href="https://mullvad.net/browser" target="_blank" rel="noopener noreferrer">Mullvad Browser</a><br>
+                    • <a href="https://www.torproject.org/" target="_blank" rel="noopener noreferrer">Tor Browser</a><br>
+                    • <a href="https://brave.com/" target="_blank" rel="noopener noreferrer">Brave Browser</a><br>
+                    • <a href="https://www.chromium.org/" target="_blank" rel="noopener noreferrer">Chromium Barebones</a><br>
+                    • <a href="https://www.mozilla.org/firefox/browsers/mobile/focus/" target="_blank" rel="noopener noreferrer">Firefox Focus Mobile Browser</a><br><br>
+
+                    <span class="section-title"># BROWSER EXTENSIONS</span>
+                    • <a href="https://ublockorigin.com/" target="_blank" rel="noopener noreferrer">Ublock Origin</a><br>
+                    • <a href="https://github.com/ClearURLs/Addon" target="_blank" rel="noopener noreferrer">Clear URLs</a><br>
+                    • <a href="https://addons.mozilla.org/firefox/addon/clear-browsing-data/" target="_blank" rel="noopener noreferrer">Clear Browsing Data</a><br>
+                    • <a href="https://github.com/Cookie-AutoDelete/Cookie-AutoDelete" target="_blank" rel="noopener noreferrer">Cookie Autodelete</a><br>
+                    • <a href="https://decentraleyes.org/" target="_blank" rel="noopener noreferrer">Decentraleyes</a><br>
+                    • <a href="https://privacybadger.org/" target="_blank" rel="noopener noreferrer">Privacy Badger</a><br>
+                    • <a href="https://addons.mozilla.org/firefox/addon/temporary-containers/" target="_blank" rel="noopener noreferrer">Temporary Containers</a><br>
+                    • <a href="https://github.com/kkapsner/CanvasBlocker" target="_blank" rel="noopener noreferrer">Canvas Blocker</a><br>
+                    • <a href="https://addons.mozilla.org/firefox/addon/port-authority/" target="_blank" rel="noopener noreferrer">Port Authority</a><br>
+                    • <a href="https://getfireshot.com/" target="_blank" rel="noopener noreferrer">Fireshot</a><br><br>
+
+                    <span class="section-title"># VPN</span>
+                    • <a href="https://mullvad.net/" target="_blank" rel="noopener noreferrer">Mullvad</a><br>
+                    • <a href="https://protonvpn.com/" target="_blank" rel="noopener noreferrer">ProtonVPN</a><br><br>
+
+                    <span class="section-title"># EMAIL</span>
+                    • <a href="https://www.thunderbird.net/" target="_blank" rel="noopener noreferrer">Thunderbird Client</a><br>
+                    • <a href="https://proton.me/mail" target="_blank" rel="noopener noreferrer">Protonmail & Client</a><br>
+                    • <a href="https://tutanota.com/" target="_blank" rel="noopener noreferrer">Tutanota</a><br>
+                    • <a href="https://simplelogin.io/" target="_blank" rel="noopener noreferrer">Simple Login</a><br>
+                    • <a href="https://mailsy.io/" target="_blank" rel="noopener noreferrer">Mailsy</a><br><br>
+
+                    <span class="section-title"># MESSAGING</span>
+                    • <a href="https://signal.org/" target="_blank" rel="noopener noreferrer">Signal</a><br>
+                    • <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer">Telegram</a><br>
+                    • <a href="https://getsession.org/" target="_blank" rel="noopener noreferrer">Session</a><br>
+                    • <a href="https://jitsi.org/" target="_blank" rel="noopener noreferrer">Jitsi Meet</a><br>
+                    • <a href="https://discord.com/" target="_blank" rel="noopener noreferrer">Discord</a><br><br>
+
+                    <span class="section-title"># PASSWORD MANAGERS</span>
+                    • <a href="https://keepassxc.org/" target="_blank" rel="noopener noreferrer">KeePassXC</a><br>
+                    • <a href="https://bitwarden.com/" target="_blank" rel="noopener noreferrer">Bitwarden</a><br><br>
+
+                    <span class="section-title"># CLOUD STORAGE & FILE SHARING</span>
+                    • <a href="https://proton.me/drive" target="_blank" rel="noopener noreferrer">Protondrive</a><br>
+                    • <a href="https://mega.nz/" target="_blank" rel="noopener noreferrer">Mega</a><br>
+                    • <a href="https://nextcloud.com/" target="_blank" rel="noopener noreferrer">Nextcloud</a><br>
+                    • <a href="https://syncthing.net/" target="_blank" rel="noopener noreferrer">Syncthing</a><br>
+                    • <a href="https://tailscale.com/" target="_blank" rel="noopener noreferrer">Tailscale</a><br>
+                    • <a href="https://github.com/magic-wormhole/magic-wormhole" target="_blank" rel="noopener noreferrer">Magic Wormhole</a><br><br>
+
+                    <span class="section-title"># ENCRYPTION</span>
+                    • <a href="https://gnupg.org/" target="_blank" rel="noopener noreferrer">GNU Privacy Guard</a><br>
+                    • <a href="https://apps.kde.org/kleopatra/" target="_blank" rel="noopener noreferrer">Kleopatra (Linux)</a><br>
+                    • <a href="https://cryptomator.org/" target="_blank" rel="noopener noreferrer">Cryptomator</a><br>
+                    • <a href="https://www.veracrypt.fr/" target="_blank" rel="noopener noreferrer">Veracrypt</a><br>
+                    • <a href="https://support.apple.com/guide/disk-utility/" target="_blank" rel="noopener noreferrer">MacOS Built-In Containers</a><br>
+                    • <a href="https://github.com/HACKERALERT/Picocrypt" target="_blank" rel="noopener noreferrer">Picocrypt</a><br>
+                    • <a href="https://github.com/resurrecting-open-source-projects/outguess" target="_blank" rel="noopener noreferrer">Outguess Steganography</a><br>
+                    • <a href="https://github.com/Ciphey/Ciphey" target="_blank" rel="noopener noreferrer">Ciphey</a><br><br>
+
+                    <span class="section-title"># MAINTENANCE & PERFORMANCE</span>
+                    • <a href="https://www.clamav.net/" target="_blank" rel="noopener noreferrer">ClamAV Virus Scanner</a><br>
+                    • <a href="https://www.titanium-software.fr/en/onyx.html" target="_blank" rel="noopener noreferrer">ONYX</a><br>
+                    • <a href="https://www.bleachbit.org/" target="_blank" rel="noopener noreferrer">Bleachbit</a><br>
+                    • <a href="https://exifcleaner.com/" target="_blank" rel="noopener noreferrer">ExifCleaner</a><br>
+                    • <a href="https://rectangleapp.com/" target="_blank" rel="noopener noreferrer">Rectangle Window Manager</a><br>
+                    • <a href="https://lunar.fyi/" target="_blank" rel="noopener noreferrer">Lunar Monitor Management</a><br><br>
+
+                    <span class="section-title"># PRIVACY & SECURITY</span>
+                    • <a href="https://objective-see.org/products/lulu.html" target="_blank" rel="noopener noreferrer">LuLu Firewall</a><br>
+                    • <a href="https://objective-see.org/products/reikey.html" target="_blank" rel="noopener noreferrer">ReiKey</a><br>
+                    • <a href="https://objective-see.org/products/knockknock.html" target="_blank" rel="noopener noreferrer">KnockKnock</a><br>
+                    • <a href="https://objective-see.org/products/taskexplorer.html" target="_blank" rel="noopener noreferrer">Task Explorer</a><br>
+                    • <a href="https://objective-see.org/products/oversight.html" target="_blank" rel="noopener noreferrer">Oversight</a><br>
+                    • <a href="https://dangerzone.rocks/" target="_blank" rel="noopener noreferrer">Dangerzone</a><br><br>
+
+                    <span class="section-title"># PRODUCTIVITY</span>
+                    • <a href="https://joplinapp.org/" target="_blank" rel="noopener noreferrer">Joplin Notes App</a><br>
+                    • <a href="https://standardnotes.com/" target="_blank" rel="noopener noreferrer">Standard Notes</a><br>
+                    • <a href="https://macdown.uranusjr.com/" target="_blank" rel="noopener noreferrer">Macdown</a><br>
+                    • <a href="https://github.com/marktext/marktext" target="_blank" rel="noopener noreferrer">Mark-text</a><br>
+                    • <a href="https://www.libreoffice.org/" target="_blank" rel="noopener noreferrer">LibreOffice Suite</a><br>
+                    • <a href="https://proton.me/calendar" target="_blank" rel="noopener noreferrer">Proton Calendar</a><br>
+                    • <a href="https://tutanota.com/calendar/" target="_blank" rel="noopener noreferrer">Tutanota Calendar</a><br><br>
+
+                    <span class="section-title"># BITCOIN & CRYPTOCURRENCY</span>
+                    • <a href="https://electrum.org/" target="_blank" rel="noopener noreferrer">Electrum Wallet</a><br>
+                    • <a href="https://sparrowwallet.com/" target="_blank" rel="noopener noreferrer">Sparrow Wallet</a><br>
+                    • <a href="https://featherwallet.org/" target="_blank" rel="noopener noreferrer">Feather Wallet</a><br>
+                    • <a href="https://bisq.network/" target="_blank" rel="noopener noreferrer">Bisq Wallet</a><br>
+                    • <a href="https://metamask.io/" target="_blank" rel="noopener noreferrer">Metamask Wallet Extension</a><br>
+                    • <a href="https://phantom.app/" target="_blank" rel="noopener noreferrer">Phantom Wallet Extension</a><br>
+                    • <a href="https://cakewallet.com/" target="_blank" rel="noopener noreferrer">Cake Mobile Wallet</a><br>
+                    • <a href="https://muun.com/" target="_blank" rel="noopener noreferrer">Muun Mobile Wallet</a><br>
+                    • <a href="https://unstoppable.money/" target="_blank" rel="noopener noreferrer">Unstoppable Mobile Wallet</a><br><br>
+
+                    <span class="section-title"># GRAPHIC DESIGN</span>
+                    • <a href="https://www.adobe.com/creativecloud.html" target="_blank" rel="noopener noreferrer">Adobe Creative Cloud</a><br>
+                    • <a href="https://www.adobe.com/products/photoshop-lightroom-classic.html" target="_blank" rel="noopener noreferrer">Adobe Lightroom Classic</a><br>
+                    • <a href="https://www.adobe.com/products/photoshop.html" target="_blank" rel="noopener noreferrer">Adobe Photoshop</a><br>
+                    • <a href="https://inkscape.org/" target="_blank" rel="noopener noreferrer">Inkscape</a><br>
+                    • <a href="https://www.piskelapp.com/" target="_blank" rel="noopener noreferrer">Piskel</a><br>
+                    • <a href="https://www.apple.com/pages/" target="_blank" rel="noopener noreferrer">MacOS Pages</a><br>
+                    • <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">Figma</a><br>
+                    • <a href="https://www.openshot.org/" target="_blank" rel="noopener noreferrer">Openshot</a><br>
+                    • <a href="https://www.capcut.com/" target="_blank" rel="noopener noreferrer">Capcut</a><br>
+                    • <a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer">Blender</a><br>
+                    • <a href="https://github.com/cslarsen/jp2a" target="_blank" rel="noopener noreferrer">Jp2a - ASCII CLI</a><br><br>
+
+                    <span class="section-title"># DEVELOPMENT</span>
+                    • <a href="https://vscodium.com/" target="_blank" rel="noopener noreferrer">VSCodium</a><br>
+                    • <a href="https://cursor.sh/" target="_blank" rel="noopener noreferrer">Cursor</a><br>
+                    • <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">Git</a><br>
+                    • <a href="https://localwp.com/" target="_blank" rel="noopener noreferrer">LocalWP</a><br>
+                    • <a href="https://developer.apple.com/xcode/" target="_blank" rel="noopener noreferrer">XCode Developer Tools</a><br>
+                    • <a href="https://www.wappalyzer.com/" target="_blank" rel="noopener noreferrer">Wappalyzer</a><br><br>
+
+                    <span class="section-title"># MEDIA</span>
+                    • <a href="https://www.audacityteam.org/" target="_blank" rel="noopener noreferrer">Audacity</a><br>
+                    • <a href="https://soundcleod.com/" target="_blank" rel="noopener noreferrer">SoundCleod</a><br>
+                    • <a href="https://github.com/kmikiy/SpotMenu" target="_blank" rel="noopener noreferrer">SpotMenu</a><br>
+                    • <a href="https://www.videolan.org/vlc/" target="_blank" rel="noopener noreferrer">VLC Media Player</a><br>
+                    • <a href="https://serato.com/" target="_blank" rel="noopener noreferrer">Serato</a><br>
+                    • <a href="https://rekordbox.com/" target="_blank" rel="noopener noreferrer">Rekordbox</a><br>
+                    • <a href="https://picard.musicbrainz.org/" target="_blank" rel="noopener noreferrer">MusicBrainz Picard</a><br>
+                    • <a href="https://jellyfin.org/" target="_blank" rel="noopener noreferrer">Jellyfin Media Server</a><br><br>
+
+                    <span class="section-title"># TORRENT CLIENTS</span>
+                    • <a href="https://www.qbittorrent.org/" target="_blank" rel="noopener noreferrer">qBittorrent</a><br>
+                    • <a href="https://transmissionbt.com/" target="_blank" rel="noopener noreferrer">Transmission</a><br><br>
+
+                    <span class="section-title"># HOSTING & DOMAINS</span>
+                    • <a href="https://www.1984hosting.com/" target="_blank" rel="noopener noreferrer">1984 Web Hosting</a><br>
+                    • <a href="https://njal.la/" target="_blank" rel="noopener noreferrer">Njalla Domain Registrar</a><br>
+                    • <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Github Pages</a><br><br>
+
+                    <span class="section-title"># UTILITIES</span>
+                    • <a href="https://www.balena.io/etcher/" target="_blank" rel="noopener noreferrer">BalenaEtcher</a><br>
+                    • <a href="https://www.raspberrypi.com/software/" target="_blank" rel="noopener noreferrer">Raspberry-Pi-Imager</a><br>
+                    • <a href="https://www.keka.io/" target="_blank" rel="noopener noreferrer">Keka File Archiver</a><br>
+                    • <a href="https://dupeguru.voltaicideas.net/" target="_blank" rel="noopener noreferrer">Dupeguru</a><br>
+                    • <a href="https://mac.getutm.app/" target="_blank" rel="noopener noreferrer">UTM Virtualization Software</a><br>
+                    • <a href="https://imageoptim.com/" target="_blank" rel="noopener noreferrer">ImageOptim</a><br><br>
+
+                    <span class="section-title"># COMMAND LINE (MacOS)</span>
+                    • <a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">Homebrew</a><br>
+                    • <a href="https://iterm2.com/" target="_blank" rel="noopener noreferrer">iTerm2 Terminal</a><br>
+                    • <a href="https://github.com/yt-dlp/yt-dlp" target="_blank" rel="noopener noreferrer">YT-DLP</a><br>
+                    • <a href="https://ffmpeg.org/" target="_blank" rel="noopener noreferrer">FFMPEG</a><br>
+                    • <a href="https://exiv2.org/" target="_blank" rel="noopener noreferrer">Exiv2 Metadata Management</a><br>
+                    • <a href="https://0xacab.org/jvoisin/mat2" target="_blank" rel="noopener noreferrer">Mat2 Metadata Management</a><br>
+                    • <a href="https://rectangleapp.com/" target="_blank" rel="noopener noreferrer">Rectangle Window Manager</a><br>
+                    • <a href="https://github.com/mas-cli/mas" target="_blank" rel="noopener noreferrer">Mas App Store Alternative (MacOS)</a><br>
+                    • <a href="https://www.gnu.org/software/wget/" target="_blank" rel="noopener noreferrer">WGET</a><br>
+                    • <a href="https://curl.se/" target="_blank" rel="noopener noreferrer">CURL</a><br>
+                    • <a href="https://github.com/BurntSushi/ripgrep" target="_blank" rel="noopener noreferrer">Ripgrep</a><br>
+                    • <a href="https://github.com/dylanaraps/neofetch" target="_blank" rel="noopener noreferrer">Neofetch</a><br>
+                    • <a href="https://www.speedtest.net/apps/cli" target="_blank" rel="noopener noreferrer">Speedtest-CLI</a><br>
+                    • <a href="https://imagemagick.org/" target="_blank" rel="noopener noreferrer">Imagemagick</a><br>
+                    • <a href="https://hashcat.net/hashcat/" target="_blank" rel="noopener noreferrer">Hashcat</a><br>
+                    • <a href="https://nmap.org/" target="_blank" rel="noopener noreferrer">NMAP</a><br>
+                    • <a href="https://github.com/sundowndev/phoneinfoga" target="_blank" rel="noopener noreferrer">Phoneinfoga</a><br>
+                    • <a href="https://github.com/feross/spoof" target="_blank" rel="noopener noreferrer">Macspoof</a><br><br>
+
+                    <span class="section-title"># AI & LLMS</span>
+                    • <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer">Claude</a><br>
+                    • <a href="https://cursor.sh/" target="_blank" rel="noopener noreferrer">Cursor</a><br>
+                    • <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a><br>
+                    • <a href="https://grok.x.ai/" target="_blank" rel="noopener noreferrer">Grok</a><br>
+                    • <a href="https://www.deepseek.com/" target="_blank" rel="noopener noreferrer">Deepseek</a><br>
+                    • <a href="https://qwenlm.github.io/" target="_blank" rel="noopener noreferrer">Qwen</a><br>
+                    • <a href="https://bolt.new/" target="_blank" rel="noopener noreferrer">Bolt.new</a><br>
+                    • <a href="https://lovable.dev/" target="_blank" rel="noopener noreferrer">Lovable</a><br>
+                    • <a href="https://v0.dev/" target="_blank" rel="noopener noreferrer">V0</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- READING LIST -->
+        <div class="terminal-window" id="books">
+            <div class="terminal-header">
+                <div class="terminal-dots">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="terminal-title">reading_list.txt</div>
+            </div>
+            <div class="terminal-content">
+                <div class="command-line">cat reading_list.txt</div>
+                <div class="output">
+                    <span class="section-title"># BITCOIN & CRYPTOCURRENCY</span>
+                    • <a href="https://www.amazon.com/Bitcoin-Standard-Decentralized-Alternative-Central/dp/1119473861" target="_blank" rel="noopener noreferrer">The Bitcoin Standard</a> - Saifedean Ammous<br>
+                    • <a href="https://www.amazon.com/Mastering-Bitcoin-Programming-Open-Blockchain/dp/1491954388" target="_blank" rel="noopener noreferrer">Mastering Bitcoin</a> - Andreas Antonopoulos<br>
+                    • <a href="https://www.amazon.com/Internet-Money-Andreas-M-Antonopoulos/dp/1537000454" target="_blank" rel="noopener noreferrer">The Internet of Money</a> - Andreas Antonopoulos<br>
+                    • <a href="https://www.amazon.com/Cryptoassets-Innovative-Investors-Bitcoin-Beyond/dp/1260026671" target="_blank" rel="noopener noreferrer">Cryptoassets</a> - Chris Burniske<br>
+                    • <a href="https://www.amazon.com/Layered-Money-Bitcoin-Dollars-Financial/dp/1736110527" target="_blank" rel="noopener noreferrer">Layered Money</a> - Nik Bhatia<br>
+                    • <a href="https://amazon.com/dp/1250114578" target="_blank" rel="noopener noreferrer">The Truth Machine</a> - Paul Vigna & Michael J. Casey<br><br>
+
+                    <span class="section-title"># CYPHERPUNKS & PRIVACY</span>
+                    • <a href="https://www.amazon.com/Cypherpunks-Freedom-Internets-Julian-Assange/dp/1944869115" target="_blank" rel="noopener noreferrer">Cypherpunks</a> - Julian Assange<br>
+                    • <a href="https://www.amazon.com/Permanent-Record-Edward-Snowden/dp/1250237238" target="_blank" rel="noopener noreferrer">Permanent Record</a> - Edward Snowden<br>
+                    • <a href="https://www.amazon.com/This-Machine-Kills-Secrets-WikiLeakers/dp/0525953205" target="_blank" rel="noopener noreferrer">This Machine Kills Secrets</a> - Andy Greenberg<br>
+                    • <a href="https://www.amazon.com/Data-Goliath-Battles-Collection-Control/dp/0393352188" target="_blank" rel="noopener noreferrer">Data and Goliath</a> - Bruce Schneier<br>
+                    • <a href="https://www.amazon.com/Trial-Julian-Assange-Story-Persecution/dp/1839765453" target="_blank" rel="noopener noreferrer">The Trial of Julian Assange</a> - Nils Melzer<br>
+                    • <a href="https://www.amazon.com/WikiLeaks-Inside-Julian-Assanges-Secrets/dp/1610390628" target="_blank" rel="noopener noreferrer">WikiLeaks</a> - David Leigh<br>
+                    • <a href="https://www.amazon.com/Obfuscation-Users-Guide-Privacy-Protest/dp/0262529866" target="_blank" rel="noopener noreferrer">Obfuscation</a> - Finn Brunton<br>
+                    • <a href="https://www.amazon.com/Darknet-Inside-Digital-Jamie-Bartlett/dp/1612194753" target="_blank" rel="noopener noreferrer">The Darknet</a> - Jamie Bartlett<br>
+                    • <a href="https://www.amazon.com/Darkest-Web-Drugs-Death-Modern/dp/1760293288" target="_blank" rel="noopener noreferrer">The Darkest Web</a> - Eileen Ormsby<br>
+                    • <a href="https://www.amazon.com/Cyberpunks-Cyberfreedom-Change-Reality-Cyberspace/dp/1579510477" target="_blank" rel="noopener noreferrer">Cyberpunks Cyberfreedom</a> - Timothy Leary<br><br>
+
+                    <span class="section-title"># HACKING & OPSEC</span>
+                    • <a href="https://www.amazon.com/Ghost-Wires-Adventures-Worlds-Wanted/dp/0316037702" target="_blank" rel="noopener noreferrer">Ghost in the Wires</a> - Kevin Mitnick<br>
+                    • <a href="https://www.amazon.com/Art-Invisibility-Worlds-Teaches-Brother/dp/0316380504" target="_blank" rel="noopener noreferrer">The Art of Invisibility</a> - Kevin Mitnick<br>
+                    • <a href="https://www.amazon.com/Art-Deception-Controlling-Element-Security/dp/076454280X" target="_blank" rel="noopener noreferrer">The Art of Deception</a> - Kevin Mitnick<br>
+                    • <a href="https://www.amazon.com/Extreme-Privacy-What-Takes-Disappear/dp/B0898YGR58" target="_blank" rel="noopener noreferrer">Extreme Privacy</a> - Michael Bazzell<br>
+                    • <a href="https://www.amazon.com/Linux-Basics-Hackers-Networking-Scripting/dp/1593278551" target="_blank" rel="noopener noreferrer">Linux Basics for Hackers</a> - OccupyTheWeb<br>
+                    • <a href="https://www.amazon.com/How-Hack-Like-Ghost-Breaching/dp/1718501269" target="_blank" rel="noopener noreferrer">How to Hack Like a Ghost</a> - Sparc Flow<br>
+                    • <a href="https://www.amazon.com/Hackers-Computer-Revolution-Steven-Levy/dp/1449388396" target="_blank" rel="noopener noreferrer">Hackers: Heroes of the Computer Revolution</a> - Steven Levy<br>
+                    • <a href="https://www.amazon.com/Hackers-Painters-Big-Ideas-Computer/dp/1449389554" target="_blank" rel="noopener noreferrer">Hackers & Painters</a> - Paul Graham<br>
+                    • <a href="https://www.amazon.com/Steal-This-Computer-Book-4-0/dp/1593271050" target="_blank" rel="noopener noreferrer">Steal This Computer Book</a> - Wallace Wang<br>
+                    • <a href="https://www.2600.com" target="_blank" rel="noopener noreferrer">2600 - The Hacker Quarterly</a> - Magazine<br><br>
+
+                    <span class="section-title"># BUSINESS & STRATEGY</span>
+                    • <a href="https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296" target="_blank" rel="noopener noreferrer">Zero to One</a> - Peter Thiel<br>
+                    • <a href="https://www.amazon.com/Sovereign-Individual-Mastering-Transition-Information/dp/0684832720" target="_blank" rel="noopener noreferrer">The Sovereign Individual</a> - James Dale Davidson<br>
+                    • <a href="https://www.amazon.com/Mom-Test-customers-business-everyone/dp/1492180742" target="_blank" rel="noopener noreferrer">The Mom Test</a> - Rob Fitzpatrick<br>
+                    • <a href="https://www.amazon.com/Good-Strategy-Bad-Difference-Matters/dp/0307886239" target="_blank" rel="noopener noreferrer">Good Strategy Bad Strategy</a> - Richard Rumelt<br>
+                    • <a href="https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898" target="_blank" rel="noopener noreferrer">The Lean Startup</a> - Eric Ries<br>
+                    • <a href="https://amazon.com/dp/0062407619" target="_blank" rel="noopener noreferrer">Play Bigger</a> - Al Ramadan, Dave Peterson, Christopher Lochhead & Kevin Maney<br>
+                    • <a href="https://amazon.com/dp/1591845572" target="_blank" rel="noopener noreferrer">The Personal MBA</a> - Josh Kaufman<br>
+                    • <a href="https://amazon.com/dp/1591842158" target="_blank" rel="noopener noreferrer">The Ultimate Sales Machine</a> - Chet Holmes<br>
+                    • <a href="https://amazon.com/dp/038534645X" target="_blank" rel="noopener noreferrer">SCRUM</a> - Jeff Sutherland<br>
+                    • <a href="https://amazon.com/dp/0312430000" target="_blank" rel="noopener noreferrer">The Checklist Manifesto</a> - Atul Gawande<br>
+                    • <a href="https://amazon.com/dp/0812993012" target="_blank" rel="noopener noreferrer">Creativity Inc.</a> - Ed Catmull<br>
+                    • <a href="https://amazon.com/dp/1984822578" target="_blank" rel="noopener noreferrer">Brave New Work</a> - Aaron Dignan<br>
+                    • <a href="https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021" target="_blank" rel="noopener noreferrer">Principles</a> - Ray Dalio<br><br>
+
+                    <span class="section-title"># ECONOMICS & POLITICS</span>
+                    • <a href="https://www.amazon.com/Seeing-like-State-Certain-Condition/dp/0300078153" target="_blank" rel="noopener noreferrer">Seeing Like a State</a> - James C. Scott<br>
+                    • <a href="https://www.amazon.com/Black-Swan-Improbable-Robustness-Fragility/dp/081297381X" target="_blank" rel="noopener noreferrer">The Black Swan</a> - Nassim Taleb<br>
+                    • <a href="https://www.amazon.com/Antifragile-Things-Gain-Disorder-Incerto/dp/0812979680" target="_blank" rel="noopener noreferrer">Antifragile</a> - Nassim Taleb<br>
+                    • <a href="https://www.amazon.com/Road-Serfdom-Documents-Definitive-Collected/dp/0226320553" target="_blank" rel="noopener noreferrer">The Road to Serfdom</a> - Friedrich Hayek<br>
+                    • <a href="https://www.amazon.com/Fourth-Turning-American-Prophecy-Rendezvous/dp/0767900464" target="_blank" rel="noopener noreferrer">The Fourth Turning</a> - Strauss & Howe<br><br>
+
+                    <span class="section-title"># POLYMATHIC THINKING</span>
+                    • <a href="https://www.amazon.com/Range-Generalists-Triumph-Specialized-World/dp/0735214484" target="_blank" rel="noopener noreferrer">Range</a> - David Epstein<br>
+                    • <a href="https://www.amazon.com/How-Read-Book-Classic-Intelligent/dp/0671212095" target="_blank" rel="noopener noreferrer">How to Read a Book</a> - Mortimer Adler<br>
+                    • <a href="https://www.amazon.com/Art-Doing-Science-Engineering-Learning/dp/1732265178" target="_blank" rel="noopener noreferrer">The Art of Doing Science and Engineering</a> - Richard Hamming<br>
+                    • <a href="https://www.amazon.com/Beginning-Infinity-Explanations-Transform-World/dp/0143121359" target="_blank" rel="noopener noreferrer">The Beginning of Infinity</a> - David Deutsch<br>
+                    • <a href="https://www.amazon.com/Rebel-Talent-Succeeding-Breaking-Rules/dp/0062934619" target="_blank" rel="noopener noreferrer">Rebel Talent</a> - Francesca Gino<br>
+                    • <a href="https://amazon.com/dp/0374533555" target="_blank" rel="noopener noreferrer">Thinking Fast & Slow</a> - Daniel Kahneman<br>
+                    • <a href="https://amazon.com/dp/076790818X" target="_blank" rel="noopener noreferrer">A Short History of Nearly Everything</a> - Bill Bryson<br>
+                    • <a href="https://amazon.com/dp/1982109661" target="_blank" rel="noopener noreferrer">The Future is Faster Than You Think</a> - Peter Diamandis & Steven Kotler<br><br>
+
+                    <span class="section-title"># SELF-IMPROVEMENT</span>
+                    • <a href="https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299" target="_blank" rel="noopener noreferrer">Atomic Habits</a> - James Clear<br>
+                    • <a href="https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692" target="_blank" rel="noopener noreferrer">Deep Work</a> - Cal Newport<br>
+                    • <a href="https://www.amazon.com/Mindset-Psychology-Carol-S-Dweck/dp/0345472322" target="_blank" rel="noopener noreferrer">Mindset</a> - Carol Dweck<br>
+                    • <a href="https://www.amazon.com/48-Laws-Power-Robert-Greene/dp/0140280197" target="_blank" rel="noopener noreferrer">The 48 Laws of Power</a> - Robert Greene<br>
+                    • <a href="https://amazon.com/dp/1577314808" target="_blank" rel="noopener noreferrer">The Power of Now</a> - Eckhart Tolle<br>
+                    • <a href="https://amazon.com/dp/1608685489" target="_blank" rel="noopener noreferrer">Story Worthy</a> - Matthew Dicks<br>
+                    • <a href="https://amazon.com/dp/0063046091" target="_blank" rel="noopener noreferrer">Skip the Line</a> - James Altucher<br>
+                    • <a href="https://amazon.com/dp/0425238512" target="_blank" rel="noopener noreferrer">The Nerdist Way</a> - Chris Hardwick<br><br>
+
+                    <span class="section-title"># MARKETING & PERSUASION</span>
+                    • <a href="https://www.amazon.com/Breakthrough-Noise-Captivate-Customers-Business/dp/1626344132" target="_blank" rel="noopener noreferrer">Breakthrough the Noise</a> - Tim Staples<br>
+                    • <a href="https://www.amazon.com/Start-Why-Leaders-Inspire-Everyone/dp/1591846447" target="_blank" rel="noopener noreferrer">Start with Why</a> - Simon Sinek<br>
+                    • <a href="https://www.amazon.com/Art-Seduction-Robert-Greene/dp/0142001198" target="_blank" rel="noopener noreferrer">The Art of Seduction</a> - Robert Greene<br>
+                    • <a href="https://www.amazon.com/Beautiful-Trouble-Toolbox-Revolution/dp/1608463273" target="_blank" rel="noopener noreferrer">Beautiful Trouble</a> - David Oswald Mitchell<br><br>
+
+                    <span class="section-title"># PHILOSOPHY & PSYCHOLOGY</span>
+                    • <a href="https://www.amazon.com/Mans-Search-Meaning-Viktor-Frankl/dp/080701429X" target="_blank" rel="noopener noreferrer">Man's Search for Meaning</a> - Viktor E. Frankl<br>
+                    • <a href="https://www.amazon.com/Obstacle-Way-Timeless-Turning-Triumph/dp/1591846358" target="_blank" rel="noopener noreferrer">The Obstacle is the Way</a> - Ryan Holiday<br>
+                    • <a href="https://www.amazon.com/Prince-Niccolo-Machiavelli/dp/0486272745" target="_blank" rel="noopener noreferrer">The Prince</a> - Niccolò Machiavelli<br>
+                    • <a href="https://www.amazon.com/Almanack-Naval-Ravikant-Wealth-Happiness/dp/1544514212" target="_blank" rel="noopener noreferrer">The Almanack of Naval Ravikant</a> - Eric Jorgenson<br>
+                    • <a href="https://www.amazon.com/Creative-Act-Way-Being/dp/0593652886" target="_blank" rel="noopener noreferrer">The Creative Act</a> - Rick Rubin<br>
+                    • <a href="https://www.amazon.com/Models-Attract-Women-Through-Honesty/dp/1463750358" target="_blank" rel="noopener noreferrer">Models</a> - Mark Manson<br><br>
+
+                    <span class="section-title"># SCIENCE & MATHEMATICS</span>
+                    • <a href="https://www.amazon.com/Prime-Number-Conspiracy-Greatest-Mathematics/dp/0262536013" target="_blank" rel="noopener noreferrer">The Prime Number Conspiracy</a> - Thomas Lin<br>
+                    • <a href="https://www.amazon.com/Singularity-Near-Humans-Transcend-Biology/dp/0143037889" target="_blank" rel="noopener noreferrer">The Singularity is Near</a> - Ray Kurzweil<br>
+                    • <a href="https://www.amazon.com/Life-After-Google-Blockchain-Economy/dp/1621575764" target="_blank" rel="noopener noreferrer">Life After Google</a> - George Gilder<br><br>
+
+                    <span class="section-title"># WRITING & CREATIVITY</span>
+                    • <a href="https://www.amazon.com/Writing-10th-Anniversary-Memoir-Craft/dp/1982159375" target="_blank" rel="noopener noreferrer">On Writing</a> - Stephen King<br>
+                    • <a href="https://www.amazon.com/Elements-Style-Fourth-William-Strunk/dp/020530902X" target="_blank" rel="noopener noreferrer">The Elements of Style</a> - Strunk, White & Kalman<br><br>
+
+                    <span class="section-title"># TRUE CRIME & UNDERWORLD</span>
+                    • <a href="https://www.amazon.com/Mastermind-Drugs-Empire-Murder-Billion-Dollar/dp/0812984919" target="_blank" rel="noopener noreferrer">The Mastermind</a> - Evan Ratliff<br>
+                    • <a href="https://www.amazon.com/American-Desperado-Life-Jon-Roberts/dp/0307450422" target="_blank" rel="noopener noreferrer">American Desperado</a> - Jon Roberts<br>
+                    • <a href="https://www.amazon.com/Pablo-Escobar-My-Father/dp/1250104475" target="_blank" rel="noopener noreferrer">Pablo Escobar: My Father</a> - Juan Pablo Escobar<br>
+                    • <a href="https://www.amazon.com/Smuggler-True-Story-Reeves/dp/1568581173" target="_blank" rel="noopener noreferrer">Smuggler</a> - Roger Reeves<br>
+                    • <a href="https://www.amazon.com/Kings-Cocaine-Astonishing-Smuggling-Billion-Dollar/dp/067173192X" target="_blank" rel="noopener noreferrer">Kings of Cocaine</a> - Guy Gugliotta<br>
+                    • <a href="https://www.amazon.com/Devils-Table-Untold-Insider-Colombian/dp/0812979397" target="_blank" rel="noopener noreferrer">At the Devil's Table</a> - William Rempel<br>
+                    • <a href="https://www.amazon.com/Accountants-Story-Inside-Violent-Medellín/dp/0446178926" target="_blank" rel="noopener noreferrer">Escobar: Drugs, Guns, Money, Power</a> - Roberto Escobar<br><br>
+
+                    <span class="section-title"># BIOGRAPHIES & MEMOIRS</span>
+                    • <a href="https://amazon.com/dp/0375756787" target="_blank" rel="noopener noreferrer">The Rise of Theodore Roosevelt</a> - Edmund Morris<br>
+                    • <a href="https://amazon.com/dp/0345526112" target="_blank" rel="noopener noreferrer">Jim Henson: The Biography</a> - Brian Jay Jones<br>
+                    • <a href="https://amazon.com/dp/0446548170" target="_blank" rel="noopener noreferrer">When I Stop Talking You'll Know I'm Dead</a> - Jerry Weintraub<br>
+                    • <a href="https://amazon.com/dp/0060899220" target="_blank" rel="noopener noreferrer">Kitchen Confidential</a> - Anthony Bourdain<br>
+                    • <a href="https://amazon.com/dp/0671725823" target="_blank" rel="noopener noreferrer">Miles: The Autobiography</a> - Miles Davis<br>
+                    • <a href="https://amazon.com/dp/1501141511" target="_blank" rel="noopener noreferrer">Born to Run</a> - Bruce Springsteen<br>
+                    • <a href="https://www.amazon.com/Life-Undercover-Coming-Age-CIA/dp/0525654674" target="_blank" rel="noopener noreferrer">Life Undercover</a> - Amaryllis Fox<br>
+                    • <a href="https://www.amazon.com/Elon-Musk-Walter-Isaacson/dp/1982181281" target="_blank" rel="noopener noreferrer">Elon Musk</a> - Walter Isaacson<br>
+                    • <a href="https://www.amazon.com/Steve-Jobs-Walter-Isaacson/dp/1451648537" target="_blank" rel="noopener noreferrer">Steve Jobs</a> - Walter Isaacson<br>
+                    • <a href="https://www.amazon.com/Elon-Musk-SpaceX-Fantastic-Future/dp/006230125X" target="_blank" rel="noopener noreferrer">Elon Musk</a> - Ashley Vance<br>
+                    • <a href="https://www.amazon.com/How-Get-Rich-Greatest-Entrepreneurs/dp/0091900271" target="_blank" rel="noopener noreferrer">How to Get Rich</a> - Felix Dennis
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">when everyone <span class="red strikethrough">copyrights</span>, <span class="red">copyleft</span></div>
+            <div class="footer-copyright"><span class="red">© chrisvrakas.com</span> — to infinity and beyond</div>
+            <div class="footer-link"><a href="privacy.html"><span class="tan">PRIVACY POLICY</span></a></div>
+            
+            <div class="social-icons">
+                <a href="https://x.com/chris_vrakas" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
+                <a href="https://www.instagram.com/chris_vrakas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chrisvrakasofficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://medium.com/@chrisvrakas" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://github.com/chrisvrakas" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Arrow -->
+    <img src="assets/images/index_scrolluparrow.png" alt="Scroll to Top" class="scroll-top-arrow" id="scroll-top-arrow">
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+            
+            if (mobileMenu.classList.contains('active')) {
+                hamburgerIcon.src = 'assets/images/HamburgerClose.png';
+            } else {
+                hamburgerIcon.src = 'assets/images/HamburgerOpen.png';
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                hamburgerIcon.src = 'assets/images/HamburgerOpen.png';
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Scroll to top arrow
+        const scrollTopArrow = document.getElementById('scroll-top-arrow');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopArrow.classList.add('visible');
+            } else {
+                scrollTopArrow.classList.remove('visible');
+            }
+        });
+
+        scrollTopArrow.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
+        

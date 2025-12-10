@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Vrakas - Connect</title>
+    <meta name="description" content="Connect with Chris Vrakas securely using PGP encryption. Download public key for encrypted communications.">
+    <meta name="keywords" content="Chris Vrakas, contact, PGP, encryption, privacy, secure communication, ProtonMail">
+    <meta name="author" content="Chris Vrakas">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chrisvrakas.com/connect.html">
+    <meta property="og:title" content="Chris Vrakas - Connect">
+    <meta property="og:description" content="Connect securely using PGP encryption for private communications.">
+    <meta property="og:image" content="https://chrisvrakas.com/assets/images/connect_01.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chrisvrakas.com/connect.html">
+    <meta property="twitter:title" content="Chris Vrakas - Connect">
+    <meta property="twitter:description" content="Connect securely using PGP encryption for private communications.">
+    <meta property="twitter:image" content="https://chrisvrakas.com/assets/images/connect_01.png">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sometype Mono', monospace;
+            background-color: #1a1a1a;
+            color: #ddc18a;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            z-index: 1000;
+            background-color: rgba(26, 26, 26, 0.95);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .logo {
+            height: 30px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: opacity 0.3s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        nav a.active {
+            color: #ddc18a;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .hamburger img {
+            height: 25px;
+            width: auto;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(26, 26, 26, 0.98);
+            width: 100%;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border-top: 1px solid #333;
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            opacity: 0.7;
+        }
+
+        .mobile-menu a:last-child {
+            color: #ddc18a;
+        }
+
+        /* Connect Hero Section */
+        .connect-hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 120px 20px 60px;
+            text-align: center;
+        }
+
+        .connect-hero h1 {
+            font-size: clamp(1.5rem, 3.5vw, 2.8rem);
+            font-weight: 700;
+            color: #ff3333;
+            text-align: center;
+            margin-bottom: 10px;
+            line-height: 1.2;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .connect-hero p {
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            line-height: 1.8;
+            color: #ddc18a;
+            text-align: center;
+            margin-bottom: 40px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .pgp-link {
+            color: #ff3333;
+            text-decoration: underline;
+            transition: opacity 0.3s ease;
+        }
+
+        .pgp-link:hover {
+            opacity: 0.7;
+        }
+
+        .connect-image {
+            max-width: 1000px;
+            width: 100%;
+            height: auto;
+            margin-bottom: 40px;
+        }
+
+        /* PGP Box */
+        .pgp-box {
+            border: 2px solid #ff3333;
+            border-radius: 8px;
+            padding: 30px;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .pgp-box h2 {
+            color: #ff3333;
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .fingerprint {
+            font-size: clamp(0.8rem, 1.5vw, 1rem);
+            color: #ddc18a;
+            word-break: break-all;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .pgp-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .pgp-action {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: clamp(0.9rem, 1.5vw, 1rem);
+            transition: opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pgp-action:hover {
+            opacity: 0.7;
+        }
+
+        .pgp-action::before {
+            content: '→';
+            font-size: 1.2em;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            padding: 80px 40px 40px 40px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-top: 1px solid #ff3333;
+        }
+
+        .footer-text {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            line-height: 1.1;
+            color: #ddc18a;
+            margin-bottom: 3px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+
+        .footer-text .red {
+            color: #ff3333;
+        }
+
+        .footer-text .strikethrough {
+            text-decoration: line-through;
+        }
+
+        .footer-copyright {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            color: #ddc18a;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+
+        .footer-copyright .red {
+            color: #ff3333;
+        }
+
+        .footer-link {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+
+        .footer-link a {
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-link a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-link .tan {
+            color: #ddc18a;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #ff3333;
+            font-size: 20px;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+
+        /* Responsive Design */
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 25px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .connect-hero {
+                padding: 100px 15px 40px;
+            }
+
+            .pgp-box {
+                padding: 20px;
+            }
+
+            footer {
+                padding: 40px 25px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 12px 20px;
+            }
+
+            .logo {
+                height: 25px;
+            }
+
+            .connect-hero {
+                padding: 90px 10px 30px;
+            }
+
+            .pgp-box {
+                padding: 15px;
+            }
+
+            footer {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="assets/images/Header_LeftLogo.png" alt="CV Logo" class="logo"></a>
+            
+            <nav>
+    <a href="whoami.html">whoami</a>
+    <a href="resources.html">resources</a>
+    <a href="connect.html" class="active">connect</a>
+</nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <img src="assets/images/HamburgerOpen.png" alt="Menu" id="hamburger-icon">
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="whoami.html">whoami</a>
+    <a href="resources.html">resources</a>
+    <a href="connect.html">connect</a>
+</div>
+    <!-- Connect Section -->
+    <section class="connect-hero">
+        <h1>YOU DOWN WITH PGP? YEAH YOU KNOW ME!</h1>
+        
+        <p>
+            For private communications, use <a href="https://protonmail.com" class="pgp-link" target="_blank" rel="noopener noreferrer">Protonmail</a> or send an encrypted email using my <a href="assets/pgp/chris-vrakas-public-key.asc" class="pgp-link" download>PGP Key</a>
+        </p>
+
+        <img src="assets/images/connect_01.png" alt="Connect" class="connect-image">
+
+        <div class="pgp-box">
+            <h2>PGP PUBLIC KEY FINGERPRINT:</h2>
+            <div class="fingerprint">
+                6286 D499 A4F1 68D0 ABF3 98CE 529D 9082 563E DF0B
+            </div>
+            <div class="pgp-actions">
+                <a href="assets/pgp/chris-vrakas-public-key.asc" class="pgp-action" download>Download Full PGP Public Key</a>
+                <a href="https://github.com/chrisvrakas" class="pgp-action" target="_blank" rel="noopener noreferrer">View on Github</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">when everyone <span class="red strikethrough">copyrights</span>, <span class="red">copyleft</span></div>
+            <div class="footer-copyright"><span class="red">© chrisvrakas.com</span> — to infinity and beyond</div>
+            <div class="footer-link"><a href="privacy.html"><span class="tan">PRIVACY POLICY</span></a></div>
+            
+            <div class="social-icons">
+                <a href="https://x.com/chris_vrakas" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
+                <a href="https://www.instagram.com/chris_vrakas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chrisvrakasofficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://medium.com/@chrisvrakas" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://github.com/chrisvrakas" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+            
+            if (mobileMenu.classList.contains('active')) {
+                hamburgerIcon.src = 'assets/images/HamburgerClose.png';
+            } else {
+                hamburgerIcon.src = 'assets/images/HamburgerOpen.png';
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                hamburgerIcon.src = 'assets/images/HamburgerOpen.png';
+                document.body.style.overflow = 'auto';
+            });
+        });
+    </script>
+</body>
+</html>

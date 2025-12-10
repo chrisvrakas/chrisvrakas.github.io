@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Vrakas - Privacy Policy</title>
+    <meta name="description" content="Privacy policy for chrisvrakas.com - No cookies, no analytics, no tracking. True privacy by design.">
+    <meta name="keywords" content="privacy policy, no tracking, no cookies, GDPR, CCPA, privacy advocate">
+    <meta name="author" content="Chris Vrakas">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chrisvrakas.com/privacy.html">
+    <meta property="og:title" content="Chris Vrakas - Privacy Policy">
+    <meta property="og:description" content="No cookies, no analytics, no tracking. True privacy by design.">
+    <meta property="og:image" content="https://chrisvrakas.com/assets/images/Header_LeftLogo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chrisvrakas.com/privacy.html">
+    <meta property="twitter:title" content="Chris Vrakas - Privacy Policy">
+    <meta property="twitter:description" content="No cookies, no analytics, no tracking. True privacy by design.">
+    <meta property="twitter:image" content="https://chrisvrakas.com/assets/images/Header_LeftLogo.png">
+    
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Sometype Mono', monospace;
+            background-color: #1a1a1a;
+            color: #ddc18a;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            z-index: 1000;
+            background-color: rgba(26, 26, 26, 0.95);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .logo {
+            height: 30px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: opacity 0.3s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .hamburger img {
+            height: 25px;
+            width: auto;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(26, 26, 26, 0.98);
+            width: 100%;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border-top: 1px solid #333;
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            opacity: 0.7;
+        }
+
+        /* Content */
+        .content-section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 40px 80px;
+        }
+
+        .page-title {
+            font-size: 64px;
+            font-weight: 700;
+            color: #ff3333;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #ff3333;
+            margin: 40px 0 20px 0;
+            letter-spacing: 1px;
+        }
+
+        .policy-text {
+            font-size: 16px;
+            line-height: 1.618;
+            color: #ddc18a;
+            margin-bottom: 20px;
+        }
+
+        .policy-text strong {
+            color: #ff3333;
+            font-weight: 700;
+        }
+
+        .policy-text a {
+            color: #ff3333;
+            text-decoration: underline;
+        }
+
+        .policy-text a:hover {
+            opacity: 0.7;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            padding: 80px 40px 40px 40px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-top: 1px solid #ff3333;
+        }
+
+        .footer-text {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            line-height: 1.1;
+            color: #ddc18a;
+            margin-bottom: 3px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+
+        .footer-text .red {
+            color: #ff3333;
+        }
+
+        .footer-text .strikethrough {
+            text-decoration: line-through;
+        }
+
+        .footer-copyright {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            color: #ddc18a;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+
+        .footer-copyright .red {
+            color: #ff3333;
+        }
+
+        .footer-link {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 12px;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+
+        .footer-link a {
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-link a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-link .tan {
+            color: #ddc18a;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #ff3333;
+            font-size: 20px;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+
+        /* Scroll to Top Arrow */
+        .scroll-top-arrow {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 40px;
+            height: auto;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 998;
+        }
+
+        .scroll-top-arrow.visible {
+            opacity: 1;
+        }
+
+        .scroll-top-arrow:hover {
+            opacity: 0.7;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 25px;
+            }
+
+            nav {
+                display: none;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .content-section {
+                padding: 100px 25px 60px;
+            }
+
+            .page-title {
+                font-size: 40px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            footer {
+                padding: 40px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 12px 20px;
+            }
+
+            .logo {
+                height: 25px;
+            }
+
+            .content-section {
+                padding: 90px 20px 40px;
+            }
+
+            .page-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="assets/images/Header_LeftLogo.png" alt="CV Logo" class="logo"></a>
+            
+        <nav>
+    <a href="whoami.html">whoami</a>
+    <a href="resources.html" class="active">resources</a>
+    <a href="connect.html">connect</a>
+</nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <img src="assets/images/HamburgerOpen.png" alt="Menu" id="hamburger-icon">
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="whoami.html">whoami</a>
+    <a href="resources.html">resources</a>
+    <a href="connect.html">connect</a>
+</div>
+
+    <!-- Content -->
+    <div class="content-section">
+        <h1 class="page-title">PRIVACY_POLICY</h1>
+
+        <h2 class="section-title">OVERVIEW</h2>
+        <p class="policy-text">
+            Most websites track everything you do. They build profiles, sell your data, and participate in surveillance capitalism. I don't. Why? Because I am a privacy advocate who believes in <strong>FREEDOM</strong>. If I can't respect your privacy on my own website, why would you trust me with your privacy?
+        </p>
+
+        <h2 class="section-title">COLLECTION</h2>
+        <p class="policy-text">
+            <strong>NO_COOKIES</strong> — I don't use cookies. Not even "necessary" ones. This site works fine without them.
+        </p>
+        <p class="policy-text">
+            <strong>NO_ANALYTICS</strong> — No Google Analytics. No Hotjar. No heatmaps. No A/B testing. I have no idea how you got here or what you click on.
+        </p>
+        <p class="policy-text">
+            <strong>NO_THIRD_PARTY_SCRIPTS</strong> — Everything runs locally. No external JavaScript. No tracking pixels. No social media widgets that phone home.
+        </p>
+        <p class="policy-text">
+            <strong>YOUR_EMAIL</strong> — If you email me at <a href="mailto:connect@chrisvrakas.com">connect@chrisvrakas.com</a>, I store your email and message so I can respond. I don't add you to any marketing or mailing lists and I don't share with anyone.
+        </p>
+        <p class="policy-text">
+            <strong>SERVER_LOGS</strong> — I use Cloudflare as my CDN/DNS provider. Cloudflare keeps basic access logs (IP address, timestamp, pages visited, user agent) for security and DDoS protection. These logs are automatically purged after 72 hours. I don't access or analyze these logs unless investigating a security incident. The actual site content is hosted on GitHub Pages, which may keep internal logs that I cannot control or access.
+        </p>
+
+        <h2 class="section-title">I DO NOT</h2>
+        <p class="policy-text">
+            ✗ Sell your data<br>
+            ✗ Share your data with advertisers<br>
+            ✗ Build behavioral profiles<br>
+            ✗ Track you across websites<br>
+            ✗ Retarget you with ads<br>
+            ✗ Any surveillance capitalism bullshit
+        </p>
+
+        <h2 class="section-title">EXTERNAL_LINKS</h2>
+        <p class="policy-text">
+            I link to GitHub, Medium, X (Twitter), and other platforms. When you click those links, you're subject to their privacy policies, not mine. I cannot control what they do.
+        </p>
+
+        <h2 class="section-title">YOUR_RIGHTS</h2>
+        <p class="policy-text">
+            Under GDPR, CCPA, and basic human decency, you have rights:
+        </p>
+        <p class="policy-text">
+            <strong>RIGHT_TO_KNOW:</strong> Ask what data I have<br>
+            <strong>RIGHT_TO_DELETE:</strong> Request deletion of your data<br>
+            <strong>RIGHT_TO_PORTABILITY:</strong> Get a copy of your data<br>
+            <strong>RIGHT_TO_OPT_OUT:</strong> You are already opted out by default
+        </p>
+        <p class="policy-text">
+            Email me: <a href="mailto:connect@chrisvrakas.com">connect@chrisvrakas.com</a>
+        </p>
+
+        <h2 class="section-title">ENCRYPTION</h2>
+        <p class="policy-text">
+            This site uses HTTPS (TLS 1.3). Your connection is encrypted. Your ISP can see you're visiting chrisvrakas.com but not which pages or what you're viewing.
+        </p>
+        <p class="policy-text">
+            For maximum privacy, I recommend considering the following options:<br>
+            • Tor Browser<br>
+            • VPN<br>
+            • ProtonMail for encrypted email
+        </p>
+
+        <h2 class="section-title">LEGAL_COMPLIANCE</h2>
+        <p class="policy-text">
+            I comply with:<br>
+            • GDPR (EU General Data Protection Regulation)<br>
+            • CCPA (California Consumer Privacy Act)<br>
+            • Common sense
+        </p>
+
+        <h2 class="section-title">LEGAL_REQUESTS</h2>
+        <p class="policy-text">
+            I may be legally required to comply with valid requests from law enforcement or government agencies. However, I can't share what I do not have—and I intentionally collect nothing about you.
+        </p>
+        <p class="policy-text">
+            My infrastructure:<br>
+            • Domain: GoDaddy (registrar only)<br>
+            • DNS/CDN: Cloudflare (keeps logs for 72 hours)<br>
+            • Hosting: GitHub Pages (I do not control their logs)
+        </p>
+        <p class="policy-text">
+            If you need maximum privacy, use Tor Browser or a VPN. I cannot see your real IP address if Cloudflare doesn't have it.
+        </p>
+
+        <h2 class="section-title">PHILOSOPHY</h2>
+        <p class="policy-text">
+            Privacy is fundamental right. It isn't about having anything to hide, it's about having everything to protect. You don't owe me your data just for visiting this website, and I do not need to know everything about you to build a relationship. If more websites respected privacy by default, the internet would be a better place.
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">when everyone <span class="red strikethrough">copyrights</span>, <span class="red">copyleft</span></div>
+            <div class="footer-copyright"><span class="red">© chrisvrakas.com</span> — to infinity and beyond</div>
+            <div class="footer-link"><a href="privacy.html"><span class="tan">PRIVACY POLICY</span></a></div>
+            
+            <div class="social-icons">
+                <a href="https://x.com/chris_vrakas" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
+                <a href="https://www.instagram.com/chris_vrakas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chrisvrakasofficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://medium.com/@chrisvrakas" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://github.com/chrisvrakas" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Arrow -->
+    <img src="assets/images/index_scrolluparrow.png" alt="Scroll to Top" class="scroll-top-arrow" id="scroll-top-arrow">
+
+    <script>
+        // Hamburger Menu Toggle
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+            
+            if (mobileMenu.classList.contains('active')) {
+                hamburgerIcon.src = 'assets/images/HamburgerClose.png';
+            } else {
+                hamburgerIcon.src = 'assets/images/HamburgerOpen.png';
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        const mobileLinks = document.querySelectorAll('.mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                hamburgerIcon.src = 'assets/images/HamburgerOpen.png';
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Scroll to top arrow
+        const scrollTopArrow = document.getElementById('scroll-top-arrow');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollTopArrow.classList.add('visible');
+            } else {
+                scrollTopArrow.classList.remove('visible');
+            }
+        });
+
+        scrollTopArrow.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
