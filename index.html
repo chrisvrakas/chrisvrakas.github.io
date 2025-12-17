@@ -206,15 +206,39 @@
             padding: 0;
         }
 
-        .welcometo {
+        /* Welcome Text Styling */
+        .welcome-text {
+            font-family: 'Sometype Mono', monospace;
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: 16px;
+            text-transform: uppercase;
+            margin: 0 0 40px 0;
+            color: #ddc18a;
+            text-align: center;
             width: 100%;
             max-width: 1200px;
-            margin: 0 0 40px 0;
-            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .welcome-text .brackets {
+            color: #ddc18a;
+            flex-shrink: 0;
+        }
+        
+        .welcome-text .text-content {
+            flex: 1;
+            text-align: center;
+        }
+
+        .welcome-text .stomping {
+            color: #ff3333;
         }
 
         .scroll-arrow {
-            width: 30px;
+            width: 40px;
             height: auto;
             cursor: pointer;
             animation: bounce 2s infinite;
@@ -467,30 +491,42 @@
 
         /* Responsive Design */
         @media (max-width: 768px) {
-        header {
-        padding: 15px 25px;
-        }
+            header {
+                padding: 15px 25px;
+            }
 
-        .header-content {
-        padding: 0;
-    }
+            .header-content {
+                padding: 0;
+            }
 
-        nav {
-        display: none;
-    }
+            nav {
+                display: none;
+            }
 
-        .hamburger {
-        display: block;
-    }
+            .hamburger {
+                display: block;
+            }
 
-        .hero-section {
-        padding: 80px 25px 40px;
-        align-items: center;
-    }
+            .hero-section {
+                padding: 80px 25px 40px;
+                align-items: center;
+            }
 
-        .hero-content {
-        align-items: center;
-    }
+            .hero-content {
+                align-items: center;
+            }
+
+            .welcome-text {
+                font-size: 14px;
+                letter-spacing: 4px;
+                text-align: center;
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .welcome-text .text-content {
+                text-align: center;
+            }
 
             .future-section {
                 padding: 40px 25px;
@@ -513,10 +549,6 @@
             .main-hero {
                 width: 95%;
             }
-
-            .welcometo {
-                width: 90%;
-            }
         }
 
         @media (max-width: 480px) {
@@ -530,6 +562,18 @@
 
             .hero-section {
                 padding: 70px 20px 30px;
+            }
+
+            .welcome-text {
+                font-size: 11px;
+                letter-spacing: 2px;
+                text-align: center;
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .welcome-text .text-content {
+                text-align: center;
             }
 
             .future-section {
@@ -561,10 +605,10 @@
             <a href="index.html"><img src="assets/images/Header_LeftLogo.png" alt="CV Logo" class="logo"></a>
             
             <nav>
-    <a href="whoami.html">whoami</a>
-    <a href="resources.html">resources</a>
-    <a href="connect.html">connect</a>
-</nav>
+                <a href="whoami.html">whoami</a>
+                <a href="resources.html">resources</a>
+                <a href="connect.html">connect</a>
+            </nav>
 
             <button class="hamburger" id="hamburger" aria-label="Menu">
                 <img src="assets/images/HamburgerOpen.png" alt="Menu" id="hamburger-icon">
@@ -573,18 +617,28 @@
     </header>
 
     <!-- Mobile Menu -->
-   <div class="mobile-menu" id="mobile-menu">
-    <a href="whoami.html">whoami</a>
-    <a href="resources.html">resources</a>
-    <a href="connect.html">connect</a>
-</div>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="whoami.html">whoami</a>
+        <a href="resources.html">resources</a>
+        <a href="connect.html">connect</a>
+    </div>
 
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="hero-content">
             <img src="assets/images/index_hellofriend.png" alt="Hello Friend" class="hero-image hellofriend">
             <img src="assets/images/index_heroimage.png" alt="Hero Image" class="hero-image main-hero">
-            <img src="assets/images/index_welcometo.png" alt="Welcome to my digital stomping ground" class="hero-image welcometo">
+            
+            <div class="welcome-text">
+                <span class="brackets">«</span>
+                <span class="text-content">
+                    WELCOME TO MY DIGITAL 
+                    <span class="stomping">STOMPING</span> 
+                    GROUND
+                </span>
+                <span class="brackets">»</span>
+            </div>
+            
             <img src="assets/images/index_scrolldownarrow.png" alt="Scroll Down" class="scroll-arrow" id="scroll-arrow">
         </div>
     </section>
