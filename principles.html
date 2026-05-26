@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Vrakas - PRINCIPLES</title>
+    <meta name="description" content="Core convictions, principles, and standards by which I live. An ever-evolving collection, refined over many years.">
+    <meta name="keywords" content="Chris Vrakas, principles, life principles, values, philosophy, polymath, stoicism">
+    <meta name="author" content="Chris Vrakas">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chrisvrakas.com/principles.html">
+    <meta property="og:title" content="Chris Vrakas - Principles">
+    <meta property="og:description" content="Core convictions, principles, and standards by which I live.">
+    <meta property="og:image" content="https://chrisvrakas.com/assets/images/principles_banner.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://chrisvrakas.com/principles.html">
+    <meta name="twitter:title" content="Chris Vrakas - Principles">
+    <meta name="twitter:description" content="Core convictions, principles, and standards by which I live.">
+    <meta name="twitter:image" content="https://chrisvrakas.com/assets/images/principles_banner.png">
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="android-chrome-512x512.png">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Medium.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'Sometype Mono';
+            src: url('assets/fonts/SometypeMono-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 90px;
+        }
+
+        body {
+            font-family: 'Sometype Mono', monospace;
+            background-color: #1a1a1a;
+            color: #ddc18a;
+            overflow-x: hidden;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 40px;
+            z-index: 1000;
+            background-color: rgba(26, 26, 26, 0.95);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .logo {
+            height: 30px;
+            width: auto;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            gap: 40px;
+        }
+
+        nav a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        nav a.active {
+            color: #ddc18a;
+        }
+
+        /* Hamburger Menu */
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+        }
+
+        .hamburger img {
+            height: 25px;
+            width: auto;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(26, 26, 26, 0.98);
+            width: 100%;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            border-top: 1px solid #333;
+            z-index: 999;
+        }
+
+        .mobile-menu.active {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-menu a:hover {
+            opacity: 0.7;
+        }
+
+        .mobile-menu a.active {
+            color: #ddc18a;
+        }
+
+
+        /* Content Sections */
+        .content-section {
+            padding: 0 40px 80px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+
+        /* Hero */
+        .hero-section {
+            padding-top: 100px;
+            width: 100%;
+        }
+
+        .hero-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 40px 0;
+        }
+
+        .hero-prompt {
+            font-size: 13px;
+            font-weight: 400;
+            color: #ff3333;
+            margin-bottom: 6px;
+            opacity: 0.85;
+        }
+
+        .hero-prompt::before {
+            content: 'user@chrisvrakas:~$ ';
+            color: rgba(221, 193, 138, 0.75);
+            font-weight: 400;
+        }
+
+        .hero-title {
+            font-size: 80px;
+            font-weight: 700;
+            color: #ff3333;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            line-height: 1;
+            margin: 12px 0 16px;
+        }
+
+        .hero-rule {
+            width: 100%;
+            height: 1px;
+            background: rgba(221, 193, 138, 0.25);
+            margin-bottom: 20px;
+        }
+
+        .hero-comment {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            color: #ddc18a;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .hero-comment .comment-slash {
+            color: rgba(221, 193, 138, 0.35);
+            font-weight: 400;
+        }
+
+        .hero-comment .hero-red {
+            color: #ff3333;
+        }
+
+        .hero-meta {
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            color: rgba(221, 193, 138, 0.5);
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        .hero-meta .comment-slash {
+            color: rgba(221, 193, 138, 0.25);
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        /* Banner Graphic */
+        .hero-graphic {
+            width: 100%;
+            margin-top: 30px;
+            display: block;
+            line-height: 0;
+        }
+
+        .hero-graphic img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Quote Block */
+        .principles-quote-block {
+            max-width: 1200px;
+            margin: 30px auto 0;
+            padding: 0 40px;
+        }
+
+        .principles-quote {
+            background: rgba(255, 51, 51, 0.04);
+            border-left: 2px solid #ff3333;
+            padding: 20px 28px;
+            font-size: 14px;
+            line-height: 1.65;
+            color: rgba(221, 193, 138, 0.9);
+            font-style: italic;
+            letter-spacing: 0.2px;
+        }
+
+        /* Nav block wrapper */
+        .nav-block {
+            margin: 40px 0 30px 0;
+        }
+
+
+        .nav-box {
+            padding: 0;
+            border-top: 1px solid #ff3333;
+            border-bottom: 1px solid #ff3333;
+        }
+
+        /* Section Navigation */
+        .section-nav {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: stretch;
+            gap: 0;
+            width: 100%;
+            padding: 0;
+        }
+
+        .section-nav a {
+            color: #ff3333;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 10px 0;
+            transition: color 0.2s ease;
+            white-space: nowrap;
+            flex: 1;
+            text-align: center;
+            border-right: 1px solid rgba(255, 51, 51, 0.4);
+        }
+
+        .section-nav a:last-child {
+            border-right: none;
+        }
+
+        .section-nav a:hover,
+        .section-nav a.section-active {
+            color: #ff3333;
+        }
+
+        .nav-sep { display: none; }
+
+
+        /* Inline quote blocks between sections */
+        .inline-quote-block {
+            margin: 0 0 40px 0;
+            padding: 0;
+        }
+
+        .inline-quote {
+            background: rgba(255, 51, 51, 0.03);
+            border-left: 2px solid rgba(255, 51, 51, 0.5);
+            padding: 16px 24px;
+            font-size: 13px;
+            font-style: italic;
+            color: rgba(221, 193, 138, 0.75);
+            line-height: 1.65;
+            letter-spacing: 0.2px;
+        }
+
+        /* Section Headers with // prefix */
+        .section {
+            margin-bottom: 60px;
+            scroll-margin-top: 100px;
+        }
+
+        .section-header {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin: 40px 0 30px 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(255, 51, 51, 0.3);
+        }
+
+        .section-header .slash {
+            color: #ddc18a;
+            font-weight: 400;
+        }
+
+        .section-header .title {
+            color: #ff3333;
+        }
+
+        .subsection-header {
+            color: #ddc18a;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-top: 40px;
+            margin-bottom: 6px;
+            opacity: 0.85;
+        }
+
+        .subsection-intro {
+            color: rgba(221, 193, 138, 0.6);
+            font-size: 12px;
+            font-style: italic;
+            margin-top: 4px;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .subsection-intro a {
+            color: #ff3333;
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 51, 51, 0.4);
+            text-underline-offset: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .subsection-intro a:hover {
+            color: #ddc18a;
+            text-decoration-color: #ddc18a;
+        }
+
+        /* Principles Grid */
+        .principle {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 30px;
+            padding: 16px 0;
+            border-bottom: 1px dashed rgba(221, 193, 138, 0.08);
+            scroll-margin-top: 100px;
+            transition: background-color 0.2s ease;
+        }
+
+        .principle:last-child {
+            border-bottom: none;
+        }
+
+        .principle:hover {
+            background-color: rgba(221, 193, 138, 0.025);
+        }
+
+        .principle:hover .principle-anchor {
+            opacity: 0.4;
+        }
+
+        .principle-key {
+            color: #ff3333;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            line-height: 1.5;
+            display: flex;
+            align-items: flex-start;
+            gap: 6px;
+        }
+
+        .principle-anchor {
+            color: rgba(221, 193, 138, 0.3);
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: 400;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            flex-shrink: 0;
+        }
+
+        .principle-anchor:hover {
+            color: #ff3333;
+            opacity: 1 !important;
+        }
+
+        .principle-value {
+            color: #ddc18a;
+            font-size: 13.5px;
+            font-weight: 400;
+            line-height: 1.65;
+        }
+
+        .principle-value a {
+            color: #ff3333;
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 51, 51, 0.4);
+            text-underline-offset: 3px;
+            transition: all 0.2s ease;
+        }
+
+        .principle-value a:hover {
+            color: #ddc18a;
+            text-decoration-color: #ddc18a;
+        }
+
+        .principle-value em {
+            color: rgba(221, 193, 138, 0.75);
+            font-style: italic;
+        }
+
+        .quote-block {
+            margin: 40px 0;
+            padding: 20px 25px;
+            border-left: 2px solid #ff3333;
+            background: rgba(255, 51, 51, 0.04);
+            color: rgba(221, 193, 138, 0.85);
+            font-size: 12px;
+            line-height: 1.7;
+            font-style: italic;
+        }
+
+        .hierarchy-box {
+            background: rgba(255, 51, 51, 0.06);
+            border-left: 3px solid #ff3333;
+            padding: 21px 30px;
+            margin: 21px 0;
+            text-align: center;
+        }
+
+        .hierarchy-box h3 {
+            font-size: 11px;
+            color: #ff3333;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+
+        .hierarchy-content {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ddc18a;
+            letter-spacing: 1px;
+            line-height: 1;
+        }
+
+        .hierarchy-note {
+            margin-top: 5px;
+            font-size: 11px;
+            opacity: 0.7;
+            font-style: italic;
+        }
+
+        .paradox-link {
+            background: rgba(255, 51, 51, 0.05);
+            border-left: 2px solid #ff3333;
+            padding: 10px 15px;
+            margin-top: 12px;
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+        .paradox-link a {
+            color: #ff3333;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .paradox-link a:hover {
+            color: #ddc18a;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            padding: 80px 40px 40px 40px;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            border-top: 1px solid #ff3333;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            line-height: 1.1;
+            color: #ddc18a;
+            margin-bottom: 3px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+
+        .footer-text .red {
+            color: #ff3333;
+        }
+
+        .footer-text .strikethrough {
+            text-decoration: line-through;
+        }
+
+        .footer-copyright {
+            font-size: 12px;
+            color: #ddc18a;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+
+        .footer-copyright .red {
+            color: #ff3333;
+        }
+
+        .footer-link {
+            font-size: 12px;
+            margin-bottom: 25px;
+            letter-spacing: 0.5px;
+            font-weight: 700;
+        }
+
+        .footer-link a {
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .footer-link a:hover {
+            opacity: 0.7;
+        }
+
+        .footer-link .tan {
+            color: #ddc18a;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .social-icons a {
+            color: #ff3333;
+            font-size: 20px;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+
+        /* Scroll to Top Arrow */
+        .scroll-top-arrow {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 40px;
+            height: auto;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 998;
+        }
+
+        .scroll-top-arrow.visible {
+            opacity: 1;
+        }
+
+        .scroll-top-arrow:hover {
+            opacity: 0.7;
+        }
+
+        @media (min-width: 1024px) {
+            .section-nav a { font-size: 13px; letter-spacing: 2px; }
+            .nav-sep { font-size: 10px; }
+        }
+
+        @media (min-width: 1200px) {
+            .section-nav a { font-size: 14px; letter-spacing: 2.5px; }
+            .nav-sep { font-size: 11px; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header { padding: 15px 25px; }
+            nav { display: none; }
+            .hamburger { display: block; }
+            .hero-section { padding-top: 80px; }
+            .hero-inner { padding: 30px 25px 0; }
+            .hero-title { font-size: 42px; letter-spacing: 2px; }
+            .hero-comment { font-size: 12px; }
+            .hero-meta { font-size: 11px; }
+            .hero-graphic { margin-top: 20px; }
+            .principles-quote-block { padding: 0 25px; }
+            .content-section { padding: 60px 25px; }
+            .nav-block { margin: 30px 0 20px 0; }
+            .section-nav { gap: 4px; padding: 6px 0; }
+            .section-nav a { font-size: 8.5px; letter-spacing: 1px; }
+            .section-nav .nav-sep { margin: 0 7px; font-size: 7px; }
+            .principle { grid-template-columns: 1fr; gap: 8px; padding: 14px 0; }
+            .principle-key { font-size: 11px; }
+            .principle-value { font-size: 12.5px; }
+            footer { padding: 40px 20px; }
+            .section-header { font-size: 12px; }
+        }
+
+        @media (max-width: 480px) {
+            header { padding: 12px 20px; }
+            .logo { height: 25px; }
+            .hero-section { padding-top: 70px; }
+            .hero-inner { padding: 20px 20px 0; }
+            .hero-title { font-size: 28px; letter-spacing: 1px; }
+            .hero-prompt { font-size: 10px; }
+            .hero-prompt::before { content: "$ "; }
+            .hero-comment { font-size: 11px; letter-spacing: 0.5px; }
+            .principles-quote-block { padding: 0 20px; }
+            .content-section { padding: 40px 20px; }
+            .section-nav a { font-size: 7.5px; letter-spacing: 0.5px; }
+            .section-nav .nav-sep { margin: 0 4px; }
+            .hierarchy-content { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html"><img src="assets/images/Header_LeftLogo.png" alt="CV Logo" class="logo"></a>
+            <nav>
+                <a href="whoami.html">whoami</a>
+                <a href="principles.html" class="active">principles</a>
+                <a href="resources.html">resources</a>
+                <a href="connect.html">connect</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <img src="assets/images/HamburgerOpen.png" alt="Menu" id="hamburger-icon">
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="whoami.html">whoami</a>
+        <a href="principles.html" class="active">principles</a>
+        <a href="resources.html">resources</a>
+        <a href="connect.html">connect</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-inner">
+            <div class="hero-prompt">-- principles.md</div>
+            <h1 class="hero-title">PRINCIPLES</h1>
+            <div class="hero-rule"></div>
+            <p class="hero-comment"><span class="comment-slash">/*</span> CORE <span class="hero-red">CONVICTIONS</span>, <span class="hero-red">PASSIONS</span>, &amp; <span class="hero-red">STANDARDS</span> BY WHICH I LIVE <span class="comment-slash">*/</span></p>
+            <p class="hero-meta"><span class="comment-slash">//</span> an ever-evolving collection, refined over many years<br><span class="comment-slash">//</span> last updated May 2026</p>
+
+            <div class="hero-graphic">
+                <img src="assets/images/principles_banner.png" alt="Principles Banner" onerror="this.parentElement.innerHTML='GRAPHIC PLACEHOLDER'">
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Block -->
+    <div class="principles-quote-block">
+        <div class="principles-quote">
+            "A principle is a way of structuring awareness. Practice what you preach &mdash; be what you speak, never speak on what you be."
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content-section">
+        <div class="nav-block">
+            <div class="nav-box">
+                <nav class="section-nav" aria-label="Sections">
+                    <a href="#foundations" data-section="foundations">FOUNDATIONS</a>
+                    <a href="#values" data-section="values">VALUES</a>
+                    <a href="#relationships" data-section="relationships">RELATIONSHIPS</a>
+                    <a href="#conduct" data-section="conduct">CONDUCT</a>
+                    <a href="#avoid" data-section="avoid">AVOID</a>
+                    <a href="#professional" data-section="professional">PROFESSIONAL</a>
+                </nav>
+            </div>
+        </div>
+
+
+        <!-- FOUNDATIONS -->
+        <section class="section" id="foundations">
+            <h2 class="section-header"><span class="slash">// </span><span class="title">FOUNDATIONS</span></h2>
+
+            <div class="hierarchy-box">
+                <h3>PERSONAL HIERARCHY</h3>
+                <div class="hierarchy-content">TRUTH → HEALTH → WEALTH</div>
+                <p class="hierarchy-note">In this order. Always.</p>
+            </div>
+
+            <div class="principle" id="practice-what-you-preach"><div class="principle-key">Practice What You Preach<a class="principle-anchor" href="#practice-what-you-preach" title="link to this principle">#</a></div><div class="principle-value">Do what you speak. Never speak on what you be.</div></div>
+            <div class="principle" id="truth-health-wealth"><div class="principle-key">Truth, Health, Wealth<a class="principle-anchor" href="#truth-health-wealth" title="link to this principle">#</a></div><div class="principle-value">In that order. Truth first — gain knowledge, learn true things, level yourself up. Health second — body, mind, sleep, fitness. Wealth last — it follows from the other two.</div></div>
+            <div class="principle" id="assume-wrong"><div class="principle-key">Assume You Are Wrong<a class="principle-anchor" href="#assume-wrong" title="link to this principle">#</a></div><div class="principle-value">Until you've proven your hypothesis correct. The foundation of science is to look for disconfirmation, not confirmation. If you fail to knock your belief down, you can begin to trust it.</div></div>
+            <div class="principle" id="failure-is-info"><div class="principle-key">Failure Is Information<a class="principle-anchor" href="#failure-is-info" title="link to this principle">#</a></div><div class="principle-value">Not a verdict. It's the data you need to get where you're going.</div></div>
+            <div class="principle" id="do-what-you-can"><div class="principle-key">Do What You Can<a class="principle-anchor" href="#do-what-you-can" title="link to this principle">#</a></div><div class="principle-value">With what you have. Nothing more is needed.</div></div>
+            <div class="principle" id="frameworks"><div class="principle-key">Frameworks Are Filters<a class="principle-anchor" href="#frameworks" title="link to this principle">#</a></div><div class="principle-value">Any framework, method, or label you impose on yourself is just as likely to be a limitation as an opening.</div></div>
+            <div class="principle" id="under-promise"><div class="principle-key">Under Promise, Over Deliver<a class="principle-anchor" href="#under-promise" title="link to this principle">#</a></div><div class="principle-value">Always. Make your bed.</div></div>
+            <div class="principle" id="job-career-calling"><div class="principle-key">Job → Career → Calling<a class="principle-anchor" href="#job-career-calling" title="link to this principle">#</a></div><div class="principle-value">Keep searching until you find your calling.</div></div>
+            <div class="principle" id="two-types"><div class="principle-key">Two Types of People<a class="principle-anchor" href="#two-types" title="link to this principle">#</a></div><div class="principle-value">Wise men who know they are fools, and fools who think they are wise.</div></div>
+            <div class="principle" id="never-dismiss"><div class="principle-key">Never Dismiss People<a class="principle-anchor" href="#never-dismiss" title="link to this principle">#</a></div><div class="principle-value">Never dismiss people because they have difficult names or unfamiliar clothes. It's like a filter on a photograph — it doesn't change the shape of what's beneath.</div></div>
+            <div class="principle" id="two-things-business"><div class="principle-key">Two Things in Business<a class="principle-anchor" href="#two-things-business" title="link to this principle">#</a></div><div class="principle-value">Build things users love. Make more than you spend.</div></div>
+
+            <div class="subsection-header">DA VINCI'S SEVEN PRINCIPLES</div>
+            <p class="subsection-intro">From Michael J. Gelb's <a href="https://www.amazon.com/How-Think-Like-Leonardo-Vinci/dp/0440508274" target="_blank">How to Think Like Leonardo da Vinci</a>.</p>
+            <div class="principle" id="curiosita"><div class="principle-key">Curiosità<a class="principle-anchor" href="#curiosita" title="link to this principle">#</a></div><div class="principle-value">An insatiably curious approach to life and an unrelenting quest for continuous learning.</div></div>
+            <div class="principle" id="dimostrazione"><div class="principle-key">Dimostrazione<a class="principle-anchor" href="#dimostrazione" title="link to this principle">#</a></div><div class="principle-value">A commitment to test knowledge through experience, persistence, and a willingness to learn from mistakes.</div></div>
+            <div class="principle" id="sensazione"><div class="principle-key">Sensazione<a class="principle-anchor" href="#sensazione" title="link to this principle">#</a></div><div class="principle-value">The continual refinement of the senses — especially as the means to enliven experience.</div></div>
+            <div class="principle" id="sfumato"><div class="principle-key">Sfumato<a class="principle-anchor" href="#sfumato" title="link to this principle">#</a></div><div class="principle-value"><em>Going up in smoke.</em> A willingness to embrace ambiguity, paradox, and uncertainty.</div></div>
+            <div class="principle" id="arte-scienza"><div class="principle-key">Arte / Scienza<a class="principle-anchor" href="#arte-scienza" title="link to this principle">#</a></div><div class="principle-value">The balance between science and art, logic and imagination. Whole-brain thinking.</div></div>
+            <div class="principle" id="corporalita"><div class="principle-key">Corporalità<a class="principle-anchor" href="#corporalita" title="link to this principle">#</a></div><div class="principle-value">The cultivation of grace, ambidexterity, fitness, and poise.</div></div>
+            <div class="principle" id="connessione"><div class="principle-key">Connessione<a class="principle-anchor" href="#connessione" title="link to this principle">#</a></div><div class="principle-value">Systems thinking. A recognition of the interconnectedness of all things and phenomena.</div></div>
+
+            <div class="quote-block">We all started life with a Da Vinci-like curiosity until we got to school and were taught that answers were more important than questions. School rewards those who figure out "the right answer" — the answer held by the person in authority. This authority-pleasing, question-suppressing approach prepares assembly-line bureaucrats for society.</div>
+
+            <div class="principle" id="mirror-test"><div class="principle-key">The Mirror Test<a class="principle-anchor" href="#mirror-test" title="link to this principle">#</a></div><div class="principle-value">Just as a maestro uses a mirror to see his painting in reverse, do the same with your beliefs. Make the strongest possible argument against your belief. Seek perspective by reviewing your beliefs from a distance — would your views change if you were another gender, race, from another country, 20 years older or younger, from a different economic class?</div></div>
+            <div class="principle" id="ambiguity-tolerance"><div class="principle-key">Tolerate Ambiguity<a class="principle-anchor" href="#ambiguity-tolerance" title="link to this principle">#</a></div><div class="principle-value">High tolerance for uncertainty. As change accelerates, ambiguity multiplies, and illusions of certainty become more difficult to maintain. The ability to thrive with ambiguity must become part of our everyday lives.</div></div>
+        </section>
+
+        <!-- VALUES -->
+        <section class="section" id="values">
+            <h2 class="section-header"><span class="slash">// </span><span class="title">VALUES</span></h2>
+            <div class="hierarchy-box">
+                <h3>EXPERIMENT</h3>
+                <div class="hierarchy-content">MAKE → BREAK → ITERATE</div>
+                <p class="hierarchy-note">Trial and error. Try, fail, diagnose, redesign, try again.</p>
+            </div>
+            <div class="principle" id="rules-value"><div class="principle-key">Rules<a class="principle-anchor" href="#rules-value" title="link to this principle">#</a></div><div class="principle-value">Learn them, adapt a mindset for them to be tested, then break them when necessary. Following rules makes your work look like everyone else's. "If we play by the rules too strictly, if we take them too literally, we are crushed by those around us who are not so foolish." — <a href="https://en.wikipedia.org/wiki/Robert_Greene_(American_author)" target="_blank">Robert Greene</a></div></div>
+            <div class="principle" id="trends-value"><div class="principle-key">Trends<a class="principle-anchor" href="#trends-value" title="link to this principle">#</a></div><div class="principle-value">Avoid them. Create your own style and stop following the herd. If you're following the herd, the view never changes.</div></div>
+            <div class="principle" id="quitting"><div class="principle-key">Quitting<a class="principle-anchor" href="#quitting" title="link to this principle">#</a></div><div class="principle-value">Knowing when to leave is important — the job, the party, the relationship.</div></div>
+            <div class="principle" id="less-is-more"><div class="principle-key">Less Is More<a class="principle-anchor" href="#less-is-more" title="link to this principle">#</a></div><div class="principle-value">Amplify the simple. Simplify the complex.</div></div>
+            <div class="principle" id="share"><div class="principle-key">Share<a class="principle-anchor" href="#share" title="link to this principle">#</a></div><div class="principle-value">Your ideas with others.</div></div>
+            <div class="principle" id="brave"><div class="principle-key">Brave<a class="principle-anchor" href="#brave" title="link to this principle">#</a></div><div class="principle-value">Someone who is never so overcome with fear that he cannot act in the right way. — Aristotle</div></div>
+            <div class="principle" id="education"><div class="principle-key">Education<a class="principle-anchor" href="#education" title="link to this principle">#</a></div><div class="principle-value">Your mind is a weapon. Keep it loaded.</div></div>
+            <div class="principle" id="curiosity"><div class="principle-key">Curiosity<a class="principle-anchor" href="#curiosity" title="link to this principle">#</a></div><div class="principle-value">Reigns supreme. Be interested and interesting.</div></div>
+            <div class="principle" id="questions"><div class="principle-key">Questions<a class="principle-anchor" href="#questions" title="link to this principle">#</a></div><div class="principle-value">Ask uncommonly clear questions. "The stupidity of people comes from having an answer for everything. The wisdom of the novel comes from having a question for everything." — Milan Kundera</div></div>
+            <div class="principle" id="insatiable"><div class="principle-key">Insatiable<a class="principle-anchor" href="#insatiable" title="link to this principle">#</a></div><div class="principle-value">Approach every problem assuming you might be wrong. Search for new solutions to the point of being dissatisfied with the status quo.</div></div>
+            <div class="principle" id="flexibility"><div class="principle-key">Flexibility<a class="principle-anchor" href="#flexibility" title="link to this principle">#</a></div><div class="principle-value">The world's tallest buildings flex and sway as the ground moves. The most successful people aren't "strong" — they're flexible.</div></div>
+            <div class="principle" id="time-value"><div class="principle-key">Time<a class="principle-anchor" href="#time-value" title="link to this principle">#</a></div><div class="principle-value">Is not money. You can always get more money — never more time. Trade money for time, not time for money.</div></div>
+            <div class="principle" id="appearance"><div class="principle-key">Appearance<a class="principle-anchor" href="#appearance" title="link to this principle">#</a></div><div class="principle-value">Look good, feel good.</div></div>
+            <div class="principle" id="question-everything"><div class="principle-key">Question Everything<a class="principle-anchor" href="#question-everything" title="link to this principle">#</a></div><div class="principle-value">Nearly everything.</div></div>
+            <div class="principle" id="open-to-wrong"><div class="principle-key">Open to Being Wrong<a class="principle-anchor" href="#open-to-wrong" title="link to this principle">#</a></div><div class="principle-value">Disconfirmation is a gift.</div></div>
+            <div class="principle" id="experiment"><div class="principle-key">Experiment<a class="principle-anchor" href="#experiment" title="link to this principle">#</a></div><div class="principle-value">Make, break, iterate. Trial and error. Try, fail, diagnose, redesign, try again.</div></div>
+            <div class="principle" id="intention"><div class="principle-key">Act with Intention<a class="principle-anchor" href="#intention" title="link to this principle">#</a></div><div class="principle-value">Spend time thinking about an authentic and motivating purpose.</div></div>
+            <div class="principle" id="understand-value"><div class="principle-key">Understand Your Value<a class="principle-anchor" href="#understand-value" title="link to this principle">#</a></div><div class="principle-value">And believe you have something to offer.</div></div>
+            <div class="principle" id="honesty"><div class="principle-key">Honesty<a class="principle-anchor" href="#honesty" title="link to this principle">#</a></div><div class="principle-value">Always tell the truth. Be clear, be straight, no exceptions. — <a href="https://samharris.org/books/lying/" target="_blank">Sam Harris</a></div></div>
+            <div class="principle" id="authenticity"><div class="principle-key">Authenticity<a class="principle-anchor" href="#authenticity" title="link to this principle">#</a></div><div class="principle-value">Be yourself. Be your word. Exercise integrity.</div></div>
+            <div class="principle" id="lead-by-example"><div class="principle-key">Lead by Example<a class="principle-anchor" href="#lead-by-example" title="link to this principle">#</a></div><div class="principle-value">The only kind that matters.</div></div>
+            <div class="principle" id="unlearning"><div class="principle-key">Unlearning<a class="principle-anchor" href="#unlearning" title="link to this principle">#</a></div><div class="principle-value">Just as important as learning.</div></div>
+            <div class="principle" id="ambiguity-value"><div class="principle-key">Ambiguity<a class="principle-anchor" href="#ambiguity-value" title="link to this principle">#</a></div><div class="principle-value">Look for things that don't make sense. The world always makes sense — when it's confusing, your model is wrong. Things that don't make sense are a learning opportunity.</div></div>
+            <div class="principle" id="robustness"><div class="principle-key">Robustness Principle<a class="principle-anchor" href="#robustness" title="link to this principle">#</a></div><div class="principle-value">Be conservative in what you do, be liberal in what you accept from others. Hold yourself to a higher standard than you hold others to. — <a href="https://perell.com/essay/50-ideas-that-changed-my-life/" target="_blank">David Perell</a></div></div>
+            <div class="principle" id="personal-monopoly"><div class="principle-key">Personal Monopoly<a class="principle-anchor" href="#personal-monopoly" title="link to this principle">#</a></div><div class="principle-value">Corporations reward conformity, but the Internet rewards people who are unique. Strive to be the only person who does what you do. — <a href="https://perell.com/essay/the-ultimate-guide-to-writing-online/" target="_blank">David Perell</a></div></div>
+            <div class="principle" id="check-yourself"><div class="principle-key">Check for Yourself<a class="principle-anchor" href="#check-yourself" title="link to this principle">#</a></div><div class="principle-value">Rather than subscribing to widely accepted views, verify them yourself. Assume you are incorrect until you've proven your hypothesis correct.</div></div>
+            <div class="principle" id="paradox"><div class="principle-key">Paradox<a class="principle-anchor" href="#paradox" title="link to this principle">#</a></div><div class="principle-value">There is infinite wisdom inside paradox. When you find two opposites that are both true, start exploring. "The only constant is change." "The more you learn, the more you realize how little you know."
+            <div class="paradox-link">For a deeper exploration of paradox as a philosophical tool, visit <a href="https://proceedwithchaos.com" target="_blank">proceedwithchaos.com</a></div>
+            </div></div>
+            <div class="principle" id="insider-outsider"><div class="principle-key">Insider & Outsider<a class="principle-anchor" href="#insider-outsider" title="link to this principle">#</a></div><div class="principle-value">Almost all the most observant people share one characteristic: they are simultaneously insiders and outsiders. They are insider enough to receive secrets and catch inside jokes, but they don't let themselves get too close. By spending time alone or bouncing between social groups, they avoid groupthink and make poignant observations. — <a href="https://en.wikipedia.org/wiki/Marshall_McLuhan" target="_blank">Marshall McLuhan</a></div></div>
+            <div class="principle" id="occams-razor"><div class="principle-key">Occam's Razor<a class="principle-anchor" href="#occams-razor" title="link to this principle">#</a></div><div class="principle-value">When multiple explanations are equally persuasive, assume the simplest is true. Remove unnecessary assumptions. Trust the lowest-complexity answer.</div></div>
+            <div class="principle" id="via-negativa"><div class="principle-key">Via Negativa<a class="principle-anchor" href="#via-negativa" title="link to this principle">#</a></div><div class="principle-value">Sometimes you improve your life by taking things away, not adding them. The foods you avoid matter more than the foods you eat.</div></div>
+            <div class="principle" id="opportunity-cost"><div class="principle-key">Opportunity Cost<a class="principle-anchor" href="#opportunity-cost" title="link to this principle">#</a></div><div class="principle-value">Doing one thing requires giving up another. Whenever you explicitly choose to do one thing, you implicitly choose not to do another.</div></div>
+        </section>
+
+        <!-- RELATIONSHIPS -->
+        <section class="section" id="relationships">
+            <h2 class="section-header"><span class="slash">// </span><span class="title">RELATIONSHIPS</span></h2>
+            <div class="hierarchy-box">
+                <h3>WHAT I VALUE IN OTHERS</h3>
+                <div class="hierarchy-content" style="font-size:18px;">CURIOSITY → INTELLIGENCE → AUTHENTICITY</div>
+                <p class="hierarchy-note">Physical connections are common. Mental connections are rare.</p>
+            </div>
+            <div class="principle" id="inspiring"><div class="principle-key">Inspiring<a class="principle-anchor" href="#inspiring" title="link to this principle">#</a></div><div class="principle-value">Someone able to challenge me, and open to being challenged.</div></div>
+            <div class="principle" id="open-minded"><div class="principle-key">Open-Minded<a class="principle-anchor" href="#open-minded" title="link to this principle">#</a></div><div class="principle-value">An independent thinker willing to hear alternative points of view, objectively.</div></div>
+            <div class="principle" id="respect"><div class="principle-key">Respect<a class="principle-anchor" href="#respect" title="link to this principle">#</a></div><div class="principle-value">Everyone deserves it.</div></div>
+            <div class="principle" id="dangerously-different"><div class="principle-key">Dangerously Different<a class="principle-anchor" href="#dangerously-different" title="link to this principle">#</a></div><div class="principle-value">When everyone zigs, zag. Not afraid to color outside the lines, challenge the status quo, and defy conventional wisdom.</div></div>
+            <div class="principle" id="mental-connection"><div class="principle-key">Mental Connection<a class="principle-anchor" href="#mental-connection" title="link to this principle">#</a></div><div class="principle-value">Physical connections are common. Mental connections are rare. Both are necessary.</div></div>
+            <div class="principle" id="family"><div class="principle-key">Family<a class="principle-anchor" href="#family" title="link to this principle">#</a></div><div class="principle-value">Respect your mother. Look out for your sister.</div></div>
+            <div class="principle" id="honest-rel"><div class="principle-key">Honest<a class="principle-anchor" href="#honest-rel" title="link to this principle">#</a></div><div class="principle-value">Always tell the truth. Be clear and be straight. No exceptions.</div></div>
+            <div class="principle" id="curious-relation"><div class="principle-key">Curious<a class="principle-anchor" href="#curious-relation" title="link to this principle">#</a></div><div class="principle-value">Inquisitive, open to learning. Not afraid to ask questions or admit when they don't know something.</div></div>
+            <div class="principle" id="style"><div class="principle-key">Style<a class="principle-anchor" href="#style" title="link to this principle">#</a></div><div class="principle-value">Unique taste in music. Personal sense of style.</div></div>
+            <div class="principle" id="purpose-driven"><div class="principle-key">Purpose-Driven<a class="principle-anchor" href="#purpose-driven" title="link to this principle">#</a></div><div class="principle-value">Self-motivated and guided by a unique set of interests, passions, and beliefs.</div></div>
+            <div class="principle" id="confident"><div class="principle-key">Confident<a class="principle-anchor" href="#confident" title="link to this principle">#</a></div><div class="principle-value">Doesn't constantly seek validation from social media. Understands their true value.</div></div>
+            <div class="principle" id="vulnerability"><div class="principle-key">Vulnerability<a class="principle-anchor" href="#vulnerability" title="link to this principle">#</a></div><div class="principle-value">To love is to be vulnerable. Let your guard down.</div></div>
+            <div class="principle" id="quality-quantity"><div class="principle-key">Quality > Quantity<a class="principle-anchor" href="#quality-quantity" title="link to this principle">#</a></div><div class="principle-value">Less is always more.</div></div>
+            <div class="principle" id="watch-over"><div class="principle-key">Watch Over<a class="principle-anchor" href="#watch-over" title="link to this principle">#</a></div><div class="principle-value">Your friends and partner. Notice when they're having a bad day. Carry some of their burden when they're overloaded.</div></div>
+            <div class="principle" id="secrets"><div class="principle-key">Secrets<a class="principle-anchor" href="#secrets" title="link to this principle">#</a></div><div class="principle-value">Respect them. Detox yourself from the "everything should be in the open" propaganda.</div></div>
+            <div class="principle" id="end-in-themselves"><div class="principle-key">End in Themselves<a class="principle-anchor" href="#end-in-themselves" title="link to this principle">#</a></div><div class="principle-value">Value anyone who supports you with nothing to gain from it. Find relationships where both parties treat each other well because they're inspired to — not because they fear negativity.</div></div>
+            <div class="principle" id="psych-flexibility"><div class="principle-key">Psychological Flexibility<a class="principle-anchor" href="#psych-flexibility" title="link to this principle">#</a></div><div class="principle-value">Be open to learning from new experiences. Experience thoughts and feelings without obsessively clinging to them. Don't see people (including yourself) as unable to change.</div></div>
+            <div class="principle" id="communication"><div class="principle-key">Communication<a class="principle-anchor" href="#communication" title="link to this principle">#</a></div><div class="principle-value">Make time to talk about the good and the bad. Be open to being wrong. Be honest. Lies beget lies. Arguments are normal — you won't always be happy.</div></div>
+            <div class="principle" id="the-past-rel"><div class="principle-key">The Past<a class="principle-anchor" href="#the-past-rel" title="link to this principle">#</a></div><div class="principle-value">Leave the past in the past — this includes exes. Learn from it, then let it go.</div></div>
+            <div class="principle" id="decentralize"><div class="principle-key">Decentralize Your Friends<a class="principle-anchor" href="#decentralize" title="link to this principle">#</a></div><div class="principle-value">Centralized groups share one history, beliefs, and behaviors. Decentralized groups are many small clusters whose only common thread is you. Humans are mimetic — diversify.</div></div>
+        </section>
+
+
+        <div class="inline-quote-block">
+            <div class="inline-quote">Walk like you are a king &mdash; or like you don't give a fuck who is.</div>
+            <div class="inline-quote" style="margin-top: 12px;">"I used to walk into a room full of people and wonder if they liked me&hellip; now I look around and wonder if I like them." &mdash; <em>Rikkie Gale</em></div>
+        </div>
+
+        <!-- DAILY CONDUCT -->
+        <section class="section" id="conduct">
+            <h2 class="section-header"><span class="slash">// </span><span class="title">CONDUCT</span></h2>
+            <div class="hierarchy-box">
+                <h3>TRIPLE S</h3>
+                <div class="hierarchy-content">SURPRISING → SOCIAL → SCARCE</div>
+                <p class="hierarchy-note">Be surprising, social, and scarce.</p>
+            </div>
+            <div class="principle" id="time-conduct"><div class="principle-key">Time<a class="principle-anchor" href="#time-conduct" title="link to this principle">#</a></div><div class="principle-value">Show up on time. If you're not early, you're late.</div></div>
+            <div class="principle" id="attire"><div class="principle-key">Attire<a class="principle-anchor" href="#attire" title="link to this principle">#</a></div><div class="principle-value">Dress well, and appropriately. You have 4 seconds to make a first impression. Looks get you in the door — personality keeps you there.</div></div>
+            <div class="principle" id="say"><div class="principle-key">Say<a class="principle-anchor" href="#say" title="link to this principle">#</a></div><div class="principle-value">Watch what you say. Practice what you say. Be what you speak.</div></div>
+            <div class="principle" id="guests"><div class="principle-key">Guests<a class="principle-anchor" href="#guests" title="link to this principle">#</a></div><div class="principle-value">Receive a guest with the same attitude you have when alone. Alone, maintain the attitude you'd have receiving guests.</div></div>
+            <div class="principle" id="read"><div class="principle-key">Read<a class="principle-anchor" href="#read" title="link to this principle">#</a></div><div class="principle-value">Dangerous books.</div></div>
+            <div class="principle" id="history"><div class="principle-key">History<a class="principle-anchor" href="#history" title="link to this principle">#</a></div><div class="principle-value">Those who do not learn from it are doomed to repeat it.</div></div>
+            <div class="principle" id="food"><div class="principle-key">Food<a class="principle-anchor" href="#food" title="link to this principle">#</a></div><div class="principle-value">Partake at regular intervals. Eat with moderation. Never to the point of satisfaction.</div></div>
+            <div class="principle" id="walk"><div class="principle-key">Walk<a class="principle-anchor" href="#walk" title="link to this principle">#</a></div><div class="principle-value">Either like you are king, or like you don't give a fuck who is king.</div></div>
+            <div class="principle" id="details"><div class="principle-key">Details<a class="principle-anchor" href="#details" title="link to this principle">#</a></div><div class="principle-value">Pay attention to the small things. Show others you were listening.</div></div>
+            <div class="principle" id="news"><div class="principle-key">News<a class="principle-anchor" href="#news" title="link to this principle">#</a></div><div class="principle-value">If you eat, invest, and think according to what the news advocates, you'll end up nutritionally, morally, and financially bankrupt.</div></div>
+            <div class="principle" id="doors"><div class="principle-key">Doors<a class="principle-anchor" href="#doors" title="link to this principle">#</a></div><div class="principle-value">Hold them. Whenever possible.</div></div>
+            <div class="principle" id="art"><div class="principle-key">Art<a class="principle-anchor" href="#art" title="link to this principle">#</a></div><div class="principle-value">The art on your walls says a lot about you. How you keep your space shows others what speaks to you, what motivates you, what you believe is worth seeing daily.</div></div>
+            <div class="principle" id="shoes"><div class="principle-key">Shoes<a class="principle-anchor" href="#shoes" title="link to this principle">#</a></div><div class="principle-value">Say a lot about you. Never look down on anyone — unless you're admiring theirs.</div></div>
+            <div class="principle" id="desktop"><div class="principle-key">Desktop<a class="principle-anchor" href="#desktop" title="link to this principle">#</a></div><div class="principle-value">Keep it clean and organized.</div></div>
+            <div class="principle" id="diet"><div class="principle-key">Diet<a class="principle-anchor" href="#diet" title="link to this principle">#</a></div><div class="principle-value">Your body is your temple. What you eat says more than you realize — about discipline, consistency, and the relationship you have with yourself.</div></div>
+            <div class="principle" id="friends"><div class="principle-key">Friends<a class="principle-anchor" href="#friends" title="link to this principle">#</a></div><div class="principle-value">Better to have 4 quarters than 100 pennies. You're a reflection of the five people you spend the most time with. A Bugatti has 2 seats. A bus has 30.</div></div>
+            <div class="principle" id="thoughts"><div class="principle-key">Thoughts<a class="principle-anchor" href="#thoughts" title="link to this principle">#</a></div><div class="principle-value">Select them like you select your clothes every morning. If you want control over your life, control your mind first.</div></div>
+            <div class="principle" id="silence"><div class="principle-key">Silence<a class="principle-anchor" href="#silence" title="link to this principle">#</a></div><div class="principle-value">Move in it. Silence is a vote of confidence in yourself.</div></div>
+            <div class="principle" id="no"><div class="principle-key">No<a class="principle-anchor" href="#no" title="link to this principle">#</a></div><div class="principle-value">Normalize saying it without over-explaining. The best weight you'll ever lose is the weight of other people's opinions.</div></div>
+            <div class="principle" id="energy"><div class="principle-key">Energy<a class="principle-anchor" href="#energy" title="link to this principle">#</a></div><div class="principle-value">Channel it into positive things. It takes more energy to be negatively condescending than positively optimistic.</div></div>
+            <div class="principle" id="be"><div class="principle-key">Be<a class="principle-anchor" href="#be" title="link to this principle">#</a></div><div class="principle-value">What you speak. A rich man doesn't need to tell people he's rich. A confident man doesn't need to tell people he's confident. The persona is the front.</div></div>
+            <div class="principle" id="imperfections"><div class="principle-key">Imperfections<a class="principle-anchor" href="#imperfections" title="link to this principle">#</a></div><div class="principle-value">Embrace them. Would the Tower of Pisa be a tourist attraction if it weren't leaning? Imperfections and authenticity go hand in hand.</div></div>
+            <div class="principle" id="fun"><div class="principle-key">Fun<a class="principle-anchor" href="#fun" title="link to this principle">#</a></div><div class="principle-value">Yours to define. Stop subscribing to other people's definitions. Fun can be a party — or a night alone reading a book.</div></div>
+            <div class="principle" id="calm"><div class="principle-key">Calm<a class="principle-anchor" href="#calm" title="link to this principle">#</a></div><div class="principle-value">But alert.</div></div>
+            <div class="principle" id="humble"><div class="principle-key">Humble<a class="principle-anchor" href="#humble" title="link to this principle">#</a></div><div class="principle-value">But confident.</div></div>
+            <div class="principle" id="relaxed"><div class="principle-key">Relaxed<a class="principle-anchor" href="#relaxed" title="link to this principle">#</a></div><div class="principle-value">But ready.</div></div>
+            <div class="principle" id="smooth"><div class="principle-key">Smooth<a class="principle-anchor" href="#smooth" title="link to this principle">#</a></div><div class="principle-value">But sharp.</div></div>
+            <div class="principle" id="diversity"><div class="principle-key">Diversity<a class="principle-anchor" href="#diversity" title="link to this principle">#</a></div><div class="principle-value">Embrace it.</div></div>
+            <div class="principle" id="triple-s"><div class="principle-key">Triple S<a class="principle-anchor" href="#triple-s" title="link to this principle">#</a></div><div class="principle-value">Be surprising, social, and scarce.</div></div>
+            <div class="principle" id="technology"><div class="principle-key">Technology<a class="principle-anchor" href="#technology" title="link to this principle">#</a></div><div class="principle-value">Are you controlling it, or is it controlling you? Treat your devices like a chimp army. Demote them from time to time.</div></div>
+            <div class="principle" id="six-mindfuls"><div class="principle-key">Six Mindfuls<a class="principle-anchor" href="#six-mindfuls" title="link to this principle">#</a></div><div class="principle-value">When alone, mind your thoughts. With friends, mind your tongue. When angry, mind your temper. In a group, mind your behavior. In trouble, mind your emotions. When blessed, mind your ego.</div></div>
+            <div class="principle" id="the-past-conduct"><div class="principle-key">The Past<a class="principle-anchor" href="#the-past-conduct" title="link to this principle">#</a></div><div class="principle-value">Never be a prisoner to your past. It was just a lesson — good or bad — not a life sentence.</div></div>
+            <div class="principle" id="notes"><div class="principle-key">Notes<a class="principle-anchor" href="#notes" title="link to this principle">#</a></div><div class="principle-value">Your mind is meant for having ideas, not holding them. Get them out of your head.</div></div>
+            <div class="principle" id="privacy"><div class="principle-key">Privacy<a class="principle-anchor" href="#privacy" title="link to this principle">#</a></div><div class="principle-value">Get serious about protecting your internet traffic.</div></div>
+            <div class="principle" id="pseudonyms"><div class="principle-key">Pseudonyms<a class="principle-anchor" href="#pseudonyms" title="link to this principle">#</a></div><div class="principle-value">Get comfortable using aliases in real-life situations.</div></div>
+            <div class="principle" id="cryptography"><div class="principle-key">Cryptography<a class="principle-anchor" href="#cryptography" title="link to this principle">#</a></div><div class="principle-value">Encryption is a right, not a privilege.</div></div>
+            <div class="principle" id="cryptocurrency"><div class="principle-key">Cryptocurrency<a class="principle-anchor" href="#cryptocurrency" title="link to this principle">#</a></div><div class="principle-value">Use it whenever possible. Offer to show a stranger how to set up a wallet.</div></div>
+            <div class="principle" id="logic"><div class="principle-key">Logic<a class="principle-anchor" href="#logic" title="link to this principle">#</a></div><div class="principle-value">Study it. Especially the fallacies.</div></div>
+            <div class="principle" id="code"><div class="principle-key">Code<a class="principle-anchor" href="#code" title="link to this principle">#</a></div><div class="principle-value">Learn to write some. Automate the boring tasks.</div></div>
+            <div class="principle" id="comparisons-self"><div class="principle-key">Comparisons<a class="principle-anchor" href="#comparisons-self" title="link to this principle">#</a></div><div class="principle-value">Compare the person you are today to who you were yesterday. Avoid comparing yourself to others entirely.</div></div>
+            <div class="principle" id="disconnect"><div class="principle-key">Disconnect<a class="principle-anchor" href="#disconnect" title="link to this principle">#</a></div><div class="principle-value">Avoid people who say what they think you want to hear, only to show the opposite through their actions later on.</div></div>
+            <div class="principle" id="popularity"><div class="principle-key">Popularity<a class="principle-anchor" href="#popularity" title="link to this principle">#</a></div><div class="principle-value">Everything popular is wrong.</div></div>
+            <div class="principle" id="tv"><div class="principle-key">TV<a class="principle-anchor" href="#tv" title="link to this principle">#</a></div><div class="principle-value">Turn it off. Read books, listen to podcasts, explore your curiosities instead.</div></div>
+        </section>
+
+        <!-- THINGS TO AVOID -->
+        <section class="section" id="avoid">
+            <h2 class="section-header"><span class="slash">// </span><span class="title">THINGS TO AVOID</span></h2>
+            <div class="hierarchy-box">
+                <h3>THE THIEF OF JOY</h3>
+                <div class="hierarchy-content" style="font-size:18px;">Comparison → Resentment → Politics</div>
+                <p class="hierarchy-note">Three forces that will drain your life if you let them.</p>
+            </div>
+            <div class="principle" id="comparison"><div class="principle-key">Comparison<a class="principle-anchor" href="#comparison" title="link to this principle">#</a></div><div class="principle-value">Comparison is the thief of joy. Stop comparing yourself to others. "It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own." — <a href="https://en.wikipedia.org/wiki/Marcus_Aurelius" target="_blank">Marcus Aurelius</a></div></div>
+            <div class="principle" id="complaining"><div class="principle-key">Complaining<a class="principle-anchor" href="#complaining" title="link to this principle">#</a></div><div class="principle-value">Don't be overheard doing it. Not even to yourself.</div></div>
+            <div class="principle" id="negativity"><div class="principle-key">Negativity<a class="principle-anchor" href="#negativity" title="link to this principle">#</a></div><div class="principle-value">On social media, in relationships, in your own head. "Stay away from negative people. They have a problem for every solution." — Einstein</div></div>
+            <div class="principle" id="gossip"><div class="principle-key">Gossip<a class="principle-anchor" href="#gossip" title="link to this principle">#</a></div><div class="principle-value">Small talk is for small minds.</div></div>
+            <div class="principle" id="social-media"><div class="principle-key">Social Media<a class="principle-anchor" href="#social-media" title="link to this principle">#</a></div><div class="principle-value">A trap to a never-ending now. The structure blinds us to history. You are the product.</div></div>
+            <div class="principle" id="waiting"><div class="principle-key">Waiting for the Right Time<a class="principle-anchor" href="#waiting" title="link to this principle">#</a></div><div class="principle-value">Timing is almost never right. Now is as good as any.</div></div>
+            <div class="principle" id="resentment"><div class="principle-key">Resentment<a class="principle-anchor" href="#resentment" title="link to this principle">#</a></div><div class="principle-value">One of the biggest forces of evil. If you're resentful, either you're being neurotic and need to take responsibility — or someone is taking advantage of you. Which is it?</div></div>
+            <div class="principle" id="what-others-think"><div class="principle-key">What Others Think<a class="principle-anchor" href="#what-others-think" title="link to this principle">#</a></div><div class="principle-value">"You will stop worrying about what people think of you when you realize how seldom they do." — David Foster Wallace</div></div>
+            <div class="principle" id="repeated-mistakes"><div class="principle-key">Repeated Mistakes<a class="principle-anchor" href="#repeated-mistakes" title="link to this principle">#</a></div><div class="principle-value">A mistake repeated more than once is a decision. Your last mistake is your best teacher.</div></div>
+            <div class="principle" id="being-offended"><div class="principle-key">Being Offended<a class="principle-anchor" href="#being-offended" title="link to this principle">#</a></div><div class="principle-value">Not everyone will agree with you. Aim for 1,000 devoted fans over 100,000 mildly interested ones.</div></div>
+            <div class="principle" id="talking-more"><div class="principle-key">Talking More Than Listening<a class="principle-anchor" href="#talking-more" title="link to this principle">#</a></div><div class="principle-value">Two ears, one mouth.</div></div>
+            <div class="principle" id="imagined-troubles"><div class="principle-key">Imagined Troubles<a class="principle-anchor" href="#imagined-troubles" title="link to this principle">#</a></div><div class="principle-value">Don't suffer before you need to. It will happen or it won't.</div></div>
+            <div class="principle" id="politics"><div class="principle-key">Politics<a class="principle-anchor" href="#politics" title="link to this principle">#</a></div><div class="principle-value">Don't waste energy on the political crisis du jour. Daily political dramas are a time-sink.</div></div>
+            <div class="principle" id="rumors"><div class="principle-key">Rumors<a class="principle-anchor" href="#rumors" title="link to this principle">#</a></div><div class="principle-value">Carried by haters, spread by fools, accepted by idiots.</div></div>
+            <div class="principle" id="negative-social"><div class="principle-key">Negative Social Media<a class="principle-anchor" href="#negative-social" title="link to this principle">#</a></div><div class="principle-value">Don't post it. Don't engage with it. Using your time to be publicly right is a war you'll never win.</div></div>
+            <div class="principle" id="coincidence"><div class="principle-key">Coincidence<a class="principle-anchor" href="#coincidence" title="link to this principle">#</a></div><div class="principle-value">Stop attaching significance to it. Angel numbers, astrology signs — it's far easier to see what we want to see. Use science and rationality.</div></div>
+            <div class="principle" id="partying"><div class="principle-key">Partying Every Night<a class="principle-anchor" href="#partying" title="link to this principle">#</a></div><div class="principle-value">You cannot escape life by partying every night and pretending everything is fine in the morning.</div></div>
+            <div class="principle" id="disconnect"><div class="principle-key">Disconnect<a class="principle-anchor" href="#disconnect" title="link to this principle">#</a></div><div class="principle-value">Avoid people who say what they think you want to hear, only to show the opposite through their actions later.</div></div>
+            <div class="principle" id="uncritical-listening"><div class="principle-key">Uncritical Listening<a class="principle-anchor" href="#uncritical-listening" title="link to this principle">#</a></div><div class="principle-value">Learn to find false assumptions in others' arguments. Most public lies sound fine until you find their unspoken assumptions.</div></div>
+            <div class="principle" id="judging"><div class="principle-key">Judging Others<a class="principle-anchor" href="#judging" title="link to this principle">#</a></div><div class="principle-value">Withhold judgment until you can decide based on evidence.</div></div>
+            <div class="principle" id="popularity"><div class="principle-key">Popularity<a class="principle-anchor" href="#popularity" title="link to this principle">#</a></div><div class="principle-value">Everything popular is wrong.</div></div>
+            <div class="principle" id="tv"><div class="principle-key">TV<a class="principle-anchor" href="#tv" title="link to this principle">#</a></div><div class="principle-value">Turn it off. Read books, listen to podcasts, explore your curiosities.</div></div>
+            <div class="principle" id="rudeness"><div class="principle-key">Rudeness<a class="principle-anchor" href="#rudeness" title="link to this principle">#</a></div><div class="principle-value">Never respond to it. When people are rude, they reveal who they are, not who you are. Move on in silence.</div></div>
+            <div class="principle" id="prisoner-past"><div class="principle-key">Prisoner of Your Past<a class="principle-anchor" href="#prisoner-past" title="link to this principle">#</a></div><div class="principle-value">It was a lesson, good or bad — not a life sentence.</div></div>
+            <div class="principle" id="seeking-appraisal"><div class="principle-key">Seeking Appraisal<a class="principle-anchor" href="#seeking-appraisal" title="link to this principle">#</a></div><div class="principle-value">"You should always let people underestimate you. Because when they misappraise your intelligence and abilities, they're merely pointing out their own vulnerabilities." — Edward Snowden</div></div>
+            <div class="principle" id="unexamined-assumptions"><div class="principle-key">Unexamined Assumptions<a class="principle-anchor" href="#unexamined-assumptions" title="link to this principle">#</a></div><div class="principle-value">Be your own biggest skeptic. Break assumptions down to their fundamental truths and reason upward from first principles.</div></div>
+        </section>
+
+        <!-- PROFESSIONAL -->
+        <section class="section" id="professional">
+            <h2 class="section-header"><span class="slash">// </span><span class="title">PROFESSIONAL</span></h2>
+            <div class="hierarchy-box">
+                <h3>THE PROFESSIONAL CREED</h3>
+                <div class="hierarchy-content" style="font-size:18px;">MIND → MISSION → MONOPOLY</div>
+                <p class="hierarchy-note">Earn with your mind. Attach to a mission. Become the only person who does what you do.</p>
+            </div>
+            <div class="principle" id="work"><div class="principle-key">Work<a class="principle-anchor" href="#work" title="link to this principle">#</a></div><div class="principle-value">Find work that feels like play — it's very hard to compete with someone like that. "Do what you love is for amateurs. Love what you do is the mantra for professionals." — <a href="https://seths.blog/" target="_blank">Seth Godin</a></div></div>
+            <div class="principle" id="start"><div class="principle-key">Start<a class="principle-anchor" href="#start" title="link to this principle">#</a></div><div class="principle-value">Done is better than perfect. You haven't achieved full maturity until you realize everyone is just winging it.</div></div>
+            <div class="principle" id="generalist"><div class="principle-key">Generalist > Specialist<a class="principle-anchor" href="#generalist" title="link to this principle">#</a></div><div class="principle-value">Avoid readymade roles and prefabricated templates. Create your own evolving path by connecting seemingly disparate passions, skill sets, and beliefs.</div></div>
+            <div class="principle" id="mind-not-time"><div class="principle-key">Mind, Not Time<a class="principle-anchor" href="#mind-not-time" title="link to this principle">#</a></div><div class="principle-value">Earn with your mind, not your hours.</div></div>
+            <div class="principle" id="speed"><div class="principle-key">Speed<a class="principle-anchor" href="#speed" title="link to this principle">#</a></div><div class="principle-value">The quickest way to succeed is to start now and figure it out as you go. You can't learn to drive in a parked car.</div></div>
+            <div class="principle" id="start-with-why"><div class="principle-key">Start With Why<a class="principle-anchor" href="#start-with-why" title="link to this principle">#</a></div><div class="principle-value">Don't attach to a person, place, company, or project. Attach to a mission, a calling, a purpose. That's the only way to retain power and peace.</div></div>
+            <div class="principle" id="competition"><div class="principle-key">Competition Is for Losers<a class="principle-anchor" href="#competition" title="link to this principle">#</a></div><div class="principle-value">Avoid competition. Stop copying what everybody else is doing. If you work on problems no one else is solving, you have no competitors. Life is easier when you don't compete.</div></div>
+            <div class="principle" id="talent-genius"><div class="principle-key">Talent vs Genius<a class="principle-anchor" href="#talent-genius" title="link to this principle">#</a></div><div class="principle-value">Talented people hit targets others can't hit. Geniuses find targets others can't see. Strive for the latter. — <a href="https://perell.com/essay/50-ideas-that-changed-my-life/" target="_blank">David Perell</a></div></div>
+            <div class="principle" id="inversion"><div class="principle-key">Inversion<a class="principle-anchor" href="#inversion" title="link to this principle">#</a></div><div class="principle-value">Avoiding stupidity is easier than trying to be brilliant. Instead of asking "How can I help?" ask "What's hurting the most and how can I avoid it?"</div></div>
+            <div class="principle" id="galls-law"><div class="principle-key">Gall's Law<a class="principle-anchor" href="#galls-law" title="link to this principle">#</a></div><div class="principle-value">Complex systems that work always evolve from simple systems that worked. You can't design complexity from scratch — you have to start simple and iterate.</div></div>
+            <div class="principle" id="parkinsons-law"><div class="principle-key">Parkinson's Law<a class="principle-anchor" href="#parkinsons-law" title="link to this principle">#</a></div><div class="principle-value">Work expands to fill the time available. Set deadlines accordingly.</div></div>
+            <div class="principle" id="bakers-dozen"><div class="principle-key">Baker's Dozen<a class="principle-anchor" href="#bakers-dozen" title="link to this principle">#</a></div><div class="principle-value">Hospitality is delighting your guests with an unexpected gift. Write a thread? Share an extra idea.</div></div>
+            <div class="principle" id="research"><div class="principle-key">Research<a class="principle-anchor" href="#research" title="link to this principle">#</a></div><div class="principle-value">Distill your obsessions into content — writing, video, graphics.</div></div>
+            <div class="principle" id="educate"><div class="principle-key">Educate<a class="principle-anchor" href="#educate" title="link to this principle">#</a></div><div class="principle-value">Focus on value creation first. How can you help others learn?</div></div>
+            <div class="principle" id="partners"><div class="principle-key">Partners<a class="principle-anchor" href="#partners" title="link to this principle">#</a></div><div class="principle-value">If you can't see yourself working with someone for life, don't work with them for a day.</div></div>
+            <div class="principle" id="failure-prof"><div class="principle-key">Failure<a class="principle-anchor" href="#failure-prof" title="link to this principle">#</a></div><div class="principle-value">Embrace it at all costs. <em>The obstacle is the way.</em> Fail better.</div></div>
+            <div class="principle" id="critics"><div class="principle-key">Critics<a class="principle-anchor" href="#critics" title="link to this principle">#</a></div><div class="principle-value">Find someone to critique your every step. We already know what we're doing right. It's much harder to see what we're doing wrong.</div></div>
+            <div class="principle" id="baby-steps"><div class="principle-key">Baby Steps<a class="principle-anchor" href="#baby-steps" title="link to this principle">#</a></div><div class="principle-value">Crawl before you walk. Sucking at something is the first step to getting good at something.</div></div>
+            <div class="principle" id="initiative"><div class="principle-key">Initiative<a class="principle-anchor" href="#initiative" title="link to this principle">#</a></div><div class="principle-value">Be the change. Take initiative to change the narrative.</div></div>
+            <div class="principle" id="teach"><div class="principle-key">Teach<a class="principle-anchor" href="#teach" title="link to this principle">#</a></div><div class="principle-value">One of the best ways to challenge your ideas is to teach them.</div></div>
+            <div class="principle" id="share-ideas"><div class="principle-key">Share Ideas<a class="principle-anchor" href="#share-ideas" title="link to this principle">#</a></div><div class="principle-value">Share your ideas freely. The best way to refine a thought is to put it in front of others.</div></div>
+            <div class="principle" id="make-break-iterate"><div class="principle-key">Make, Break, Iterate<a class="principle-anchor" href="#make-break-iterate" title="link to this principle">#</a></div><div class="principle-value">The only process that matters.</div></div>
+            <div class="principle" id="entrepreneur"><div class="principle-key">Entrepreneur<a class="principle-anchor" href="#entrepreneur" title="link to this principle">#</a></div><div class="principle-value">Find a part-time passion that lets you be productive under your own command.</div></div>
+            <div class="principle" id="trust"><div class="principle-key">Trust<a class="principle-anchor" href="#trust" title="link to this principle">#</a></div><div class="principle-value">Invest in it. Do small deals on trust. Take others at their word, and let yourself be challenged by yours.</div></div>
+            <div class="principle" id="invest"><div class="principle-key">Invest<a class="principle-anchor" href="#invest" title="link to this principle">#</a></div><div class="principle-value">In education and relationships, not single deals or whatever is hot right now.</div></div>
+            <div class="principle" id="investing-values"><div class="principle-key">Investing<a class="principle-anchor" href="#investing-values" title="link to this principle">#</a></div><div class="principle-value">Put your money where your values are, and trust that partnership through thick and thin.</div></div>
+            <div class="principle" id="startup-capital"><div class="principle-key">Startup Capital<a class="principle-anchor" href="#startup-capital" title="link to this principle">#</a></div><div class="principle-value">If you want advice, ask for money. If you want money, ask for advice.</div></div>
+            <div class="principle" id="delegate"><div class="principle-key">Delegate<a class="principle-anchor" href="#delegate" title="link to this principle">#</a></div><div class="principle-value">Work and credit when due.</div></div>
+            <div class="principle" id="rank"><div class="principle-key">Rank<a class="principle-anchor" href="#rank" title="link to this principle">#</a></div><div class="principle-value">Shouldn't be part of the equation. Hierarchy is the enemy of good work.</div></div>
+            <div class="principle" id="permission"><div class="principle-key">Permission<a class="principle-anchor" href="#permission" title="link to this principle">#</a></div><div class="principle-value">Don't ask for it. Ask forgiveness later if things don't go as planned.</div></div>
+            <div class="principle" id="disrupt"><div class="principle-key">Disrupt<a class="principle-anchor" href="#disrupt" title="link to this principle">#</a></div><div class="principle-value">If it's not broke, break it. Reward dissent.</div></div>
+            <div class="principle" id="exponentials"><div class="principle-key">Exponentials<a class="principle-anchor" href="#exponentials" title="link to this principle">#</a></div><div class="principle-value">"Compound interest is the 8th wonder of the world. He who understands it, earns it; he who doesn't, pays it." — Einstein</div></div>
+            <div class="principle" id="optimize-freedom"><div class="principle-key">Optimize for Freedom<a class="principle-anchor" href="#optimize-freedom" title="link to this principle">#</a></div><div class="principle-value">Independence over income. Make money with your mind, not your time.</div></div>
+            <div class="principle" id="options"><div class="principle-key">Options<a class="principle-anchor" href="#options" title="link to this principle">#</a></div><div class="principle-value">Always act in a way that increases them.</div></div>
+            <div class="principle" id="change"><div class="principle-key">Change<a class="principle-anchor" href="#change" title="link to this principle">#</a></div><div class="principle-value">Stop hoping for completion. Most people think <em>one day it will be done.</em> The error is to think things will eventually be different.</div></div>
+            <div class="principle" id="shift-shape"><div class="principle-key">Shift Shape<a class="principle-anchor" href="#shift-shape" title="link to this principle">#</a></div><div class="principle-value">Don't be afraid to start over. You're not starting from scratch — you're starting from experience.</div></div>
+            <div class="principle" id="purpose-first"><div class="principle-key">Purpose First<a class="principle-anchor" href="#purpose-first" title="link to this principle">#</a></div><div class="principle-value">The highest purpose in life cannot be reduced to any particular relationship.</div></div>
+            <div class="principle" id="constraints"><div class="principle-key">Constraints<a class="principle-anchor" href="#constraints" title="link to this principle">#</a></div><div class="principle-value">A system is only as strong as its weakest point. Focus on the bottleneck. Optimize the whole system, not individual components.</div></div>
+            <div class="principle" id="marketing"><div class="principle-key">Marketing<a class="principle-anchor" href="#marketing" title="link to this principle">#</a></div><div class="principle-value">Lead with value first. If you want people to share your content, it has to be about them, not you.</div></div>
+            <div class="principle" id="secrets-hidden"><div class="principle-key">Secrets Hide in Plain Sight<a class="principle-anchor" href="#secrets-hidden" title="link to this principle">#</a></div><div class="principle-value">The best secrets are hidden in plain sight. Things so well-known they aren't well-seen. Look for what everyone sees but nobody notices.</div></div>
+            <div class="principle" id="table-selection"><div class="principle-key">Table Selection<a class="principle-anchor" href="#table-selection" title="link to this principle">#</a></div><div class="principle-value">Choose your battles wisely. You don't need to get good at doing difficult things if you get good at avoiding difficult things. Pick battles you can win.</div></div>
+            <div class="principle" id="hock-principle"><div class="principle-key">Hock Principle<a class="principle-anchor" href="#hock-principle" title="link to this principle">#</a></div><div class="principle-value">Simple, clear principles give rise to intelligent behavior. Complex rules create stupid behavior.</div></div>
+            <div class="principle" id="creativity-edge"><div class="principle-key">Creativity Begins at the Edge<a class="principle-anchor" href="#creativity-edge" title="link to this principle">#</a></div><div class="principle-value">Change starts away from the spotlight, then moves toward the center. The most interesting ideas at a conference never come from the main stage — they come from the hallways and the bar after sunset.</div></div>
+            <div class="principle" id="invisible-hand"><div class="principle-key">The Invisible Hand<a class="principle-anchor" href="#invisible-hand" title="link to this principle">#</a></div><div class="principle-value">Markets aggregate knowledge. Prices are a signal wrapped in an incentive.</div></div>
+            <div class="principle" id="go-for-it"><div class="principle-key">The Go-For-It Window<a class="principle-anchor" href="#go-for-it" title="link to this principle">#</a></div><div class="principle-value">The gap between new technology and old social norms creates massive opportunity. But the window is short. Move fast when you spot it.</div></div>
+            <div class="principle" id="consensus"><div class="principle-key">Consensus<a class="principle-anchor" href="#consensus" title="link to this principle">#</a></div><div class="principle-value">Take initiative to doubt the default. You get paid for being right first — and to be first, you can't wait for consensus.</div></div>
+            <div class="principle" id="arguments"><div class="principle-key">Arguments<a class="principle-anchor" href="#arguments" title="link to this principle">#</a></div><div class="principle-value">Don't argue with people about what "can't be done." Win the argument by doing it.</div></div>
+            <div class="principle" id="pushing"><div class="principle-key">Pushing<a class="principle-anchor" href="#pushing" title="link to this principle">#</a></div><div class="principle-value">If you want your team to push boundaries, get in the trenches with them.</div></div>
+            <div class="principle" id="angles"><div class="principle-key">Angles<a class="principle-anchor" href="#angles" title="link to this principle">#</a></div><div class="principle-value">The only way to solve problems smarter is to approach them from new angles.</div></div>
+            <div class="principle" id="outside-field"><div class="principle-key">Outside Your Field<a class="principle-anchor" href="#outside-field" title="link to this principle">#</a></div><div class="principle-value">For breakthrough ideas, look outside your field, not within it.</div></div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-text">when everyone <span class="red strikethrough">copyrights</span>, <span class="red">copyleft</span></div>
+            <div class="footer-copyright"><a href="https://chrisvrakas.com" target="_blank" rel="noopener noreferrer" style="text-decoration:none;"><span class="red">© chrisvrakas.com</span></a> — to infinity and beyond</div>
+            <div class="footer-link"><a href="privacy.html"><span class="tan">PRIVACY POLICY</span></a></div>
+            <div class="social-icons">
+                <a href="https://x.com/chris_vrakas" target="_blank" rel="noopener noreferrer" aria-label="X">𝕏</a>
+                <a href="https://www.instagram.com/chris_vrakas/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/chrisvrakasofficial" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://medium.com/@chrisvrakas" target="_blank" rel="noopener noreferrer" aria-label="Medium"><i class="fa-brands fa-medium"></i></a>
+                <a href="https://github.com/chrisvrakas" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <img src="assets/images/index_scrolluparrow.png" alt="Scroll to Top" class="scroll-top-arrow" id="scroll-top-arrow">
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const hamburgerIcon = document.getElementById('hamburger-icon');
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+            hamburgerIcon.src = mobileMenu.classList.contains('active') ? 'assets/images/HamburgerClose.png' : 'assets/images/HamburgerOpen.png';
+        });
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                hamburgerIcon.src = 'assets/images/HamburgerOpen.png';
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        const scrollTopArrow = document.getElementById('scroll-top-arrow');
+        window.addEventListener('scroll', () => {
+            scrollTopArrow.classList.toggle('visible', window.scrollY > 500);
+        });
+        scrollTopArrow.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        const sections = document.querySelectorAll('.section');
+        const navLinks = document.querySelectorAll('.section-nav a[data-section]');
+
+        function updateActiveSection() {
+            const scrollPos = window.scrollY + 150;
+            let currentSection = '';
+            sections.forEach(section => {
+                if (scrollPos >= section.offsetTop) currentSection = section.id;
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('section-active');
+                if (link.getAttribute('data-section') === currentSection) {
+                    link.classList.add('section-active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveSection);
+        updateActiveSection();
+    </script>
+</body>
+</html>

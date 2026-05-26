@@ -113,6 +113,10 @@
             opacity: 0.7;
         }
 
+        nav a.active {
+            color: #ddc18a;
+        }
+
         /* Hamburger Menu */
         .hamburger {
             display: none;
@@ -164,6 +168,10 @@
 
         .mobile-menu a:hover {
             opacity: 0.7;
+        }
+
+        .mobile-menu a.active {
+            color: #ddc18a;
         }
 
         /* Main Content - matches header structure exactly */
@@ -531,7 +539,8 @@
             
             <nav>
                 <a href="whoami.html">whoami</a>
-                <a href="resources.html">resources</a>
+                <a href="principles.html">principles</a>
+                <a href="resources.html" class="active">resources</a>
                 <a href="connect.html">connect</a>
             </nav>
 
@@ -544,7 +553,8 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobile-menu">
         <a href="whoami.html">whoami</a>
-        <a href="resources.html">resources</a>
+        <a href="principles.html">principles</a>
+        <a href="resources.html" class="active">resources</a>
         <a href="connect.html">connect</a>
     </div>
 
@@ -1772,4 +1782,4 @@
         });
     </script>
 </body>
-                        </html>
+</html>

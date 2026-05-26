@@ -20,7 +20,8 @@ No WordPress. No analytics. No cookies. No bloat. Just code and ideas.
 
 ## ✨ Features
 
-- **5 Pages** — Index, Whoami, Resources, Connect, Privacy Policy
+- **6 Pages** — Index, Whoami, Principles, Resources, Connect, Privacy Policy
+- **190 Principles** — Core convictions, passions, and standards across 6 categories
 - **600+ Curated Resources** — Software, books, films, podcasts, and bookmarks
 - **Terminal Aesthetic** — Monospace typography, dark theme, intentional design
 - **Vanilla Stack** — No frameworks, no dependencies, pure HTML/CSS/JS
@@ -37,7 +38,6 @@ No WordPress. No analytics. No cookies. No bloat. Just code and ideas.
 Every byte is intentional:
 - Sometype Mono throughout — monospace because clarity > decoration
 - `#1a1a1a` background, `#ddc18a` text, `#ff3333` accent — that's the palette
-- No animations except the scroll arrow bounce
 - No JavaScript libraries — if vanilla JS can't do it, it doesn't belong here
 
 ### Privacy as Aesthetic
@@ -74,6 +74,7 @@ SSL/TLS mode must remain on **Custom** (not Automatic, not Full Strict). Full St
 chrisvrakas.github.io/
 ├── index.html              # Landing page — hero, preface, quotes
 ├── whoami.html             # About / bio page
+├── principles.html         # 190 principles across 6 categories
 ├── resources.html          # 600+ curated tools, books, films, podcasts, bookmarks
 ├── connect.html            # Contact page with PGP key
 ├── privacy.html            # Privacy policy (not legal boilerplate — a manifesto)
@@ -87,8 +88,27 @@ chrisvrakas.github.io/
 ├── android-chrome-512x512.png
 └── assets/
     ├── fonts/              # Sometype Mono (Regular, Medium, Bold — self-hosted)
-    └── images/             # All PNGs: hero graphics, logos, quote images, arrows
+    ├── images/             # All PNGs: hero graphics, logos, quote images, arrows
+    ├── notes/              # PRINCIPLES.pdf — original source document
+    └── pgp/                # PGP public key
 ```
+
+---
+
+## 📐 Principles Page
+
+`principles.html` is the newest addition — 190 hand-curated principles organized across 6 sections:
+
+| Section | Count | Description |
+|---|---|---|
+| FOUNDATIONS | 20 | Core hierarchy, first principles, Da Vinci framework |
+| VALUES | 31 | Rules, curiosity, honesty, flexibility, mental models |
+| RELATIONSHIPS | 20 | What I value in others, communication, decentralization |
+| CONDUCT | 43 | Daily habits, attire, silence, privacy, code, logic |
+| AVOID | 26 | Comparison, resentment, politics, social media, assumptions |
+| PROFESSIONAL | 50 | Work, speed, failure, competition, mental models |
+
+Each section opens with a highlighted `CONCEPT → CONCEPT → CONCEPT` block. Every principle has a hover-activated deep-link anchor.
 
 ---
 
@@ -122,7 +142,7 @@ The resources page (`resources.html`) is mirrored as a standalone GitHub reposit
 
 **When everyone copyrights, copyleft.**
 
-This project is open source and available under the [MIT License](LICENSE) — fork it, modify it, learn from it. Just give credit where it's due.
+This project is open source and available under the [MIT License](LICENSE.md) — fork it, modify it, learn from it. Just give credit where it's due.
 
 ---
 
@@ -157,6 +177,8 @@ This project is open source and available under the [MIT License](LICENSE) — f
 ---
 
 <div align="center">
+
+**"A principle is a way of structuring awareness."**
 
 **"No man ever steps in the same river twice, for it's not the same river and he's not the same man."**  
 — Heraclitus
