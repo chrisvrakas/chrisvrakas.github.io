@@ -2,7 +2,7 @@
 
 > **The future will belong to those non-obvious thinkers who use their wide-ranging powers of interdisciplinary exploration to see connections between multiple, seemingly unrelated domains.**
 
-A personal portfolio and digital stomping ground built from scratch with zero dependencies, zero tracking, and zero compromise. Pure HTML, CSS, and vanilla JavaScript.
+My personal portfolio and digital stomping ground built from scratch with zero dependencies, zero tracking, and zero compromise. Pure HTML, CSS, and vanilla JavaScript.
 
 **[→ Live Site: chrisvrakas.com](https://chrisvrakas.com)**
 
@@ -178,8 +178,6 @@ This project is open source and available under the [MIT License](LICENSE.md) �
 ---
 
 <div align="center">
-
-**"A principle is a way of structuring awareness."**
 
 **"No man ever steps in the same river twice, for it's not the same river and he's not the same man."**  
 — Heraclitus
