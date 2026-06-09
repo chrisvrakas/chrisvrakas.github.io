@@ -109,6 +109,8 @@ chrisvrakas.github.io/
 
 Each section opens with a highlighted `CONCEPT → CONCEPT → CONCEPT` block. Every principle has a hover-activated deep-link anchor. The ETHOS section features a custom Da Vinci banner graphic and the full 7-principle Da Vinci framework from Michael J. Gelb's *How to Think Like Leonardo da Vinci*.
 
+**[→ Browse principles as markdown](principles/)**
+
 ---
 
 ## 📚 Resources Page
