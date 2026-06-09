@@ -21,7 +21,7 @@ No WordPress. No analytics. No cookies. No bloat. Just code and ideas.
 ## ✨ Features
 
 - **6 Pages** — Index, Whoami, Principles, Resources, Connect, Privacy Policy
-- **190 Principles** — Core convictions, passions, and standards across 6 categories
+- **189 Principles** — Core convictions, passions, and standards across 5 categories
 - **600+ Curated Resources** — Software, books, films, podcasts, and bookmarks
 - **Terminal Aesthetic** — Monospace typography, dark theme, intentional design
 - **Vanilla Stack** — No frameworks, no dependencies, pure HTML/CSS/JS
@@ -74,7 +74,7 @@ SSL/TLS mode must remain on **Custom** (not Automatic, not Full Strict). Full St
 chrisvrakas.github.io/
 ├── index.html              # Landing page — hero, preface, quotes
 ├── whoami.html             # About / bio page
-├── principles.html         # 190 principles across 6 categories
+├── principles.html         # 189 principles across 5 categories
 ├── resources.html          # 600+ curated tools, books, films, podcasts, bookmarks
 ├── connect.html            # Contact page with PGP key
 ├── privacy.html            # Privacy policy (not legal boilerplate — a manifesto)
@@ -88,7 +88,7 @@ chrisvrakas.github.io/
 ├── android-chrome-512x512.png
 └── assets/
     ├── fonts/              # Sometype Mono (Regular, Medium, Bold — self-hosted)
-    ├── images/             # All PNGs: hero graphics, logos, quote images, arrows
+    ├── images/             # All graphics: hero images, logos, arrows, banners
     ├── notes/              # PRINCIPLES.pdf — original source document
     └── pgp/                # PGP public key
 ```
@@ -97,18 +97,17 @@ chrisvrakas.github.io/
 
 ## 📐 Principles Page
 
-`principles.html` is the newest addition — 190 hand-curated principles organized across 6 sections:
+`principles.html` — 189 hand-curated principles organized across 5 sections:
 
 | Section | Count | Description |
 |---|---|---|
-| FOUNDATIONS | 20 | Core hierarchy, first principles, Da Vinci framework |
-| VALUES | 31 | Rules, curiosity, honesty, flexibility, mental models |
-| RELATIONSHIPS | 20 | What I value in others, communication, decentralization |
-| CONDUCT | 43 | Daily habits, attire, silence, privacy, code, logic |
+| ETHOS | 44 | Paradox, truth hierarchy, Da Vinci framework, mental models, first principles |
+| RELATIONSHIPS | 21 | What I value in others, communication, vulnerability, decentralization |
+| CONDUCT | 47 | Daily habits, attire, silence, privacy, cryptography, logic, code |
+| PROFESSIONAL | 54 | Work, speed, failure, competition, mental models, investing |
 | AVOID | 26 | Comparison, resentment, politics, social media, assumptions |
-| PROFESSIONAL | 50 | Work, speed, failure, competition, mental models |
 
-Each section opens with a highlighted `CONCEPT → CONCEPT → CONCEPT` block. Every principle has a hover-activated deep-link anchor.
+Each section opens with a highlighted `CONCEPT → CONCEPT → CONCEPT` block. Every principle has a hover-activated deep-link anchor. The ETHOS section features a custom Da Vinci banner graphic and the full 7-principle Da Vinci framework from Michael J. Gelb's *How to Think Like Leonardo da Vinci*.
 
 ---
 
