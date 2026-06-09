@@ -342,7 +342,7 @@
 
         /* Inline quote blocks between sections */
         .inline-quote-block {
-            margin: 0 0 40px 0;
+            margin: -40px 0 40px 0;
             padding: 0;
         }
 
@@ -357,6 +357,23 @@
             letter-spacing: 0.2px;
         }
 
+
+        /* Da Vinci banner */
+        .davinci-banner {
+            width: 100%;
+            margin: 16px 0 24px;
+            line-height: 0;
+        }
+
+        .davinci-banner img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 5 / 1;
+            object-fit: cover;
+            object-position: center top;
+            display: block;
+        }
+
         /* Section Headers with // prefix */
         .section {
             margin-bottom: 60px;
@@ -366,7 +383,7 @@
         .section-header {
             font-size: 14px;
             font-weight: 700;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-transform: uppercase;
             margin: 40px 0 30px 0;
             padding-bottom: 10px;
@@ -384,13 +401,13 @@
 
         .subsection-header {
             color: #ddc18a;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: 700;
-            letter-spacing: 1.5px;
+            letter-spacing: 2px;
             text-transform: uppercase;
             margin-top: 40px;
             margin-bottom: 6px;
-            opacity: 0.85;
+            opacity: 1;
         }
 
         .subsection-intro {
@@ -759,64 +776,27 @@
         <div class="nav-block">
             <div class="nav-box">
                 <nav class="section-nav" aria-label="Sections">
-                    <a href="#foundations" data-section="foundations">FOUNDATIONS</a>
-                    <a href="#values" data-section="values">VALUES</a>
+                    <a href="#ethos" data-section="ethos">ETHOS</a>
                     <a href="#relationships" data-section="relationships">RELATIONSHIPS</a>
                     <a href="#conduct" data-section="conduct">CONDUCT</a>
-                    <a href="#avoid" data-section="avoid">AVOID</a>
                     <a href="#professional" data-section="professional">PROFESSIONAL</a>
+                    <a href="#avoid" data-section="avoid">AVOID</a>
                 </nav>
             </div>
         </div>
 
-
-        <!-- FOUNDATIONS -->
-        <section class="section" id="foundations">
-            <h2 class="section-header"><span class="slash">// </span><span class="title">FOUNDATIONS</span></h2>
-
+        <!-- VALUES -->
+        <section class="section" id="ethos">
+            <h2 class="section-header"><span class="slash">// </span><span class="title">ETHOS</span></h2>
             <div class="hierarchy-box">
                 <h3>PERSONAL HIERARCHY</h3>
                 <div class="hierarchy-content">TRUTH → HEALTH → WEALTH</div>
                 <p class="hierarchy-note">In this order. Always.</p>
             </div>
-
-            <div class="principle" id="practice-what-you-preach"><div class="principle-key">Practice What You Preach<a class="principle-anchor" href="#practice-what-you-preach" title="link to this principle">#</a></div><div class="principle-value">Do what you speak. Never speak on what you be.</div></div>
-            <div class="principle" id="truth-health-wealth"><div class="principle-key">Truth, Health, Wealth<a class="principle-anchor" href="#truth-health-wealth" title="link to this principle">#</a></div><div class="principle-value">In that order. Truth first — gain knowledge, learn true things, level yourself up. Health second — body, mind, sleep, fitness. Wealth last — it follows from the other two.</div></div>
-            <div class="principle" id="assume-wrong"><div class="principle-key">Assume You Are Wrong<a class="principle-anchor" href="#assume-wrong" title="link to this principle">#</a></div><div class="principle-value">Until you've proven your hypothesis correct. The foundation of science is to look for disconfirmation, not confirmation. If you fail to knock your belief down, you can begin to trust it.</div></div>
-            <div class="principle" id="failure-is-info"><div class="principle-key">Failure Is Information<a class="principle-anchor" href="#failure-is-info" title="link to this principle">#</a></div><div class="principle-value">Not a verdict. It's the data you need to get where you're going.</div></div>
-            <div class="principle" id="do-what-you-can"><div class="principle-key">Do What You Can<a class="principle-anchor" href="#do-what-you-can" title="link to this principle">#</a></div><div class="principle-value">With what you have. Nothing more is needed.</div></div>
-            <div class="principle" id="frameworks"><div class="principle-key">Frameworks Are Filters<a class="principle-anchor" href="#frameworks" title="link to this principle">#</a></div><div class="principle-value">Any framework, method, or label you impose on yourself is just as likely to be a limitation as an opening.</div></div>
-            <div class="principle" id="under-promise"><div class="principle-key">Under Promise, Over Deliver<a class="principle-anchor" href="#under-promise" title="link to this principle">#</a></div><div class="principle-value">Always. Make your bed.</div></div>
-            <div class="principle" id="job-career-calling"><div class="principle-key">Job → Career → Calling<a class="principle-anchor" href="#job-career-calling" title="link to this principle">#</a></div><div class="principle-value">Keep searching until you find your calling.</div></div>
-            <div class="principle" id="two-types"><div class="principle-key">Two Types of People<a class="principle-anchor" href="#two-types" title="link to this principle">#</a></div><div class="principle-value">Wise men who know they are fools, and fools who think they are wise.</div></div>
-            <div class="principle" id="never-dismiss"><div class="principle-key">Never Dismiss People<a class="principle-anchor" href="#never-dismiss" title="link to this principle">#</a></div><div class="principle-value">Never dismiss people because they have difficult names or unfamiliar clothes. It's like a filter on a photograph — it doesn't change the shape of what's beneath.</div></div>
-            <div class="principle" id="two-things-business"><div class="principle-key">Two Things in Business<a class="principle-anchor" href="#two-things-business" title="link to this principle">#</a></div><div class="principle-value">Build things users love. Make more than you spend.</div></div>
-
-            <div class="subsection-header">DA VINCI'S SEVEN PRINCIPLES</div>
-            <p class="subsection-intro">From Michael J. Gelb's <a href="https://www.amazon.com/How-Think-Like-Leonardo-Vinci/dp/0440508274" target="_blank">How to Think Like Leonardo da Vinci</a>.</p>
-            <div class="principle" id="curiosita"><div class="principle-key">Curiosità<a class="principle-anchor" href="#curiosita" title="link to this principle">#</a></div><div class="principle-value">An insatiably curious approach to life and an unrelenting quest for continuous learning.</div></div>
-            <div class="principle" id="dimostrazione"><div class="principle-key">Dimostrazione<a class="principle-anchor" href="#dimostrazione" title="link to this principle">#</a></div><div class="principle-value">A commitment to test knowledge through experience, persistence, and a willingness to learn from mistakes.</div></div>
-            <div class="principle" id="sensazione"><div class="principle-key">Sensazione<a class="principle-anchor" href="#sensazione" title="link to this principle">#</a></div><div class="principle-value">The continual refinement of the senses — especially as the means to enliven experience.</div></div>
-            <div class="principle" id="sfumato"><div class="principle-key">Sfumato<a class="principle-anchor" href="#sfumato" title="link to this principle">#</a></div><div class="principle-value"><em>Going up in smoke.</em> A willingness to embrace ambiguity, paradox, and uncertainty.</div></div>
-            <div class="principle" id="arte-scienza"><div class="principle-key">Arte / Scienza<a class="principle-anchor" href="#arte-scienza" title="link to this principle">#</a></div><div class="principle-value">The balance between science and art, logic and imagination. Whole-brain thinking.</div></div>
-            <div class="principle" id="corporalita"><div class="principle-key">Corporalità<a class="principle-anchor" href="#corporalita" title="link to this principle">#</a></div><div class="principle-value">The cultivation of grace, ambidexterity, fitness, and poise.</div></div>
-            <div class="principle" id="connessione"><div class="principle-key">Connessione<a class="principle-anchor" href="#connessione" title="link to this principle">#</a></div><div class="principle-value">Systems thinking. A recognition of the interconnectedness of all things and phenomena.</div></div>
-
-            <div class="quote-block">We all started life with a Da Vinci-like curiosity until we got to school and were taught that answers were more important than questions. School rewards those who figure out "the right answer" — the answer held by the person in authority. This authority-pleasing, question-suppressing approach prepares assembly-line bureaucrats for society.</div>
-
-            <div class="principle" id="mirror-test"><div class="principle-key">The Mirror Test<a class="principle-anchor" href="#mirror-test" title="link to this principle">#</a></div><div class="principle-value">Just as a maestro uses a mirror to see his painting in reverse, do the same with your beliefs. Make the strongest possible argument against your belief. Seek perspective by reviewing your beliefs from a distance — would your views change if you were another gender, race, from another country, 20 years older or younger, from a different economic class?</div></div>
-            <div class="principle" id="ambiguity-tolerance"><div class="principle-key">Tolerate Ambiguity<a class="principle-anchor" href="#ambiguity-tolerance" title="link to this principle">#</a></div><div class="principle-value">High tolerance for uncertainty. As change accelerates, ambiguity multiplies, and illusions of certainty become more difficult to maintain. The ability to thrive with ambiguity must become part of our everyday lives.</div></div>
-        </section>
-
-        <!-- VALUES -->
-        <section class="section" id="values">
-            <h2 class="section-header"><span class="slash">// </span><span class="title">VALUES</span></h2>
-            <div class="hierarchy-box">
-                <h3>EXPERIMENT</h3>
-                <div class="hierarchy-content">MAKE → BREAK → ITERATE</div>
-                <p class="hierarchy-note">Trial and error. Try, fail, diagnose, redesign, try again.</p>
-            </div>
-            <div class="principle" id="rules-value"><div class="principle-key">Rules<a class="principle-anchor" href="#rules-value" title="link to this principle">#</a></div><div class="principle-value">Learn them, adapt a mindset for them to be tested, then break them when necessary. Following rules makes your work look like everyone else's. "If we play by the rules too strictly, if we take them too literally, we are crushed by those around us who are not so foolish." — <a href="https://en.wikipedia.org/wiki/Robert_Greene_(American_author)" target="_blank">Robert Greene</a></div></div>
+            <div class="principle" id="paradox"><div class="principle-key">Paradox<a class="principle-anchor" href="#paradox" title="link to this principle">#</a></div><div class="principle-value">There is infinite wisdom inside paradox. When you find two opposites that are both true, start exploring. "The only constant is change." "The more you learn, the more you realize how little you know."
+            <div class="paradox-link">For a deeper exploration of paradox as a philosophical tool, visit <a href="https://proceedwithchaos.com" target="_blank">proceedwithchaos.com</a></div>
+            </div></div>
+            <div class="principle" id="rules-value"><div class="principle-key">Rules<a class="principle-anchor" href="#rules-value" title="link to this principle">#</a></div><div class="principle-value">Learn the rules so you know how to break them properly.</div></div>
             <div class="principle" id="trends-value"><div class="principle-key">Trends<a class="principle-anchor" href="#trends-value" title="link to this principle">#</a></div><div class="principle-value">Avoid them. Create your own style and stop following the herd. If you're following the herd, the view never changes.</div></div>
             <div class="principle" id="quitting"><div class="principle-key">Quitting<a class="principle-anchor" href="#quitting" title="link to this principle">#</a></div><div class="principle-value">Knowing when to leave is important — the job, the party, the relationship.</div></div>
             <div class="principle" id="less-is-more"><div class="principle-key">Less Is More<a class="principle-anchor" href="#less-is-more" title="link to this principle">#</a></div><div class="principle-value">Amplify the simple. Simplify the complex.</div></div>
@@ -840,15 +820,34 @@
             <div class="principle" id="unlearning"><div class="principle-key">Unlearning<a class="principle-anchor" href="#unlearning" title="link to this principle">#</a></div><div class="principle-value">Just as important as learning.</div></div>
             <div class="principle" id="ambiguity-value"><div class="principle-key">Ambiguity<a class="principle-anchor" href="#ambiguity-value" title="link to this principle">#</a></div><div class="principle-value">Look for things that don't make sense. The world always makes sense — when it's confusing, your model is wrong. Things that don't make sense are a learning opportunity.</div></div>
             <div class="principle" id="robustness"><div class="principle-key">Robustness Principle<a class="principle-anchor" href="#robustness" title="link to this principle">#</a></div><div class="principle-value">Be conservative in what you do, be liberal in what you accept from others. Hold yourself to a higher standard than you hold others to. — <a href="https://perell.com/essay/50-ideas-that-changed-my-life/" target="_blank">David Perell</a></div></div>
-            <div class="principle" id="personal-monopoly"><div class="principle-key">Personal Monopoly<a class="principle-anchor" href="#personal-monopoly" title="link to this principle">#</a></div><div class="principle-value">Corporations reward conformity, but the Internet rewards people who are unique. Strive to be the only person who does what you do. — <a href="https://perell.com/essay/the-ultimate-guide-to-writing-online/" target="_blank">David Perell</a></div></div>
+            <div class="principle" id="personal-monopoly"><div class="principle-key">Personal Monopoly<a class="principle-anchor" href="#personal-monopoly" title="link to this principle">#</a></div><div class="principle-value">It's better to be the ONLY than the best.</div></div>
             <div class="principle" id="check-yourself"><div class="principle-key">Check for Yourself<a class="principle-anchor" href="#check-yourself" title="link to this principle">#</a></div><div class="principle-value">Rather than subscribing to widely accepted views, verify them yourself. Assume you are incorrect until you've proven your hypothesis correct.</div></div>
-            <div class="principle" id="paradox"><div class="principle-key">Paradox<a class="principle-anchor" href="#paradox" title="link to this principle">#</a></div><div class="principle-value">There is infinite wisdom inside paradox. When you find two opposites that are both true, start exploring. "The only constant is change." "The more you learn, the more you realize how little you know."
-            <div class="paradox-link">For a deeper exploration of paradox as a philosophical tool, visit <a href="https://proceedwithchaos.com" target="_blank">proceedwithchaos.com</a></div>
-            </div></div>
             <div class="principle" id="insider-outsider"><div class="principle-key">Insider & Outsider<a class="principle-anchor" href="#insider-outsider" title="link to this principle">#</a></div><div class="principle-value">Almost all the most observant people share one characteristic: they are simultaneously insiders and outsiders. They are insider enough to receive secrets and catch inside jokes, but they don't let themselves get too close. By spending time alone or bouncing between social groups, they avoid groupthink and make poignant observations. — <a href="https://en.wikipedia.org/wiki/Marshall_McLuhan" target="_blank">Marshall McLuhan</a></div></div>
             <div class="principle" id="occams-razor"><div class="principle-key">Occam's Razor<a class="principle-anchor" href="#occams-razor" title="link to this principle">#</a></div><div class="principle-value">When multiple explanations are equally persuasive, assume the simplest is true. Remove unnecessary assumptions. Trust the lowest-complexity answer.</div></div>
             <div class="principle" id="via-negativa"><div class="principle-key">Via Negativa<a class="principle-anchor" href="#via-negativa" title="link to this principle">#</a></div><div class="principle-value">Sometimes you improve your life by taking things away, not adding them. The foods you avoid matter more than the foods you eat.</div></div>
             <div class="principle" id="opportunity-cost"><div class="principle-key">Opportunity Cost<a class="principle-anchor" href="#opportunity-cost" title="link to this principle">#</a></div><div class="principle-value">Doing one thing requires giving up another. Whenever you explicitly choose to do one thing, you implicitly choose not to do another.</div></div>
+        
+            <div class="principle" id="truth-health-wealth"><div class="principle-key">Truth, Health, Wealth<a class="principle-anchor" href="#truth-health-wealth" title="link to this principle">#</a></div><div class="principle-value">In that order. Truth first — gain knowledge, learn true things, level yourself up. Health second — body, mind, sleep, fitness. Wealth last — it follows from the other two.</div></div>
+            <div class="principle" id="assume-wrong"><div class="principle-key">Assume You Are Wrong<a class="principle-anchor" href="#assume-wrong" title="link to this principle">#</a></div><div class="principle-value">Until you've proven your hypothesis correct. The foundation of science is to look for disconfirmation, not confirmation. If you fail to knock your belief down, you can begin to trust it.</div></div>
+            <div class="principle" id="do-what-you-can"><div class="principle-key">Do What You Can<a class="principle-anchor" href="#do-what-you-can" title="link to this principle">#</a></div><div class="principle-value">With what you have. Nothing more is needed.</div></div>
+            <div class="principle" id="frameworks"><div class="principle-key">Frameworks Are Filters<a class="principle-anchor" href="#frameworks" title="link to this principle">#</a></div><div class="principle-value">Any framework, method, or label you impose on yourself is just as likely to be a limitation as an opening.</div></div>
+
+            <div class="subsection-header">DA VINCI'S SEVEN PRINCIPLES</div>
+            <p class="subsection-intro">From Michael J. Gelb's <a href="https://www.amazon.com/How-Think-Like-Leonardo-Vinci/dp/0440508274" target="_blank">How to Think Like Leonardo da Vinci</a>.</p>
+            <div class="davinci-banner">
+                <img src="assets/images/principles_davinci_banner.jpg" alt="Da Vinci" onerror="this.parentElement.style.display='none'">
+            </div>
+
+            <div class="quote-block">We all started life with a Da Vinci-like curiosity until we got to school and were taught that answers were more important than questions. School rewards those who figure out "the right answer" — the answer held by the person in authority. This authority-pleasing, question-suppressing approach prepares assembly-line bureaucrats for society.</div>
+            <div class="principle" id="curiosita"><div class="principle-key">Curiosità<a class="principle-anchor" href="#curiosita" title="link to this principle">#</a></div><div class="principle-value">An insatiably curious approach to life and an unrelenting quest for continuous learning.</div></div>
+            <div class="principle" id="dimostrazione"><div class="principle-key">Dimostrazione<a class="principle-anchor" href="#dimostrazione" title="link to this principle">#</a></div><div class="principle-value">A commitment to test knowledge through experience, persistence, and a willingness to learn from mistakes.</div></div>
+            <div class="principle" id="sensazione"><div class="principle-key">Sensazione<a class="principle-anchor" href="#sensazione" title="link to this principle">#</a></div><div class="principle-value">The continual refinement of the senses — especially as the means to enliven experience.</div></div>
+            <div class="principle" id="sfumato"><div class="principle-key">Sfumato<a class="principle-anchor" href="#sfumato" title="link to this principle">#</a></div><div class="principle-value"><em>Going up in smoke.</em> A willingness to embrace ambiguity, paradox, and uncertainty.</div></div>
+            <div class="principle" id="arte-scienza"><div class="principle-key">Arte / Scienza<a class="principle-anchor" href="#arte-scienza" title="link to this principle">#</a></div><div class="principle-value">The balance between science and art, logic and imagination. Whole-brain thinking.</div></div>
+            <div class="principle" id="corporalita"><div class="principle-key">Corporalità<a class="principle-anchor" href="#corporalita" title="link to this principle">#</a></div><div class="principle-value">The cultivation of grace, ambidexterity, fitness, and poise.</div></div>
+            <div class="principle" id="connessione"><div class="principle-key">Connessione<a class="principle-anchor" href="#connessione" title="link to this principle">#</a></div><div class="principle-value">Systems thinking. A recognition of the interconnectedness of all things and phenomena.</div></div>
+            <div class="principle" id="mirror-test"><div class="principle-key">The Mirror Test<a class="principle-anchor" href="#mirror-test" title="link to this principle">#</a></div><div class="principle-value">Just as a maestro uses a mirror to see his painting in reverse, do the same with your beliefs. Make the strongest possible argument against your belief. Seek perspective by reviewing your beliefs from a distance — would your views change if you were another gender, race, from another country, 20 years older or younger, from a different economic class?</div></div>
+            <div class="principle" id="ambiguity-tolerance"><div class="principle-key">Tolerate Ambiguity<a class="principle-anchor" href="#ambiguity-tolerance" title="link to this principle">#</a></div><div class="principle-value">High tolerance for uncertainty. As change accelerates, ambiguity multiplies, and illusions of certainty become more difficult to maintain. The ability to thrive with ambiguity must become part of our everyday lives.</div></div>
         </section>
 
         <!-- RELATIONSHIPS -->
@@ -879,6 +878,8 @@
             <div class="principle" id="communication"><div class="principle-key">Communication<a class="principle-anchor" href="#communication" title="link to this principle">#</a></div><div class="principle-value">Make time to talk about the good and the bad. Be open to being wrong. Be honest. Lies beget lies. Arguments are normal — you won't always be happy.</div></div>
             <div class="principle" id="the-past-rel"><div class="principle-key">The Past<a class="principle-anchor" href="#the-past-rel" title="link to this principle">#</a></div><div class="principle-value">Leave the past in the past — this includes exes. Learn from it, then let it go.</div></div>
             <div class="principle" id="decentralize"><div class="principle-key">Decentralize Your Friends<a class="principle-anchor" href="#decentralize" title="link to this principle">#</a></div><div class="principle-value">Centralized groups share one history, beliefs, and behaviors. Decentralized groups are many small clusters whose only common thread is you. Humans are mimetic — diversify.</div></div>
+        
+            <div class="principle" id="two-types"><div class="principle-key">Two Types of People<a class="principle-anchor" href="#two-types" title="link to this principle">#</a></div><div class="principle-value">Wise men who know they are fools, and fools who think they are wise. Surround yourself with those who know they are fools.</div></div>
         </section>
 
 
@@ -937,55 +938,25 @@
             <div class="principle" id="disconnect"><div class="principle-key">Disconnect<a class="principle-anchor" href="#disconnect" title="link to this principle">#</a></div><div class="principle-value">Avoid people who say what they think you want to hear, only to show the opposite through their actions later on.</div></div>
             <div class="principle" id="popularity"><div class="principle-key">Popularity<a class="principle-anchor" href="#popularity" title="link to this principle">#</a></div><div class="principle-value">Everything popular is wrong.</div></div>
             <div class="principle" id="tv"><div class="principle-key">TV<a class="principle-anchor" href="#tv" title="link to this principle">#</a></div><div class="principle-value">Turn it off. Read books, listen to podcasts, explore your curiosities instead.</div></div>
+        
+
+            <div class="principle" id="practice-what-you-preach"><div class="principle-key">Practice What You Preach<a class="principle-anchor" href="#practice-what-you-preach" title="link to this principle">#</a></div><div class="principle-value">Do what you speak. Never speak on what you be.</div></div>
+            <div class="principle" id="under-promise"><div class="principle-key">Under Promise, Over Deliver<a class="principle-anchor" href="#under-promise" title="link to this principle">#</a></div><div class="principle-value">A good surprise &gt; a bad surprise.</div></div>
+            <div class="principle" id="make-your-bed"><div class="principle-key">Always Make Your Bed<a class="principle-anchor" href="#make-your-bed" title="link to this principle">#</a></div><div class="principle-value">A mindfully anchored routine that starts each day with a small, yet successful win.</div></div>
+            <div class="principle" id="never-dismiss"><div class="principle-key">Never Dismiss People<a class="principle-anchor" href="#never-dismiss" title="link to this principle">#</a></div><div class="principle-value">Never dismiss people because they have difficult names or unfamiliar clothes — it's like a filter on a photograph. It doesn't change the shape of what's beneath.</div></div>
         </section>
 
         <div class="inline-quote-block">
             <div class="inline-quote">Walk like you are a king &mdash; or like you don't give a fuck who is.</div>
         </div>
 
-        <!-- THINGS TO AVOID -->
-        <section class="section" id="avoid">
-            <h2 class="section-header"><span class="slash">// </span><span class="title">AVOID</span></h2>
-            <div class="hierarchy-box">
-                <h3>THE THIEF OF JOY</h3>
-                <div class="hierarchy-content">COMPARISON → RESENTMENT → POLITICS</div>
-                <p class="hierarchy-note">Three forces that will drain your life if you let them.</p>
-            </div>
-            <div class="principle" id="comparison"><div class="principle-key">Comparison<a class="principle-anchor" href="#comparison" title="link to this principle">#</a></div><div class="principle-value">Comparison is the thief of joy. Stop comparing yourself to others. "It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own." — <a href="https://en.wikipedia.org/wiki/Marcus_Aurelius" target="_blank">Marcus Aurelius</a></div></div>
-            <div class="principle" id="complaining"><div class="principle-key">Complaining<a class="principle-anchor" href="#complaining" title="link to this principle">#</a></div><div class="principle-value">Don't be overheard doing it. Not even to yourself.</div></div>
-            <div class="principle" id="negativity"><div class="principle-key">Negativity<a class="principle-anchor" href="#negativity" title="link to this principle">#</a></div><div class="principle-value">On social media, in relationships, in your own head. "Stay away from negative people. They have a problem for every solution." — Einstein</div></div>
-            <div class="principle" id="gossip"><div class="principle-key">Gossip<a class="principle-anchor" href="#gossip" title="link to this principle">#</a></div><div class="principle-value">Small talk is for small minds.</div></div>
-            <div class="principle" id="social-media"><div class="principle-key">Social Media<a class="principle-anchor" href="#social-media" title="link to this principle">#</a></div><div class="principle-value">A trap to a never-ending now. The structure blinds us to history. You are the product.</div></div>
-            <div class="principle" id="waiting"><div class="principle-key">Waiting for the Right Time<a class="principle-anchor" href="#waiting" title="link to this principle">#</a></div><div class="principle-value">Timing is almost never right. Now is as good as any.</div></div>
-            <div class="principle" id="resentment"><div class="principle-key">Resentment<a class="principle-anchor" href="#resentment" title="link to this principle">#</a></div><div class="principle-value">One of the biggest forces of evil. If you're resentful, either you're being neurotic and need to take responsibility — or someone is taking advantage of you. Which is it?</div></div>
-            <div class="principle" id="what-others-think"><div class="principle-key">What Others Think<a class="principle-anchor" href="#what-others-think" title="link to this principle">#</a></div><div class="principle-value">"You will stop worrying about what people think of you when you realize how seldom they do." — David Foster Wallace</div></div>
-            <div class="principle" id="repeated-mistakes"><div class="principle-key">Repeated Mistakes<a class="principle-anchor" href="#repeated-mistakes" title="link to this principle">#</a></div><div class="principle-value">A mistake repeated more than once is a decision. Your last mistake is your best teacher.</div></div>
-            <div class="principle" id="being-offended"><div class="principle-key">Being Offended<a class="principle-anchor" href="#being-offended" title="link to this principle">#</a></div><div class="principle-value">Not everyone will agree with you. Aim for 1,000 devoted fans over 100,000 mildly interested ones.</div></div>
-            <div class="principle" id="talking-more"><div class="principle-key">Talking More Than Listening<a class="principle-anchor" href="#talking-more" title="link to this principle">#</a></div><div class="principle-value">Two ears, one mouth.</div></div>
-            <div class="principle" id="imagined-troubles"><div class="principle-key">Imagined Troubles<a class="principle-anchor" href="#imagined-troubles" title="link to this principle">#</a></div><div class="principle-value">Don't suffer before you need to. It will happen or it won't.</div></div>
-            <div class="principle" id="politics"><div class="principle-key">Politics<a class="principle-anchor" href="#politics" title="link to this principle">#</a></div><div class="principle-value">Don't waste energy on the political crisis du jour. Daily political dramas are a time-sink.</div></div>
-            <div class="principle" id="rumors"><div class="principle-key">Rumors<a class="principle-anchor" href="#rumors" title="link to this principle">#</a></div><div class="principle-value">Carried by haters, spread by fools, accepted by idiots.</div></div>
-            <div class="principle" id="negative-social"><div class="principle-key">Negative Social Media<a class="principle-anchor" href="#negative-social" title="link to this principle">#</a></div><div class="principle-value">Don't post it. Don't engage with it. Using your time to be publicly right is a war you'll never win.</div></div>
-            <div class="principle" id="coincidence"><div class="principle-key">Coincidence<a class="principle-anchor" href="#coincidence" title="link to this principle">#</a></div><div class="principle-value">Stop attaching significance to it. Angel numbers, astrology signs — it's far easier to see what we want to see. Use science and rationality.</div></div>
-            <div class="principle" id="partying"><div class="principle-key">Partying Every Night<a class="principle-anchor" href="#partying" title="link to this principle">#</a></div><div class="principle-value">You cannot escape life by partying every night and pretending everything is fine in the morning.</div></div>
-            <div class="principle" id="disconnect"><div class="principle-key">Disconnect<a class="principle-anchor" href="#disconnect" title="link to this principle">#</a></div><div class="principle-value">Avoid people who say what they think you want to hear, only to show the opposite through their actions later.</div></div>
-            <div class="principle" id="uncritical-listening"><div class="principle-key">Uncritical Listening<a class="principle-anchor" href="#uncritical-listening" title="link to this principle">#</a></div><div class="principle-value">Learn to find false assumptions in others' arguments. Most public lies sound fine until you find their unspoken assumptions.</div></div>
-            <div class="principle" id="judging"><div class="principle-key">Judging Others<a class="principle-anchor" href="#judging" title="link to this principle">#</a></div><div class="principle-value">Withhold judgment until you can decide based on evidence.</div></div>
-            <div class="principle" id="popularity"><div class="principle-key">Popularity<a class="principle-anchor" href="#popularity" title="link to this principle">#</a></div><div class="principle-value">Everything popular is wrong.</div></div>
-            <div class="principle" id="tv"><div class="principle-key">TV<a class="principle-anchor" href="#tv" title="link to this principle">#</a></div><div class="principle-value">Turn it off. Read books, listen to podcasts, explore your curiosities.</div></div>
-            <div class="principle" id="rudeness"><div class="principle-key">Rudeness<a class="principle-anchor" href="#rudeness" title="link to this principle">#</a></div><div class="principle-value">Never respond to it. When people are rude, they reveal who they are, not who you are. Move on in silence.</div></div>
-            <div class="principle" id="prisoner-past"><div class="principle-key">Prisoner of Your Past<a class="principle-anchor" href="#prisoner-past" title="link to this principle">#</a></div><div class="principle-value">It was a lesson, good or bad — not a life sentence.</div></div>
-            <div class="principle" id="seeking-appraisal"><div class="principle-key">Seeking Appraisal<a class="principle-anchor" href="#seeking-appraisal" title="link to this principle">#</a></div><div class="principle-value">"You should always let people underestimate you. Because when they misappraise your intelligence and abilities, they're merely pointing out their own vulnerabilities." — Edward Snowden</div></div>
-            <div class="principle" id="unexamined-assumptions"><div class="principle-key">Unexamined Assumptions<a class="principle-anchor" href="#unexamined-assumptions" title="link to this principle">#</a></div><div class="principle-value">Be your own biggest skeptic. Break assumptions down to their fundamental truths and reason upward from first principles.</div></div>
-        </section>
-
         <!-- PROFESSIONAL -->
         <section class="section" id="professional">
             <h2 class="section-header"><span class="slash">// </span><span class="title">PROFESSIONAL</span></h2>
             <div class="hierarchy-box">
-                <h3>THE PROFESSIONAL CREED</h3>
-                <div class="hierarchy-content">MIND → MISSION → MONOPOLY</div>
-                <p class="hierarchy-note">Earn with your mind. Attach to a mission. Become the only person who does what you do.</p>
+                <h3>EXPERIMENT</h3>
+                <div class="hierarchy-content">MAKE → BREAK → ITERATE</div>
+                <p class="hierarchy-note">Trial and error. Try, fail, diagnose, redesign, try again.</p>
             </div>
             <div class="principle" id="work"><div class="principle-key">Work<a class="principle-anchor" href="#work" title="link to this principle">#</a></div><div class="principle-value">Find work that feels like play — it's very hard to compete with someone like that. "Do what you love is for amateurs. Love what you do is the mantra for professionals." — <a href="https://seths.blog/" target="_blank">Seth Godin</a></div></div>
             <div class="principle" id="start"><div class="principle-key">Start<a class="principle-anchor" href="#start" title="link to this principle">#</a></div><div class="principle-value">Done is better than perfect. You haven't achieved full maturity until you realize everyone is just winging it.</div></div>
@@ -1037,7 +1008,48 @@
             <div class="principle" id="pushing"><div class="principle-key">Pushing<a class="principle-anchor" href="#pushing" title="link to this principle">#</a></div><div class="principle-value">If you want your team to push boundaries, get in the trenches with them.</div></div>
             <div class="principle" id="angles"><div class="principle-key">Angles<a class="principle-anchor" href="#angles" title="link to this principle">#</a></div><div class="principle-value">The only way to solve problems smarter is to approach them from new angles.</div></div>
             <div class="principle" id="outside-field"><div class="principle-key">Outside Your Field<a class="principle-anchor" href="#outside-field" title="link to this principle">#</a></div><div class="principle-value">For breakthrough ideas, look outside your field, not within it.</div></div>
+        
+            <div class="principle" id="failure-is-info"><div class="principle-key">Failure Is Information<a class="principle-anchor" href="#failure-is-info" title="link to this principle">#</a></div><div class="principle-value">Not a verdict. It's the data you need to get where you're going.</div></div>
+            <div class="principle" id="job-career-calling"><div class="principle-key">Job → Career → Calling<a class="principle-anchor" href="#job-career-calling" title="link to this principle">#</a></div><div class="principle-value">Keep searching until you find your purpose.</div></div>
+            <div class="principle" id="two-things-business"><div class="principle-key">Two Things in Business<a class="principle-anchor" href="#two-things-business" title="link to this principle">#</a></div><div class="principle-value">Build things users love. Make more than you spend.</div></div>
+            <div class="principle" id="mind-mission-monopoly"><div class="principle-key">Mind → Mission → Monopoly<a class="principle-anchor" href="#mind-mission-monopoly" title="link to this principle">#</a></div><div class="principle-value">Earn with your mind. Attach to a mission. Become the only person who does what you do.</div></div>
+        </section>        <!-- THINGS TO AVOID -->
+        <section class="section" id="avoid">
+            <h2 class="section-header"><span class="slash">// </span><span class="title">AVOID</span></h2>
+            <div class="hierarchy-box">
+                <h3>THE THIEF OF JOY</h3>
+                <div class="hierarchy-content">COMPARISON → RESENTMENT → POLITICS</div>
+                <p class="hierarchy-note">Three forces that will drain your life if you let them.</p>
+            </div>
+            <div class="principle" id="comparison"><div class="principle-key">Comparison<a class="principle-anchor" href="#comparison" title="link to this principle">#</a></div><div class="principle-value">Comparison is the thief of joy. Stop comparing yourself to others. "It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own." — <a href="https://en.wikipedia.org/wiki/Marcus_Aurelius" target="_blank">Marcus Aurelius</a></div></div>
+            <div class="principle" id="complaining"><div class="principle-key">Complaining<a class="principle-anchor" href="#complaining" title="link to this principle">#</a></div><div class="principle-value">Don't be overheard doing it. Not even to yourself.</div></div>
+            <div class="principle" id="negativity"><div class="principle-key">Negativity<a class="principle-anchor" href="#negativity" title="link to this principle">#</a></div><div class="principle-value">On social media, in relationships, in your own head. "Stay away from negative people. They have a problem for every solution." — Einstein</div></div>
+            <div class="principle" id="gossip"><div class="principle-key">Gossip<a class="principle-anchor" href="#gossip" title="link to this principle">#</a></div><div class="principle-value">Small talk is for small minds.</div></div>
+            <div class="principle" id="social-media"><div class="principle-key">Social Media<a class="principle-anchor" href="#social-media" title="link to this principle">#</a></div><div class="principle-value">A trap to a never-ending now. The structure blinds us to history. You are the product.</div></div>
+            <div class="principle" id="waiting"><div class="principle-key">Waiting for the Right Time<a class="principle-anchor" href="#waiting" title="link to this principle">#</a></div><div class="principle-value">Timing is almost never right. Now is as good as any.</div></div>
+            <div class="principle" id="resentment"><div class="principle-key">Resentment<a class="principle-anchor" href="#resentment" title="link to this principle">#</a></div><div class="principle-value">One of the biggest forces of evil. If you're resentful, either you're being neurotic and need to take responsibility — or someone is taking advantage of you. Which is it?</div></div>
+            <div class="principle" id="what-others-think"><div class="principle-key">What Others Think<a class="principle-anchor" href="#what-others-think" title="link to this principle">#</a></div><div class="principle-value">"You will stop worrying about what people think of you when you realize how seldom they do." — David Foster Wallace</div></div>
+            <div class="principle" id="repeated-mistakes"><div class="principle-key">Repeated Mistakes<a class="principle-anchor" href="#repeated-mistakes" title="link to this principle">#</a></div><div class="principle-value">A mistake repeated more than once is a decision. Your last mistake is your best teacher.</div></div>
+            <div class="principle" id="being-offended"><div class="principle-key">Being Offended<a class="principle-anchor" href="#being-offended" title="link to this principle">#</a></div><div class="principle-value">Not everyone will agree with you. Aim for 1,000 devoted fans over 100,000 mildly interested ones.</div></div>
+            <div class="principle" id="talking-more"><div class="principle-key">Talking More Than Listening<a class="principle-anchor" href="#talking-more" title="link to this principle">#</a></div><div class="principle-value">Two ears, one mouth.</div></div>
+            <div class="principle" id="imagined-troubles"><div class="principle-key">Imagined Troubles<a class="principle-anchor" href="#imagined-troubles" title="link to this principle">#</a></div><div class="principle-value">Don't suffer before you need to. It will happen or it won't.</div></div>
+            <div class="principle" id="politics"><div class="principle-key">Politics<a class="principle-anchor" href="#politics" title="link to this principle">#</a></div><div class="principle-value">Don't waste energy on the political crisis du jour. Daily political dramas are a time-sink.</div></div>
+            <div class="principle" id="rumors"><div class="principle-key">Rumors<a class="principle-anchor" href="#rumors" title="link to this principle">#</a></div><div class="principle-value">Carried by haters, spread by fools, accepted by idiots.</div></div>
+            <div class="principle" id="negative-social"><div class="principle-key">Negative Social Media<a class="principle-anchor" href="#negative-social" title="link to this principle">#</a></div><div class="principle-value">Don't post it. Don't engage with it. Using your time to be publicly right is a war you'll never win.</div></div>
+            <div class="principle" id="coincidence"><div class="principle-key">Coincidence<a class="principle-anchor" href="#coincidence" title="link to this principle">#</a></div><div class="principle-value">Stop attaching significance to it. Angel numbers, astrology signs — it's far easier to see what we want to see. Use science and rationality.</div></div>
+            <div class="principle" id="partying"><div class="principle-key">Partying Every Night<a class="principle-anchor" href="#partying" title="link to this principle">#</a></div><div class="principle-value">You cannot escape life by partying every night and pretending everything is fine in the morning.</div></div>
+            <div class="principle" id="disconnect"><div class="principle-key">Disconnect<a class="principle-anchor" href="#disconnect" title="link to this principle">#</a></div><div class="principle-value">Avoid people who say what they think you want to hear, only to show the opposite through their actions later.</div></div>
+            <div class="principle" id="uncritical-listening"><div class="principle-key">Uncritical Listening<a class="principle-anchor" href="#uncritical-listening" title="link to this principle">#</a></div><div class="principle-value">Learn to find false assumptions in others' arguments. Most public lies sound fine until you find their unspoken assumptions.</div></div>
+            <div class="principle" id="judging"><div class="principle-key">Judging Others<a class="principle-anchor" href="#judging" title="link to this principle">#</a></div><div class="principle-value">Withhold judgment until you can decide based on evidence.</div></div>
+            <div class="principle" id="popularity"><div class="principle-key">Popularity<a class="principle-anchor" href="#popularity" title="link to this principle">#</a></div><div class="principle-value">Everything popular is wrong.</div></div>
+            <div class="principle" id="tv"><div class="principle-key">TV<a class="principle-anchor" href="#tv" title="link to this principle">#</a></div><div class="principle-value">Turn it off. Read books, listen to podcasts, explore your curiosities.</div></div>
+            <div class="principle" id="rudeness"><div class="principle-key">Rudeness<a class="principle-anchor" href="#rudeness" title="link to this principle">#</a></div><div class="principle-value">Never respond to it. When people are rude, they reveal who they are, not who you are. Move on in silence.</div></div>
+            <div class="principle" id="prisoner-past"><div class="principle-key">Prisoner of Your Past<a class="principle-anchor" href="#prisoner-past" title="link to this principle">#</a></div><div class="principle-value">It was a lesson, good or bad — not a life sentence.</div></div>
+            <div class="principle" id="seeking-appraisal"><div class="principle-key">Seeking Appraisal<a class="principle-anchor" href="#seeking-appraisal" title="link to this principle">#</a></div><div class="principle-value">"You should always let people underestimate you. Because when they misappraise your intelligence and abilities, they're merely pointing out their own vulnerabilities." — Edward Snowden</div></div>
+            <div class="principle" id="unexamined-assumptions"><div class="principle-key">Unexamined Assumptions<a class="principle-anchor" href="#unexamined-assumptions" title="link to this principle">#</a></div><div class="principle-value">Be your own biggest skeptic. Break assumptions down to their fundamental truths and reason upward from first principles.</div></div>
         </section>
+
+
     </div>
 
     <footer>
