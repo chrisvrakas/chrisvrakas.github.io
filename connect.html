@@ -185,18 +185,8 @@
             font-weight: 700;
             color: #ff3333;
             text-align: center;
-            margin-bottom: 10px;
-            line-height: 1.2;
-            max-width: 1000px;
-            width: 100%;
-        }
-
-        .connect-hero p {
-            font-size: clamp(0.9rem, 2vw, 1.1rem);
-            line-height: 1.8;
-            color: #ddc18a;
-            text-align: center;
             margin-bottom: 40px;
+            line-height: 1.2;
             max-width: 1000px;
             width: 100%;
         }
@@ -228,10 +218,37 @@
             margin: 0 auto;
         }
 
+        /* Email row (top of box) */
+        .email-row {
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(255, 51, 51, 0.3);
+        }
+
+        .email-row a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #ff3333;
+            text-decoration: none;
+            font-size: clamp(1rem, 2.2vw, 1.4rem);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: opacity 0.3s ease;
+        }
+
+        .email-row a:hover {
+            opacity: 0.7;
+        }
+
+        .email-row i {
+            font-size: 0.8em;
+        }
+
         .pgp-box h2 {
             color: #ff3333;
             font-size: clamp(1rem, 2vw, 1.3rem);
-            margin-bottom: 20px;
+            margin-bottom: 8px;
             font-weight: 700;
         }
 
@@ -247,7 +264,7 @@
         .pgp-actions {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 6px;
         }
 
         .pgp-action {
@@ -267,6 +284,22 @@
         .pgp-action::before {
             content: '→';
             font-size: 1.2em;
+        }
+
+        /* Footnote (bottom of box) */
+        .pgp-footnote {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 51, 51, 0.3);
+            font-size: clamp(0.7rem, 1.2vw, 0.8rem);
+            line-height: 1.7;
+            color: #ddc18a;
+            opacity: 0.7;
+            text-align: center;
+        }
+
+        .pgp-footnote .pgp-link {
+            font-size: inherit;
         }
 
         /* Footer */
@@ -356,7 +389,6 @@
         }
 
         /* Responsive Design */
-        /* Responsive Design */
         @media (max-width: 768px) {
             header {
                 padding: 15px 25px;
@@ -400,6 +432,10 @@
                 padding: 15px;
             }
 
+            .email-row a {
+                font-size: 1rem;
+            }
+
             footer {
                 padding: 40px 20px;
             }
@@ -434,22 +470,29 @@
     <!-- Connect Section -->
     <section class="connect-hero">
         <h1>YOU DOWN WITH PGP? YEAH YOU KNOW ME!</h1>
-        
-        <p>
-            For private communications, use <a href="https://protonmail.com" class="pgp-link" target="_blank" rel="noopener noreferrer">Protonmail</a> or send an encrypted email using my <a href="assets/pgp/chris-vrakas-public-key.asc" class="pgp-link" download>PGP Key</a>
-        </p>
 
         <img src="assets/images/connect_01.png" alt="Connect" class="connect-image">
 
         <div class="pgp-box">
+            <div class="email-row">
+                <a href="mailto:freedom@chrisvrakas.com">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>freedom@chrisvrakas.com
+                </a>
+            </div>
+
             <h2>PGP PUBLIC KEY FINGERPRINT:</h2>
             <div class="fingerprint">
-                6286 D499 A4F1 68D0 ABF3 98CE 529D 9082 563E DF0B
+                0AD1 B833 73CE A598 682A 8ADC FCB5 ADD3 8E5E 4895
             </div>
+
             <div class="pgp-actions">
                 <a href="assets/pgp/chris-vrakas-public-key.asc" class="pgp-action" download>Download Full PGP Public Key</a>
                 <a href="https://github.com/chrisvrakas" class="pgp-action" target="_blank" rel="noopener noreferrer">View on Github</a>
             </div>
+
+            <p class="pgp-footnote">
+                This email is hosted at <a href="https://protonmail.com" class="pgp-link" target="_blank" rel="noopener noreferrer">Proton&nbsp;Mail</a>. For private communications, consider sending an encrypted email using my <a href="assets/pgp/chris-vrakas-public-key.asc" class="pgp-link" download>PGP&nbsp;Key</a>.
+            </p>
         </div>
     </section>
 
