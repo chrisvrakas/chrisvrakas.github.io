@@ -164,7 +164,7 @@ This project is open source and available under the [MIT License](LICENSE.md) â€
 - GitHub: [@chrisvrakas](https://github.com/chrisvrakas)
 - X: [@chris_vrakas](https://x.com/chris_vrakas)
 - Medium: [@chrisvrakas](https://medium.com/@chrisvrakas)
-- PGP: [connect@chrisvrakas.com](mailto:connect@chrisvrakas.com)
+- PGP: [freedom@chrisvrakas.com](mailto:freedom@chrisvrakas.com)
 
 ---
 
