@@ -1,10 +1,12 @@
 # CHRIS VRAKAS — PERSONAL WEBSITE
 
+![hero_image](assets/images/index_heroimage.png)
+
 > **The future will belong to those non-obvious thinkers who use their wide-ranging powers of interdisciplinary exploration to see connections between multiple, seemingly unrelated domains.**
 
-My personal portfolio and digital stomping ground built from scratch with zero dependencies, zero tracking, and zero compromise. Pure HTML, CSS, and vanilla JavaScript.
+Welcome to my digital stomping ground ✍🏻 built from scratch with zero dependencies, zero tracking, and zero compromise. Pure HTML, CSS, and vanilla JavaScript
 
-**[→ Live Site: chrisvrakas.com](https://chrisvrakas.com)**
+**[VISIT LIVE SITE →](https://chrisvrakas.com)**
 
 ---
 
@@ -12,7 +14,7 @@ My personal portfolio and digital stomping ground built from scratch with zero d
 
 Most personal websites are static brochures. This one is a living document.
 
-I'm a relentlessly curious, lifelong learner — technologist, Bitcoin enthusiast, privacy advocate, and polymathic explorer. I not only differ from others, but I differ from myself from yesterday. This site is the digital expression of that philosophy: ever-evolving, deliberately designed, and built the way I believe software should be built — minimal, fast, and without surveillance.
+I'm a relentlessly curious, lifelong learner — technologist, Bitcoin enthusiast, privacy advocate, and polymathic explorer. This site is a ever-evolving expression of these philosophies. 
 
 No WordPress. No analytics. No cookies. No bloat. Just code and ideas.
 
@@ -143,7 +145,7 @@ The resources page (`resources.html`) is mirrored as a standalone GitHub reposit
 
 **When everyone copyrights, copyleft.**
 
-This project is open source and available under the [MIT License](LICENSE.md) — fork it, modify it, learn from it. Just give credit where it's due.
+This project is open source and available under the [MIT License](LICENSE.md) 
 
 ---
 
@@ -177,11 +179,13 @@ This project is open source and available under the [MIT License](LICENSE.md) �
 
 ---
 
+![hero_image](assets/images/index_yourstruly.png)
+
 <div align="center">
 
 **"No man ever steps in the same river twice, for it's not the same river and he's not the same man."**  
 — Heraclitus
 
-**[Visit chrisvrakas.com →](https://chrisvrakas.com)**
+**[VISIT LIVE SITE →](https://chrisvrakas.com)**
 
 </div>
